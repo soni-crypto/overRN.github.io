@@ -1,7 +1,7 @@
 let variable = 0
 const data = () => {
 
-    const lista = ["Python", "JavaScript", "Php", "Html", "Css"];
+    const lista = ["python", "javaScript", "php", "html", "css"];
     console.log(lista[variable]);
 
     document.getElementById("lenguaje").innerHTML = lista[variable];
