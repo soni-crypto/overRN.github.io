@@ -1,0 +1,211 @@
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#particles-js {
+    height: 100%;
+    width: 90%;
+    position: absolute;
+}
+
+section {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0e1347+0,1b1366+23,1d147f+47,1f0f60+65,2f0f63+77,1d147f+90,2b2496+100 */
+    background: rgb(14, 19, 71);
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(14, 19, 71, 1) 0%, rgba(27, 19, 102, 1) 23%, rgba(29, 20, 127, 1) 47%, rgba(31, 15, 96, 1) 65%, rgba(47, 15, 99, 1) 77%, rgba(29, 20, 127, 1) 90%, rgba(43, 36, 150, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(14, 19, 71, 1) 0%, rgba(27, 19, 102, 1) 23%, rgba(29, 20, 127, 1) 47%, rgba(31, 15, 96, 1) 65%, rgba(47, 15, 99, 1) 77%, rgba(29, 20, 127, 1) 90%, rgba(43, 36, 150, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(14, 19, 71, 1) 0%, rgba(27, 19, 102, 1) 23%, rgba(29, 20, 127, 1) 47%, rgba(31, 15, 96, 1) 65%, rgba(47, 15, 99, 1) 77%, rgba(29, 20, 127, 1) 90%, rgba(43, 36, 150, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0e1347', endColorstr='#2b2496', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+
+.navegacionPrincipal ul li {
+    font-family: monospace;
+    font-size: 1rem;
+    display: inline-block;
+    background-color: rgba(240, 248, 255, 0.356);
+    border-radius: 4px;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.navegacionPrincipal ul li:hover {
+    /* background-color: rgb(130, 128, 128); */
+    border-bottom: 3px solid rgb(179, 255, 66)
+}
+
+.img-perfil {
+    width: 14rem;
+    border-radius: 7px;
+}
+
+.contenedor-madre {
+    display: flex;
+}
+
+.contenedor1 {
+    margin-left: 4rem;
+    width: 30rem;
+    background-color: rgba(157, 178, 252, 0.407);
+    border-radius: 3rem;
+    padding: 1rem 1rem 1rem 1rem;
+    box-shadow: 5px 5px 30px rgb(68, 126, 240), inset 2px 2px 10px rgba(255, 235, 205, 0.735);
+}
+
+.contenedor2 {
+    margin-left: 4rem;
+    width: 30rem;
+    background-color: rgba(157, 178, 252, 0.407);
+    border-radius: 50%;
+    padding: 1rem 1rem 1rem 1rem;
+    box-shadow: inset 100px 100px 100px rgba(108, 157, 255, 0.825), inset -40px -20px 60px rgba(67, 52, 120, 0.77);
+}
+
+.contenedor2:hover {
+    border: 6px double rgb(19, 57, 135);
+    background-color: blueviolet;
+    transition: 3s;
+    box-shadow: inset 100px 100px 100px rgba(10, 23, 50, 0.825), inset -40px -20px 60px rgba(171, 154, 232, 0.77);
+}
+
+h1 {
+    font-family: monospace;
+    font-size: 1.4rem;
+    color: rgb(0, 0, 0);
+}
+
+h2 {
+    font-family: monospace;
+}
+
+p {
+    font-family: monospace;
+}
+
+#lenguaje {
+    color: antiquewhite;
+    margin-top: 8rem;
+    font-size: 4rem;
+    font-family: monospace;
+}
+
+.caja-madre {
+    overflow: hidden;
+    margin-left: 5rem;
+    margin-top: 8rem;
+    background-color: rgb(47, 44, 44);
+    width: 650px;
+    height: 450px;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.caja-cabeza {
+    border-radius: 0rem 0rem 0rem 0rem;
+    background-color: rgb(57, 52, 52);
+    width: 100%;
+    display: flex;
+}
+
+.caja-cuerpo {
+    margin-top: -1.1rem;
+    margin-left: -6rem;
+    width: 100%;
+    height: 60px;
+}
+
+.caja-base {
+    padding-top: 0.2rem;
+    padding-left: 1rem;
+    margin-top: 11rem;
+    height: 13rem;
+    background-color: black;
+    color: aliceblue;
+}
+
+.color-azul {
+    margin-left: 1rem;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: blue;
+}
+
+.color-rojo {
+    margin-left: 1rem;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.color-amarillo {
+    margin-left: 1rem;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: yellow;
+}
+
+#codigo {
+    outline: none;
+}
+
+imprt,
+fun {
+    color: blue;
+}
+
+n {
+    color: rgb(112, 111, 111);
+}
+
+pre {
+    color: rgb(209, 209, 209);
+    font-family: cursive;
+    font-size: 15px;
+}
+
+va {
+    color: rgb(151, 169, 36);
+}
+
+lib {
+    color: blueviolet;
+}
+
+r {
+    color: red;
+}
+
+.centro {
+    display: flex;
+}
+
+.dato-python {
+    margin-top: 8rem;
+    margin-left: 4rem;
+}
+
+.letra-py {
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+
+.description {
+    color: #fff;
+}
+
+.mas-info {
+    width: 400px;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}

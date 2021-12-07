@@ -10,21 +10,96 @@
 </head>
 
 <body>
+    <div id="particles-js"></div>
+    <script src="./templates/particulas/particles.min.js"></script>
+    <script src="./templates/particulas/app.js"></script>
     <section>
         <article>
+
             <div>
-                <nav>
+                <nav class="navegacionPrincipal">
                     <ul>
-                        <li>Home</li>
-                        <li>Proyectos</li>
-                        <li>Habilidades</li>
-                        <li>descripcion</li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Habilities</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
             </div>
-            <div>
-                <h1>Over Rimachi Nuñez</h1>
+            <div class="contenedor-madre">
+                <div class="contenedor1">
+                    <h1>Over Rimachi Nuñez</h1>
+                    <div>
+                        <h2>1. Descripcion </h2>
+                        <p class="description">BackEnd and FrontEnd web programmer, Systems Engineering Study at the National University of San Cristobal De Huamanga. From the first year at university (2018) I started programming, learning different types of programming languages
+                            ​​and markup languages.</p>
+                        <p class="description">I am very fluent in python in areas such as web development, Computer Vision and Data Management along with other languages.</p>
+
+                        <center>
+                            <img class="img-perfil" src="./static/images/over.jpg" alt="">
+                        </center>
+
+                    </div>
+                </div>
+                <div class="contenedor2">
+                    <script src="./templates/otros/lenguajes.js"></script>
+                    <center>
+                        <p id="lenguaje"></p>
+                        <img width="120px" src="" id="imagen" alt="">
+                    </center>
+
+                </div>
+
             </div>
+            <div class="centro">
+                <div class="caja-madre">
+                    <div class="caja-cabeza">
+                        <p class="color-azul"></p>
+                        <p class="color-rojo"></p>
+                        <p class="color-amarillo"></p>
+                    </div>
+                    <div class="caja-cuerpo">
+
+                        <code>
+                            <pre id="codigo">       
+                                <n>1</n>   <fun>for <va> i</va><fun>  in Range</fun><va>(<va>0,  20</va>)</va>:</fun>
+                                <n>2</n>   <va>    <fun>print(</fun> i<fun>)</fun></va>
+                                <n>3</n>   <va>answer=<lib>"Hello World"</lib></va>
+                                <n>4</n>   <va>c=<lib>0</lib></va>
+                                <n>5</n>   <fun>while True</fun>: 
+                                <n>6</n>       <va>var</va>=<r>answer</r><fun>.upper()</fun>
+                                <n>7</n>       <fun>if</fun> <r>c</r>==<fun>10</fun>:
+                                <n>8</n>           <fun>break</fun>
+                                <n>9</n>        <va>c+=</va><lib>1</lib>
+
+                                
+                            </pre>
+                        </code>
+
+                    </div>
+                    <div class="caja-base">
+                        <p>Microsoft Windows [Versión 10.0.18363.1556]</p>
+                        <p>(c) 2019 Microsoft Corporation. Todos los derechos reservados.</p>
+                        <p>C:\Over></p>
+
+                    </div>
+                </div>
+                <div class="dato-python">
+                    <h2>.Python</h2>
+                    <p class="letra-py">Solid knowledge in Python 2.7 and Python 3.X</p>
+                    <p class="letra-py">- Databases (Mysql)</p>
+                    <p class="letra-py">- Consumption of Apis</p>
+                    <p class="letra-py">- Others</p>
+                </div>
+            </div>
+            <center>
+                <div class="mas-info">
+
+                    <h2>More about me</h2>
+                    <p>Mastery of several programming languages, On databases, Apis consumption, I am passive, I love programming and much of my time I dedicate to programming.</p>
+
+                </div>
+            </center>
         </article>
     </section>
 </body>
