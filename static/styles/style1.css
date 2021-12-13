@@ -209,3 +209,9 @@ r {
     text-align: center;
     color: #fff;
 }
+
+.video-bg {
+    /* position: absolute; */
+    width: 30rem;
+    border-radius: 10%;
+}
