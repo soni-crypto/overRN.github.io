@@ -1,0 +1,76 @@
+body {
+    background: rgb(14, 19, 71);
+}
+
+ul li {
+    font-family: monospace;
+    font-size: 1rem;
+    display: inline-block;
+    background-color: rgba(240, 248, 255, 0.356);
+    border-radius: 4px;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+ul li:hover {
+    /* background-color: rgb(130, 128, 128); */
+    border-bottom: 3px solid rgb(179, 255, 66)
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.py {
+    box-shadow: 5px 5px 10px rgb(235, 235, 235), -1px -1px 3px rgb(242, 240, 240);
+    border-radius: 10px;
+    /* border-style: solid; */
+    border-color: aquamarine;
+    width: 25rem;
+    height: 14rem;
+    background-color: rgb(255, 255, 255);
+    margin-left: 3rem;
+}
+
+.js {
+    /* border-style: solid; */
+    border-color: aquamarine;
+    border-radius: 10px;
+    width: 25rem;
+    height: 14rem;
+    background-color: rgb(255, 255, 255);
+    margin-left: 4rem;
+}
+
+.php {
+    /* border-style: solid; */
+    border-color: aquamarine;
+    border-radius: 10px;
+    width: 25rem;
+    height: 14rem;
+    background-color: rgb(255, 255, 255);
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+
+.py:hover {
+    box-shadow: 10px 10px 20px rgb(81, 71, 71), -5px -5px -10px rgb(114, 101, 101);
+}
+
+.ctn-languaje {
+    border-radius: 10px;
+    padding-top: 2rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 10px 20px rgb(54, 48, 164);
+    max-width: 60rem;
+    min-width: 30rem;
+    min-height: 35rem;
+    /* display: inline-block; */
+    /* float: left; */
+    /* justify-content: center;
+    text-align: center; */
+}
+
+.ctn-languaje>div {
+    float: left;
+}
