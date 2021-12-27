@@ -1,16 +1,14 @@
-let variable = 0
+const lista = ["python", "javascript", "php", "html", "css"];
+let variable = 1;
 const data = () => {
-
-    const lista = ["python", "javascript", "php", "html", "css"];
-    console.log(lista[variable]);
-
-    document.getElementById("lenguaje").innerHTML = lista[variable];
+    const letra = document.getElementById("lenguaje");
+    letra.innerHTML = lista[variable];
     const imagen = document.getElementById("imagen");
     imagen.setAttribute("src", "./static/images/" + lista[variable] + ".png")
     variable = variable + 1;
     if (variable === 5) {
         variable = 0
     }
-    // return lista;
+
 };
-const id = window.setInterval(data, 2000)
+window.setInterval(data, 2000)

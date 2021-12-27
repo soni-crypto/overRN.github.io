@@ -22,10 +22,7 @@ ul li:hover {
 }
 
 .py {
-    box-shadow: 5px 5px 10px rgb(235, 235, 235), -1px -1px 7px rgb(242, 240, 240);
     border-radius: 10px;
-    /* border-style: solid; */
-    border-color: aquamarine;
     width: 25rem;
     height: 14rem;
     background-color: rgb(255, 255, 255);
@@ -33,9 +30,6 @@ ul li:hover {
 }
 
 .js {
-    box-shadow: 5px 5px 10px rgb(235, 235, 235), -1px -1px 7px rgb(242, 240, 240);
-    /* border-style: solid; */
-    border-color: aquamarine;
     border-radius: 10px;
     width: 25rem;
     height: 14rem;
@@ -44,8 +38,6 @@ ul li:hover {
 }
 
 .php {
-    box-shadow: 5px 5px 10px rgb(235, 235, 235), -1px -1px 7px rgb(242, 240, 240);
-    /* border-style: solid; */
     border-color: aquamarine;
     border-radius: 10px;
     width: 25rem;
@@ -56,51 +48,30 @@ ul li:hover {
 }
 
 .py:hover {
-    box-shadow: 10px 10px 20px rgb(201, 201, 201);
-    /* border-left-style: solid; */
-    /* border-right-style: solid; */
-    /* border-width: 5px; */
-    /* border-color: rgb(179, 255, 66); */
-    /* background-color: black; */
-    /* width: 24.4rem; */
+    box-shadow: 2px 2px 0px rgb(213, 213, 33), 3px 3px 0px rgb(213, 213, 33), 5px 5px 0px rgb(213, 213, 33);
 }
 
 .js:hover {
-    box-shadow: 10px 10px 20px rgb(201, 201, 201);
-    /* border-left-style: solid; */
-    /* border-right-style: solid;
-    /* border-width: 5px; */
-    /* border-color: rgb(179, 255, 66); */
-    /* background-color: black; */
-    /* width: 24.4rem; */
+    box-shadow: 2px 2px 0px rgb(213, 213, 33), 3px 3px 0px rgb(213, 213, 33), 5px 5px 0px rgb(213, 213, 33);
 }
 
 .php:hover {
-    box-shadow: 10px 10px 20px rgb(201, 201, 201);
-    /* border-left-style: solid; */
-    /* border-right-style: solid; */
-    /* border-width: 5px; */
-    /* border-color: rgb(179, 255, 66); */
-    /* background-color: black; */
-    /* width: 24.4rem; */
+    box-shadow: 2px 2px 0px rgb(213, 213, 33), 3px 3px 0px rgb(213, 213, 33), 5px 5px 0px rgb(213, 213, 33);
 }
 
 .ctn-languaje {
     border-radius: 10px;
     padding-top: 2rem;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 10px 10px 20px rgb(54, 48, 164);
+    background-color: rgba(57, 66, 171, 0.188);
+    box-shadow: inset 3px 3px 10px rgb(107, 103, 184), inset -3px -3px 10px rgb(107, 103, 184);
     max-width: 60rem;
     min-width: 30rem;
     min-height: 35rem;
-    /* display: inline-block; */
-    /* float: left; */
-    /* justify-content: center;
-    text-align: center; */
 }
 
 .ctn-languaje>div {
     float: left;
+    /* background-color: rgba(255, 255, 255, 0.489); */
 }
 
 .link-code {
@@ -112,4 +83,9 @@ ul li:hover {
 
 .git {
     width: 2rem;
+}
+
+.folder {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
 }
