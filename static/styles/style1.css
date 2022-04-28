@@ -22,48 +22,127 @@ section {
 body {
     padding: 0;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0e1347+0,1b1366+23,1d147f+47,1f0f60+65,2f0f63+77,1d147f+90,2b2496+100 */
-    background: rgb(255, 255, 255);
+    background: rgb(40, 40, 40);
     /* Old browsers */
     /* background: -moz-linear-gradient(-45deg, rgba(14, 19, 71, 1) 0%, rgba(27, 19, 102, 1) 23%, rgba(29, 20, 127, 1) 47%, rgba(31, 15, 96, 1) 65%, rgba(47, 15, 99, 1) 77%, rgba(29, 20, 127, 1) 90%, rgba(43, 36, 150, 1) 100%); */
-    /* FF3.6-15 */
+    /* sFF3.6-15 */
     /* background: -webkit-linear-gradient(-45deg, rgba(14, 19, 71, 1) 0%, rgba(27, 19, 102, 1) 23%, rgba(29, 20, 127, 1) 47%, rgba(31, 15, 96, 1) 65%, rgba(47, 15, 99, 1) 77%, rgba(29, 20, 127, 1) 90%, rgba(43, 36, 150, 1) 100%); */
     /* Chrome10-25,Safari5.1-6 */
     /* background: linear-gradient(135deg, rgba(14, 19, 71, 1) 0%, rgba(27, 19, 102, 1) 23%, rgba(29, 20, 127, 1) 47%, rgba(31, 15, 96, 1) 65%, rgba(47, 15, 99, 1) 77%, rgba(29, 20, 127, 1) 90%, rgba(43, 36, 150, 1) 100%); */
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     /* filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0e1347', endColorstr='#2b2496', GradientType=1); */
-    /* IE6-9 fallback on horizontal gradient */
+    /* IE6-9 fallback on horizontal gradient*/
+}
+
+.navegacion {
+    display: block;
+    justify-content: center;
+    height: 4rem;
+    background-color: rgb(70, 70, 70);
+    margin-top: -1.5rem;
+    margin-left: -.5rem;
 }
 
 @media(min-width:700px) {
     .navegacionPrincipal ul li {
-        max-width: 5rem;
-        min-width: 5rem;
+        /* max-width: 5rem; */
+        height: 4rem;
+        min-width: 7rem;
         text-align: center;
-        margin-left: 1rem;
+        margin-left: 0rem;
         font-family: monospace;
         font-size: 1rem;
         display: inline-block;
-        background-color: rgba(255, 255, 255, 0.708);
-        border-radius: 2rem;
-        padding: 1rem 1rem 1rem 1rem;
-        box-shadow: 5px 5px 10px var(--background-negro), -3px -3px 7px var(--background-negro);
+        border-radius: .1rem;
+        padding: 1rem .2rem .2rem .2rem;
+        /* box-shadow: 5px 5px 10px var(--background-negro), -3px -3px 7px var(--background-negro); */
+    }
+    .navegacionPrincipal ul li:hover {
+        transform: scale(.9);
+    }
+    .navegacionPrincipal ul li a {
+        color: white;
+        font-size: 1.2rem;
+    }
+    .navegacionPrincipal ul li a:hover {
+        color: rgb(111, 255, 109);
     }
     .img-perfil {
-        width: 10rem;
-        border-radius: 7px;
+        width: 15rem;
+        margin-left: -5rem;
+        border-radius: .2rem;
     }
     .contenedor-madre {
         /* background-color: black; */
         /* flex-direction: row; */
+        /* display: inline-flex; */
         justify-content: center;
     }
     .contenedor1 {
+        border: 1px solid rgb(184, 184, 184);
         max-width: 30rem;
         min-width: auto;
-        background-color: rgba(255, 255, 255, 0.407);
-        border-radius: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        margin-left: 20%;
+        background-color: rgb(0, 0, 0);
+        /* border-radius: 2rem; */
         padding: 1rem 1rem 1rem 1rem;
-        box-shadow: 10px 10px 20px rgb(232, 232, 232), -10px -10px 20px rgb(232, 232, 232);
+        /* box-shadow: 10px 10px 20px rgb(232, 232, 232), 10px 10px 20px rgb(232, 232, 232); */
+    }
+    .letraPubInfo {
+        padding-top: 1rem;
+        margin-left: 1rem;
+    }
+    .contenedorFacebookPub {
+        width: 35rem;
+        height: 100%;
+        margin-left: 4%;
+        /* background-color: #d1d1d1; */
+    }
+    .inputFacebook {
+        margin-top: 1rem;
+        margin-left: .7rem;
+        height: 3rem;
+        width: 28rem;
+        border-radius: 10rem;
+        outline: none;
+        border: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        color: rgb(193, 193, 193);
+        background-color: rgb(54, 54, 54);
+    }
+    .inputFacebook:hover {
+        background-color: rgb(93, 93, 93);
+    }
+    .perfilFacebook {
+        width: 3rem;
+        height: 3rem;
+        margin: 1rem 0rem 0rem 1rem;
+        border-radius: 50%;
+    }
+    .vistaALaProgramacion {
+        display: flex;
+    }
+    .facebookBloque1 {
+        height: 9rem;
+        width: 100%;
+        border-radius: 1rem;
+        background-color: rgb(64, 64, 64);
+    }
+    .facebookBloque2 {
+        height: 8rem;
+        width: 100%;
+        border-radius: 1rem;
+        background-color: rgb(64, 64, 64);
+    }
+    .facebookBloque3 {
+        height: 100%;
+        width: 100%;
+        border-radius: 1rem;
+        background-color: rgb(99, 98, 98);
+        margin-bottom: 3rem;
     }
     .contenedor2 {
         overflow: hidden;
@@ -73,7 +152,7 @@ body {
         background-color: rgba(255, 255, 255, 0.407);
         border-radius: 4rem;
         padding: 0rem 1rem 1rem 1rem;
-        box-shadow: 10px 10px 20px rgb(220, 220, 220), -10px -10px 20px rgb(220, 220, 220);
+        /* box-shadow: 10px 10px 20px rgb(220, 220, 220), -10px -10px 20px rgb(220, 220, 220); */
         /* box-shadow: inset 100px 100px 100px rgba(189, 189, 189, 0.825), inset -40px -20px 60px rgba(67, 52, 120, 0.77); */
     }
     h1 {
@@ -87,12 +166,114 @@ body {
     p {
         font-family: monospace;
     }
+    .letraTwitter {
+        color: rgb(168, 168, 168);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+    }
+    .prohack {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: .9rem;
+    }
+    .bloqueFaceCabecera {
+        display: flex;
+        border-bottom: 1px solid rgb(191, 191, 191);
+        width: 90%;
+        margin-left: 2rem;
+        padding-bottom: 1rem;
+        /* background-color: #000; */
+    }
+    .bloqueFaceCabeceraPub {
+        display: flex;
+        border-radius: 1rem 1rem 0 0;
+        /* border-bottom: 1px solid rgb(191, 191, 191); */
+        width: 100%;
+        /* padding-left: 1rem; */
+        padding-bottom: 1rem;
+        background-color: rgb(51, 51, 51);
+    }
+    .inforFalso {
+        color: rgb(128, 128, 255);
+        /* text-decoration: underline; */
+        font-family: Consolas;
+        font-size: .8rem
+    }
+    .botonInfFacebook {
+        border: none;
+        outline: none;
+        width: 15rem;
+        height: 2.7rem;
+        border-radius: .4rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        margin-top: .4rem;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(100, 100, 100, 0);
+        color: aqua;
+    }
+    .botonInfFacebook:hover {
+        background-color: rgb(100, 100, 100);
+    }
+    .botonesParteDos {
+        margin-top: 1rem;
+    }
+    .publicacionesFacebook {
+        margin-top: .3rem;
+        margin-right: 1rem;
+    }
+    .inputFacebookParte2 {
+        height: 2.3rem;
+        background-color: rgb(100, 100, 100);
+        color: aqua;
+        border-radius: .5rem;
+        border: none;
+        outline: none;
+    }
+    .centrarEnVertiFacebook {
+        color: rgb(103, 103, 240);
+    }
+    .classListaModo {
+        border: none;
+        outline: none;
+        width: 15rem;
+        height: 2.7rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        margin-top: .4rem;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(100, 100, 100, 0);
+        color: aqua;
+        border-bottom: 3px solid rgb(74, 74, 223);
+    }
+    .botonesFacebookInferior {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .facebookColorIcono {
+        fill: rgb(255, 94, 94);
+        font-size: 1.6rem;
+    }
+    .twitterContadorDePuntos {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-right: 8%;
+        color: rgb(159, 159, 159);
+    }
+    .iconTwitterPub {
+        margin-top: .3rem;
+    }
     #lenguaje {
         color: var(--color-negro-letra);
         margin-top: 3rem;
         font-size: 2rem;
         font-family: 'Courier New', Courier, monospace;
         transition: 1s;
+    }
+    .hu5pjgll {
+        filter: invert(80%);
     }
     .caja-madre {
         overflow: hidden;
@@ -172,22 +353,55 @@ body {
         display: flex;
     }
     .dato-python {
+        color: white;
         margin-top: 8rem;
         margin-left: 4rem;
+    }
+    .dato-python p,
+    h2 {
+        color: white;
     }
     .letra-py {
         color: rgb(30, 30, 30);
         font-size: 1.2rem;
     }
     .description {
-        color: mediumblue;
-        font-size: 15px;
-        font-family: 'Courier New', Courier, monospace;
+        color: rgb(255, 255, 255);
+        font-size: .9rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
         /* margin-left: -6rem; */
     }
     .nombre {
-        color: mediumblue;
-        font-family: 'Courier New', Courier, monospace;
+        color: rgb(255, 255, 255);
+        font-size: 1.2rem;
+        font-family: fantasy;
+    }
+    .imagenTwitterProfile {
+        width: 3rem;
+        margin-left: 1rem;
+        border-radius: 50%;
+    }
+    .calendarioSVG {
+        width: 1.3rem;
+        fill: rgb(160, 160, 160);
+        padding-bottom: -5rem;
+    }
+    .contenedorTwitterCaja {
+        width: 32rem;
+        margin-top: 1rem;
+        margin-left: -1rem;
+        display: flex;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-top: 1px solid rgb(161, 161, 161);
+        border-bottom: 1px solid rgb(161, 161, 161);
+    }
+    .contenedorTwitterCajaImg {
+        padding-top: 2rem;
+        margin-right: 1rem;
+    }
+    .fechaDeDesarrollo {
+        color: rgb(152, 152, 152);
     }
     .dscr1 {
         color: mediumblue;
@@ -212,7 +426,7 @@ body {
         margin-top: 6rem;
         position: absolute;
         /* width: 600px; */
-        width: 20px;
+        width: 50px;
         height: 500px;
         transition: 2s;
     }
@@ -309,9 +523,13 @@ body {
     .fa-angle-double-right {
         position: absolute;
         /* background-color: blue; */
-        padding: 1rem 1rem 1rem;
+        padding: 0rem .1rem 0rem .1rem;
         margin-top: -14rem;
-        margin-left: -20.9rem;
+        margin-left: -19.4rem;
+        /* font-size: 1rem; */
+        width: 2rem;
+        border-radius: .5rem;
+        background-color: rgb(255, 255, 255);
     }
     .icon-f {
         margin-top: 0.5rem;
@@ -327,14 +545,15 @@ body {
     }
     .icon-af {
         border-radius: 0 9px 9px 0;
-        background-color: rgb(72, 72, 255);
+        background-color: rgb(255, 255, 255);
         width: 40%;
         height: 4rem;
+        /* box-shadow: 5px 5px 7px rgb(216, 216, 216); */
     }
     .icon-aw {
         border-radius: 9px 0 0 9px;
-        background-color: rgb(121, 248, 116);
-        ;
+        background-color: rgb(255, 255, 255);
+        /* box-shadow: 5px 5px 7px rgb(216, 216, 216); */
         width: 40%;
         height: 4rem;
     }
@@ -403,4 +622,245 @@ body {
         animation-duration: 5s;
         animation-iteration-count: infinite;
     }
+    .btnModalSkill {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        cursor: pointer;
+        border-radius: .4rem;
+        border: none;
+        outline: none;
+        width: 7.4rem;
+        height: 3rem;
+        margin: .5rem .5rem .5rem .5rem;
+        padding: 0;
+        background: linear-gradient(145deg, #e6e6e6, #ffffff);
+        box-shadow: 5px 5px 10px #d1d1d1, -5px -5px 10px #ffffff;
+        /* background-color: rgb(255, 255, 255);
+        box-shadow: -4px 4px 10px rgb(210, 210, 210); */
+    }
+    .btnModalSkill:hover {
+        color: blue;
+    }
+    .AllSkills {
+        margin-top: 2rem;
+        padding: 2rem 2rem 2rem 2rem;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 65%;
+        height: 20rem;
+        border-radius: .4rem;
+        border-radius: 26px;
+        background: #ffffff;
+        /* box-shadow: 11px 11px 23px #cccccc, -11px -11px 23px #ffffff; */
+        /* background-color: rgb(255, 255, 255);
+        box-shadow: -4px 4px 10px rgb(210, 210, 210); */
+    }
+    .AllSkillsPadre {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        /* background-color: black; */
+    }
+    .terminales-y-mas {
+        /* background-color: #dbdbdb; */
+        height: 4rem;
+        width: 90%;
+        margin-left: 5%;
+        border-radius: .3rem;
+        justify-content: center;
+    }
+    .imgOPT {
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+    .buttonOPT {
+        cursor: pointer;
+        width: 7rem;
+        margin-top: .5rem;
+        height: 3rem;
+        background-color: white;
+        border: none;
+        border-radius: .4rem;
+        outline: none;
+    }
+    .gitCmd {
+        display: none;
+        width: 45rem;
+        height: 25rem;
+        background-color: rgb(0, 0, 0);
+        position: absolute;
+        margin-left: 10rem;
+        margin-top: 2rem;
+    }
+    .gitCuerpo {
+        margin-top: 1rem;
+    }
+    .gitCerrar {
+        position: absolute;
+        right: 2rem;
+        margin-top: -1rem;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        /* background-color: aliceblue; */
+    }
+    .gitCerrar span {
+        margin-left: 1.3rem;
+        cursor: pointer;
+    }
+    .minimizarCmd {
+        height: 1rem;
+        padding-bottom: 1rem;
+        background-color: blue;
+    }
+    .minimizarCmd>span {
+        margin-top: -.4rem;
+        position: absolute;
+        margin-left: -1rem;
+    }
+    .letracabezera {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        margin-top: -3rem;
+        font-size: .8rem;
+    }
+    .codeCommand {
+        width: 90%;
+        background-color: rgb(0, 0, 0);
+        border: none;
+        outline: none;
+        color: white;
+        font-family: Verdana;
+        font-size: .9rem;
+    }
+    .contentCMD {
+        /* background-color: antiquewhite; */
+        padding-left: 2rem;
+        margin-top: 1rem;
+        margin-left: 3rem;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    /* #################################### */
+    .PSCmd {
+        display: none;
+        width: 45rem;
+        height: 25rem;
+        background-color: rgb(25, 25, 119);
+        position: absolute;
+        margin-left: 10rem;
+        margin-top: 2rem;
+    }
+    .psCabezera {
+        background-color: rgb(0, 0, 0);
+        position: relative;
+        height: 2rem;
+        padding-bottom: .3rem;
+    }
+    .imgPS {
+        margin-bottom: -.5rem;
+    }
+    .psCuerpo {
+        margin-top: 1rem;
+    }
+    .psCerrar {
+        position: absolute;
+        right: 2rem;
+        margin-top: -1rem;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        /* background-color: aliceblue; */
+    }
+    .psCerrar span {
+        margin-left: 1.3rem;
+        cursor: pointer;
+    }
+    .minimizarCmdPs {
+        height: 1rem;
+        padding-bottom: 1rem;
+        background-color: blue;
+    }
+    .minimizarCmdPs>span {
+        margin-top: -.4rem;
+        position: absolute;
+        margin-left: -1rem;
+    }
+    .letracabezeraPS {
+        font-family: courier;
+        color: white;
+        padding-top: 2rem;
+        font-size: .8rem;
+    }
+    .codeCommandPS {
+        width: 60%;
+        background-color: rgba(187, 43, 43, 0);
+        border: none;
+        outline: none;
+        color: white;
+        font-family: Verdana;
+        font-size: .9rem;
+    }
+    .contentCMDPs {
+        /* background-color: antiquewhite; */
+        padding-left: 2rem;
+        margin-top: 1rem;
+        margin-left: 3rem;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
+
+.modalContainer {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalContainer .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid lightgray;
+    /* border-top: 10px solid #58abb7; */
+    width: 60%;
+    border-radius: .5rem;
+}
+
+.modalContainer .close {
+    color: #ececec;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: rgb(147, 147, 147);
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.modalContainer .close:hover,
+.modalContainer .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close:active {
+    background-color: rgb(255, 101, 101);
+}
+
+.descripcionCertificado {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
 }

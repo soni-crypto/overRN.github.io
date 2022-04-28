@@ -1,3 +1,4 @@
+<!-- https://imagenes.20minutos.es/files/image_656_370/uploads/imagenes/2020/10/19/5f8d6b7374c61.jpeg -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,45 +15,162 @@
 
 <body>
     <section>
-        <article>
-            <div>
-                <ul>
-                    <li><a class="nav" href="/">Home</a></li>
-                    <li><a class="nav" href="./project.html">Projects</a></li>
-                    <li><a class="nav" href="#">Habilities</a></li>
-                    <li><a class="nav" href="#">Contact</a></li>
-                </ul>
-            </div>
+        <div>
             <script src="./templates/otros/back.js"></script>
-            <center>
-                <!-- onmouseenter="backcolor()" onmouseleave="ratonsalido()" -->
-                <div style="" class="ctn-languaje" id="ctn-l">
-                    <div class="py">
-                        <h1>Python</h1>
-                        <p class="folder">Desde el año 2018 Programe en áreas como desarrollo web backend, vision artificial, etc... asi ganando experiencia en cada proyecto echo</p>
-                        <a class="link-code" href="https://github.com/soni-crypto/vision-por-computador" target="blank"><img class="git" src="../static/images/github-brands.svg" alt=""></a>
-                        <a class="link-code" href=""><img class="git" src="../static/images/folder-open-solid.svg" alt=""></a>
+            <!-- onmouseenter="backcolor()" onmouseleave="ratonsalido()" -->
+            <div class="contenedor-padre" id="contenedor-general">
+                <div class="stilos">
+                    <ul>
+                        <li><a class="nav" href="/">Home</a></li>
+                        <img src="../static/images/logoRaptor.png" class="logoRaptorIndicaciones" alt="">
+                    </ul>
+                    <button class="btn-estilos">Agregar</button>
+                    <button class="btn-estilos">Modificar</button>
+                    <button class="btn-estilos">Estilos</button>
+                    <button class="btn-estilos">Colores</button>
+                    <button class="btn-estilos">Eliminar</button>
+                    <button class="btn-estilos">Vincular</button>
+                    <button class="btn-estilos">Mas</button>
+                </div>
+                <div class="cuerpo">
+                    <center>
+                        <div class="cabezera">
 
+
+                        </div>
+
+                        <div class="contenidoCentro"></div>
+                        <div class="pie"></div>
+                    </center>
+
+                </div>
+                <div class="partesModales">
+                    <div class="Agregar">
+                        <span class="cerrarAgregar">x</span>
+                        <!-- <div> -->
+                        <label for="agregarEtiqueta" class="labelLetra">Buscar etiqueta</label>
+                        <input type="text" class="agregarEtiqueta" id="agregarEtiqueta" placeholder="Ingrese la etiqueta a agregar">
+                        <br><br>
+                        <!-- <center> -->
+
+                        <div class="contenedorDeBotonesEtiquetas">
+
+                        </div>
+                        <!-- </center> -->
+                        <!-- </div> -->
                     </div>
-                    <div class="js">
-                        <h1>JavaScript</h1>
-                        <p class="folder">Desarrollé un pequeño juego en JavaScript, fortaleciendo mis habilidades de programador asi ganando experiencia en cada linea de codigo escrito
-                            <p>
-                                <a href="https://vraemtec.github.io/">ir al juego</a>
-                                <a class="link-code" href=""><img class="git" src="../static/images/github-brands.svg" alt=""></a>
-                                <a class="link-code" href=""><img class="git" src="../static/images/folder-open-solid.svg" alt=""></a>
-
+                    <div class="tipoTitulo">
+                        <span class="cerrarVentanaDeTitulo">x</span>
+                        <select name="tituloEscojido" id="tituloEscojido">
+                            <option class="titulo titulo1" value="h1">Titulo1</option>
+                            <option class="titulo titulo2" value="h2">Titulo2</option>
+                            <option class="titulo titulo3" value="h3">Titulo3</option>
+                            <option class="titulo titulo4" value="h4">Titulo4</option>
+                            <option class="titulo titulo5" value="h5">Titulo5</option>
+                            <option class="titulo titulo6" value="h6">Titulo6</option>
+                        </select>
+                        <textarea name="textoTitulo" class="textoTitulo" id="textoTitulo" cols="40" rows="3"></textarea>
+                        <button class="agregarTituloAlArchivo">Agregar</button>
                     </div>
-                    <div class="php">
-                        <h1>Php</h1>
-                        <a class="link-code" href=""><img class="git" src="../static/images/github-brands.svg" alt=""></a>
-                        <a class="link-code" href=""><img class="git" src="../static/images/folder-open-solid.svg" alt=""></a>
-
+                    <div class="agregarTextoACuerpo">
+                        <span>Escriba su texto</span>
+                        <span class="cerrarTextoInput">x</span>
+                        <div class="inputsDeTextoACuerpo">
+                            <textarea name="textoAPoner" id="textoAPoner" placeholder="Escriba su texto" cols="60" rows="8"></textarea>
+                            <div class="btnTextoEditor"><input type="color" name="colorTexto" id="colorTexto">
+                                <!-- <button class="btnFonTIni">fuente</button>
+                                <button class="btnFonTIni">tamaño</button> -->
+                                <select name="" id="" class="btnModificadorInt2">
+                                    <option class="estiloOption2"  value="arial" selected>Arial</option>
+                                    <option class="estiloOption2" value="verdana">Verdana</option>
+                                    <option class="estiloOption2" value="consolas">Consolas</option>
+                                    <option class="estiloOption2" value="cursive">Cursiva</option>
+                                    <option class="estiloOption2" value="fantasy">Negrita</option>
+                                </select>
+                                <select class="btnModificadorInt2">
+                                    <option class="estiloOption2"  value="1.3rem">Extra Grande</option>
+                                    <option class="estiloOption2"  value="1.2rem">Muy Grande</option>
+                                    <option class="estiloOption2" value="1.1rem">Grande</option>
+                                    <option class="estiloOption2" value="1rem" selected >Normal</option>
+                                    <option class="estiloOption2" value=".9rem">Pequeño</option>
+                                    <option class="estiloOption2" value=".8rem">Muy Pequeño</option>
+                                </select>
+                                <input type="radio" name="modoDePunto" checked id="saltoDeLinea"><label for="saltoDeLinea">Nueva linea</label>
+                                <br><input type="radio" name="modoDePunto" id="lineaSeguida"><label for="lineaSeguida">punto seguido</label><br>
+                                <button class="submitTexto">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="agregarImagenACuerpo">
+                        <span class="cerrarImagenInput">x</span>
+                        <div>
+                            <input type="text" class="urlImagenAInsertar" placeholder="Ingrese link de la Imagen">
+                            <input type="number" class="tamañoImagenInsertar" min-length="2" max-length="3" placeholder=" 200 ">
+                            <br>
+                            <button class="btnInsertarImagen">Insertar imagen</button>
+                            <br><br>
+                            <input type="text" class="urlVideoAInsertar" placeholder="Ingrese link de la Video">
+                            <input type="number" class="tamañoVideoInsertar" min-length="2" max-length="3" placeholder="200">
+                            <br>
+                            <button class="btnInsertarVideo">Insertar Video</button>
+                        </div>
                     </div>
                 </div>
-            </center>
-        </article>
+                <div class="partesModalesModificador">
+                    <span class="cerrarVentanaModificador">x</span>
+                    <div class="pantallaParaVerEtiqueta">
+                        <span class="codigoHtmlPantalla"></span>
+                        <textarea name="etiquetaAModificar" id="etiquetaAModificar" cols="70" rows="4" oninput="actualizarDataEnTiempoReal()"></textarea>
+                        <!-- <input type="text" id="etiquetaAModificar" name="etiquetaAModificar" oninput="actualizarDataEnTiempoReal()"> -->
+                    </div>
+                    <h4 style="color: white;">Modificar</h4>
+                    <div class="contenedorDeBotonesModificadores">
+                        <!-- <button class="btnModificadorInt">Tamaño</button> -->
+                        <select name="tamañoDeLetraSeleccionado" id="tamañoDeLetraSeleccionado" class="btnModificadorInt">
+                            <option class="estiloOption"  value="1.3rem">Extra Grande</option>
+                            <option class="estiloOption"  value="1.2rem">Muy Grande</option>
+                            <option class="estiloOption" value="1.1rem">Grande</option>
+                            <option class="estiloOption" value="1rem" selected >Normal</option>
+                            <option class="estiloOption" value=".9rem">Pequeño</option>
+                            <option class="estiloOption" value=".8rem">Muy Pequeño</option>
+                        </select>
+                        <select name="" id="" class="btnModificadorInt">
+                            <option class="estiloOption"  value="arial" selected>Arial</option>
+                            <option class="estiloOption" value="verdana">Verdana</option>
+                            <option class="estiloOption" value="consolas">Consolas</option>
+                            <option class="estiloOption" value="cursive">Cursiva</option>
+                            <option class="estiloOption" value="fantasy">Negrita</option>
+                        </select>
+                        <!-- <button class="btnModificadorInt">Tipo de letra</button> -->
+                        <label for="colorModificadorInput" class="btnModificadorInt">Color de texto</label><input type="color" style="width: 0px;display: none;" name="colorModificadorInput" id="colorModificadorInput">
+                        <button class="btnModificadorInt">Margen Izq.</button>
+                        <button class="btnModificadorInt">Centrar</button><br>
+                        <button class="guardarCambiosNuevos">Guardar Cambios</button>
+                    </div>
+                </div>
+                <div class="Bienvenida">
+                    <span class="cerrarVentanaBienvenida">x</span>
+                    <h2 class="bienvLetra1">Bienvenid@ a RapPress</h2>
+                    <p class="bienvLetra2">RapPress es un sitio web para personas que buscan tener un sitio web personal.</p>
+                    <p class="bienvLetra2">Desarrollo Tus Propios sitios webs de manera muy sencilla y en corto tiempo</p>
+                    <br> <br>
+                    <p class="bienvLetra3">Crea y modifica de manera muy facil, agrega imagenes y videos para embellezer su pagina web</p>
+                    <center>
+                        <p class="bienvLetra4">RapPress Go !!</p>
+                    </center>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="../static/modalesJS/etiquetasAppend.js"></script>
+        <script src="../static/modalesJS/cerradorModales.js"></script>
+        <script src="../static/modalesJS/agregaTexto.js"></script>
+        <script src="../static/modalesJS/agregaTexto.js"></script>
+        <script src="../static/modalesJS/agregaImagen.js"></script>
+        <script src="../static/modalesJS/modificadorGeneral.js"></script>
     </section>
 </body>
+
 
 </html>
