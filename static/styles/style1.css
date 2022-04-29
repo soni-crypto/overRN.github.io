@@ -332,6 +332,7 @@ body {
         color: white;
         margin-top: 8rem;
         margin-left: 2rem;
+        z-index: -1;
         /* display: flex; */
         /* float: right; */
         /* background-color: blue; */
