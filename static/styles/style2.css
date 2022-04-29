@@ -1,556 +1,1058 @@
-:root {
-    --colorDeBordeCajas: rgb(191, 191, 191);
-}
-
-body {
-    background: rgb(47, 47, 47);
-    overflow: hidden;
-}
-
-ul li {
-    font-family: monospace;
-    font-size: 1rem;
-    display: inline-block;
-    background-color: rgb(0, 136, 255);
-    border-radius: 4px;
-    padding: .3rem .3rem .3rem .3rem;
-}
-
-ul li:hover {
-    background-color: rgb(130, 128, 128);
-    /* border-bottom: 3px solid rgb(179, 255, 66); */
-}
-
-.hoverAnunciosPart1 {
-    border: 1px solid var(--colorDeBordeCajas);
-    max-width: 10rem;
-    height: auto;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    display: none;
-    margin-left: 7rem;
-    padding: .3rem;
-}
-
-.nav {
-    text-decoration: none;
-    color: #fff;
-}
-
-.botonDeEliminarClickDerecho {
-    border: 3px solid rgb(137, 176, 248);
-    outline: none;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
-    color: black;
-    padding: .3rem;
-    border-radius: .3rem;
-}
-
-.mensajeDeEliminarClickDerecho {
-    font-family: monospace;
-    color: black;
-}
-
-.cajaDeEliminarClickDerecho {
-    position: absolute;
-    border: 1px solid rgb(200, 200, 200);
-    background-color: white;
-    border-radius: .4rem;
-    padding: .3rem;
-    box-shadow: .3rem .3rem .3rem rgb(216, 216, 216);
-}
-
-@media screen and (min-width:700px) {
-    .logoRaptorIndicaciones {
-        width: 100px;
-        border-radius: 50%;
-        margin-left: -1rem;
-        margin-top: 1rem;
-    }
-    .logoRaptorIndicaciones:hover {
-        cursor: pointer;
-    }
-    .logoRaptorIndicaciones:active {
-        width: 98px;
-    }
-    .stilos {
-        margin-top: -.4rem;
-        margin-left: -.4rem;
-        height: 100vh;
-        width: 10rem;
-        background-color: rgb(246, 246, 246);
-        border-right: 1px solid rgb(194, 193, 193);
-    }
-    .contenedor-padre {
-        /* padding-left: 1rem; */
-        display: flex;
-    }
-    .btn-estilos {
-        padding-left: 1.4rem;
-        color: rgb(123, 123, 123);
-        height: 2.7rem;
-        font-size: 1.1rem;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        width: 100%;
-        background-color: rgb(246, 246, 246);
-        border: none;
-        text-align: left;
-    }
-    .btn-estilos:hover {
-        /* background-color: rgb(136, 166, 192); */
-        color: black;
-    }
-    .btn-estilos:active {
-        background-color: rgb(105, 101, 101);
-    }
-    .cuerpo {
-        overflow-y: scroll;
-        margin-top: -.4rem;
-        width: 90vw;
-        height: 100vh;
-        background-color: white;
-    }
-    .contenidoCentro {
-        /* padding: 0rem 10rem 1rem 10rem; */
-        height: auto;
-        word-wrap: break-word;
-        width: 80%;
-        text-align: left;
-    }
-    .textoTitulo {
-        padding: .5rem .5rem .5rem .5rem;
-        font-family: Arial, Helvetica, sans-serif;
-        margin-top: .3rem;
-        margin-bottom: .3rem;
-        outline: none;
-        border-radius: .4rem;
-        resize: none;
-        border: 3px solid rgb(182, 182, 255);
-    }
-    .tamañoVideoInsertar,
-    .tamañoImagenInsertar {
-        padding: .4rem .2rem .4rem .2rem;
-        font-family: Arial, Helvetica, sans-serif;
-        margin-top: .3rem;
-        margin-bottom: .3rem;
-        outline: none;
-        border-radius: .4rem;
-        resize: none;
-        width: 3rem;
-        border: 3px solid rgb(182, 182, 255);
-    }
-    .pantallaParaVerEtiqueta {
-        /* overflow-y: scroll; */
-        width: 100%;
-        height: 5rem;
-        padding: .5rem .5rem .5rem .5rem;
-        background-color: rgba(255, 255, 255, 0.546);
-        border-radius: .4rem;
-        border: 5px solid rgb(155, 161, 255);
-    }
-    /* MODALES NO TOCAR */
-    .partesModales {
-        display: none;
-        position: absolute;
-        bottom: 2rem;
-        right: 17%;
-        width: 50vw;
-        background-color: rgba(255, 255, 255, 0.7);
-        border: 1px solid rgb(195, 195, 195);
-        padding: 1rem 5rem 1rem 1rem;
-        height: 10rem;
-        border-radius: .4rem;
-    }
-    .partesModalesModificador {
-        display: none;
-        position: absolute;
-        bottom: 2rem;
-        right: 17%;
-        height: 20rem;
-        width: 50vw;
-        background-color: rgba(255, 255, 255, 0.7);
-        padding: 1rem 5rem 1rem 1rem;
-        /* height: 0; */
-        border-radius: .4rem;
-        border: 1px solid rgb(195, 195, 195);
-        box-shadow: 3px 3px 8px rgb(244, 244, 244);
-    }
-    .Agregar {
-        width: 100%;
-        position: absolute;
-    }
-    .agregarEtiqueta {
-        width: auto;
-        height: 1.7rem;
-        border-radius: .3rem;
-        outline: none;
-        border: 4px solid rgb(192, 192, 192);
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .contenedorDeBotonesEtiquetas {
-        display: flex;
-        /* flex-direction: row; */
-        justify-content: center;
-        width: 30rem;
-        position: absolute;
-        margin-left: 3rem;
-        /* background-color: blue; */
-    }
-    .tipoTitulo {
-        display: none;
-        position: absolute;
-        padding: 1rem 1rem 1rem 1rem;
-        height: 9rem;
-        width: 20rem;
-        border: 1px solid var(--colorDeBordeCajas);
-        border-radius: .4rem;
-        background-color: rgba(255, 255, 255, 0.941);
-    }
-    .agregarTextoACuerpo {
-        display: none;
-        position: absolute;
-        padding: 1rem 1rem 1rem 1rem;
-        height: 12rem;
-        width: 40rem;
-        border: 1px solid var(--colorDeBordeCajas);
-        border-radius: .4rem;
-        background-color: rgba(255, 255, 255, 0.941);
-    }
-    .agregarImagenACuerpo {
-        display: none;
-        position: absolute;
-        padding: 1rem 1rem 1rem 1rem;
-        height: 10rem;
-        width: 30rem;
-        border-radius: .4rem;
-        border: 1px solid var(--colorDeBordeCajas);
-        background-color: rgba(255, 255, 255, 0.941);
-    }
-    /* BOTON PARA CERRAR */
-    .cerrarAgregar {
-        position: absolute;
-        font-family: arial;
-        font-size: 1rem;
-        right: 2rem;
-        margin-top: -.3rem;
-        background-color: rgb(195, 195, 195);
-        padding: .4rem .7rem .4rem .7rem;
-        border-radius: 50%;
-        border: 4px solid rgb(113, 113, 113);
-        /* cursor: pointer;
-        position: absolute;
-        right: 2rem;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        color: rgb(0, 0, 255);
-        border-radius: 50%;
-        padding: .7rem 1rem .7rem 1rem;
-        font-size: 1.3rem;
-        background-color: rgb(208, 208, 208); */
-        color: white;
-    }
-    .cerrarAgregar:hover {
-        background-color: rgb(164, 164, 164);
-        border-color: rgb(224, 224, 224);
-    }
-    .cerrarVentanaDeTitulo {
-        position: absolute;
-        font-family: arial;
-        font-size: 1rem;
-        right: .5rem;
-        margin-top: -.8rem;
-        background-color: rgb(195, 195, 195);
-        padding: .3rem .6rem .3rem .6rem;
-        border-radius: 50%;
-    }
-    .cerrarVentanaDeTitulo:hover {
-        border: 2px solid rgb(255, 74, 74);
-    }
-    .cerrarVentanaDeTitulo:active {
-        background-color: blue;
-        color: white;
-    }
-    .cerrarTextoInput {
-        position: absolute;
-        font-family: arial;
-        font-size: 1rem;
-        right: .5rem;
-        margin-top: -.8rem;
-        background-color: rgb(195, 195, 195);
-        padding: .3rem .6rem .3rem .6rem;
-        border-radius: 50%;
-    }
-    .cerrarTextoInput:hover {
-        border: 2px solid rgb(255, 74, 74);
-    }
-    .cerrarTextoInput:active {
-        background-color: blue;
-        color: white;
-    }
-    .cerrarImagenInput {
-        position: absolute;
-        font-family: arial;
-        font-size: 1rem;
-        right: .5rem;
-        margin-top: -.8rem;
-        background-color: rgb(195, 195, 195);
-        padding: .3rem .6rem .3rem .6rem;
-        border-radius: 50%;
-    }
-    .cerrarImagenInput:hover {
-        border: 2px solid rgb(255, 74, 74);
-    }
-    .cerrarImagenInput:active {
-        background-color: rgb(153, 153, 255);
-        color: white;
-    }
-    .cerrarVentanaModificador {
-        position: absolute;
-        font-family: arial;
-        font-size: 1rem;
-        right: .5rem;
-        margin-top: -.1rem;
-        background-color: rgb(195, 195, 195);
-        padding: .3rem .6rem .3rem .6rem;
-        border-radius: 50%;
-        border: 4px solid rgb(113, 113, 113);
-    }
-    .cerrarVentanaModificador:hover {
-        border-color: rgb(235, 235, 235);
-    }
-    .cerrarVentanaModificador:active {
-        background-color: rgb(187, 187, 187);
-        color: white;
-    }
-    /* Bienbenida */
-    .cerrarVentanaBienvenida {
-        position: absolute;
-        font-family: arial;
-        font-size: 1rem;
-        right: 2rem;
-        margin-top: -.9rem;
-        background-color: rgb(195, 195, 195);
-        padding: .4rem .7rem .4rem .7rem;
-        border-radius: 50%;
-        border: 4px solid rgb(113, 113, 113);
-    }
-    .cerrarVentanaBienvenida:hover {
-        border: 4px solid rgb(213, 213, 213);
-    }
-    .cerrarVentanaBienvenida:active {
-        background-color: rgb(153, 153, 255);
-        color: white;
-    }
-    /* EXTRAS */
-    #etiquetaAModificar {
-        border: none;
-        color: rgb(16, 16, 16);
-        outline: none;
-        font-family: Arial, Helvetica, sans-serif;
-        padding: .3rem .3rem .3rem .3rem;
-        background-color: rgba(255, 255, 255, 0.765);
-        border-radius: .3rem;
-        resize: horizontal;
-    }
-    .labelLetra {
-        color: white;
-        font-family: Arial;
-    }
-    .inputsDeTextoACuerpo {
-        display: flex;
-        /* flex-direction: row; */
-    }
-    .btnModificadorInt {
-        padding: .2rem 0rem .2rem 0rem;
-        width: 6rem;
-        border: 4px solid rgb(211, 211, 255);
-        border-radius: .3rem;
-        background-color: rgb(198, 211, 255);
-        margin-left: .7rem;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: .8rem;
-        outline: none;
-    }
-    .btnModificadorInt:hover {
-        background-color: azure;
-    }
-    .btnModificadorInt:active {
-        border-color: rgb(97, 97, 97);
-    }
-    /* Modifciadores 2 */
-    .btnModificadorInt2 {
-        padding: .2rem 0rem .2rem 0rem;
-        width: 6rem;
-        border: 4px solid rgb(211, 211, 255);
-        border-radius: .3rem;
-        background-color: rgb(198, 211, 255);
-        margin-left: .7rem;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: .8rem;
-        outline: none;
-    }
-    .btnModificadorInt2:hover {
-        background-color: azure;
-    }
-    .btnModificadorInt2:active {
-        border-color: rgb(97, 97, 97);
-    }
-    .guardarCambiosNuevos {
-        margin-top: 1rem;
-        width: 13rem;
-        padding: .6rem;
-        margin-left: 11rem;
-        color: white;
-        border-radius: .3rem;
-        font-family: Arial, Helvetica, sans-serif;
-        border: 3px solid rgb(188, 188, 188);
-        background-color: rgb(102, 102, 102);
-    }
-    .guardarCambiosNuevos:hover {
-        background-color: aqua;
-        color: black;
-    }
-    .guardarCambiosNuevos:active {
-        border-color: rgb(108, 108, 108);
-    }
-    #textoAPoner {
-        resize: none;
-        border: 2px solid rgb(125, 160, 255);
-        outline: none;
-        padding: .6rem;
-        border-radius: .3rem;
-        font-family: Arial, Helvetica, sans-serif;
-        margin-right: 1rem;
-    }
-    .btnTextoEditor {
-        display: block;
-        font-family: Consolas;
-    }
-    .urlImagenAInsertar {
-        width: 60%;
-        padding: .4rem .4rem .4rem .4rem;
-        outline: none;
-        border-radius: .5em;
-        font-family: Arial, Helvetica, sans-serif;
-        border: 3px solid rgb(157, 157, 255);
-    }
-    .btnInsertarImagen {
-        padding: .4rem .4rem .4rem .4rem;
-        border-radius: .5em;
-        color: white;
-        background-color: rgb(82, 82, 82);
-        border: 3px solid rgb(142, 161, 255);
-    }
-    .btnInsertarImagen:active {
-        background-color: beige;
-    }
-    /* ############ */
-    .urlVideoAInsertar {
-        width: 60%;
-        padding: .4rem .4rem .4rem .4rem;
-        outline: none;
-        border-radius: .5em;
-        font-family: Arial, Helvetica, sans-serif;
-        border: 3px solid rgb(157, 157, 255);
-    }
-    .btnInsertarVideo {
-        padding: .4rem .4rem .4rem .4rem;
-        border-radius: .5em;
-        color: white;
-        background-color: rgb(82, 82, 82);
-        border: 3px solid rgb(142, 161, 255);
-    }
-    .btnInsertarVideo:active {
-        background-color: beige;
-    }
-    /* ############ */
-    .submitTexto {
-        border: 1px solid var(--colorDeBordeCajas);
-        padding: .3rem;
-        margin-top: 1rem;
-        margin-left: 28%;
-        background-color: rgb(255, 255, 255);
-    }
-    .submitTexto:hover {
-        color: blue;
-    }
-    .submitTexto:active {
-        background-color: rgb(235, 235, 235);
-    }
-    .estiloOption {
-        /* display: none;
+                                                                               :root {
+                                                                                  --colorDeBordeCajas: rgb(191, 191, 191);
+                                                                              }
+                                                                              
+                                                                              body {
+                                                                                  background: rgb(47, 47, 47);
+                                                                                  overflow: hidden;
+                                                                              }
+                                                                              
+                                                                              ul li {
+                                                                                  font-family: monospace;
+                                                                                  font-size: 1rem;
+                                                                                  display: inline-block;
+                                                                                  background-color: rgb(0, 136, 255);
+                                                                                  border-radius: 4px;
+                                                                                  padding: .3rem .3rem .3rem .3rem;
+                                                                              }
+                                                                              
+                                                                              ul li:hover {
+                                                                                  background-color: rgb(130, 128, 128);
+                                                                                  /* border-bottom: 3px solid rgb(179, 255, 66); */
+                                                                              }
+                                                                              
+                                                                              .hoverAnunciosPart1 {
+                                                                                  border: 1px solid var(--colorDeBordeCajas);
+                                                                                  max-width: 10rem;
+                                                                                  height: auto;
+                                                                                  font-family: Arial, Helvetica, sans-serif;
+                                                                                  background-color: rgb(255, 255, 255);
+                                                                                  position: absolute;
+                                                                                  display: none;
+                                                                                  margin-left: 7rem;
+                                                                                  padding: .3rem;
+                                                                              }
+                                                                              
+                                                                              .nav {
+                                                                                  text-decoration: none;
+                                                                                  color: #fff;
+                                                                              }
+                                                                              
+                                                                              .botonDeEliminarClickDerecho {
+                                                                                  border: 3px solid rgb(137, 176, 248);
+                                                                                  outline: none;
+                                                                                  font-family: Arial, Helvetica, sans-serif;
+                                                                                  background-color: white;
+                                                                                  color: black;
+                                                                                  padding: .3rem;
+                                                                                  border-radius: .3rem;
+                                                                              }
+                                                                              
+                                                                              .mensajeDeEliminarClickDerecho {
+                                                                                  font-family: monospace;
+                                                                                  color: black;
+                                                                              }
+                                                                              
+                                                                              .cajaDeEliminarClickDerecho {
+                                                                                  position: absolute;
+                                                                                  border: 1px solid rgb(200, 200, 200);
+                                                                                  background-color: white;
+                                                                                  border-radius: .4rem;
+                                                                                  padding: .3rem;
+                                                                                  box-shadow: .3rem .3rem .3rem rgb(216, 216, 216);
+                                                                              }
+                                                                              
+                                                                              .agregarTextoACuerpo {
+                                                                                  display: none;
+                                                                                  position: absolute;
+                                                                                  padding: 1rem 1rem 1rem 1rem;
+                                                                                  height: 12rem;
+                                                                                  width: 80%;
+                                                                                  border: 1px solid var(--colorDeBordeCajas);
+                                                                                  border-radius: .4rem;
+                                                                                  background-color: rgba(255, 255, 255, 0.941);
+                                                                              }
+                                                                              
+                                                                              @media screen and (max-width:700px) {
+                                                                                  .menuModoCelular {
+                                                                                      background-color: rgba(241, 211, 211, 0);
+                                                                                      position: absolute;
+                                                                                      margin-top: -1.5rem;
+                                                                                  }
+                                                                                  .menuModoCelularP {
+                                                                                      font-family: Arial, Helvetica, sans-serif;
+                                                                                      font-size: 1rem;
+                                                                                      margin-left: 1rem;
+                                                                                      background-color: black;
+                                                                                      padding: .3rem;
+                                                                                      color: white;
+                                                                                      border-radius: .3rem;
+                                                                                  }
+                                                                                  .menuModoCelular:hover>.stilos {
+                                                                                      display: block;
+                                                                                  }
+                                                                                  .logoRaptorIndicaciones {
+                                                                                      /* width: 50px; */
+                                                                                      display: none;
+                                                                                      height: 0;
+                                                                                  }
+                                                                                  .stilos {
+                                                                                      display: none;
+                                                                                      position: absolute;
+                                                                                      margin-top: -.4rem;
+                                                                                      margin-left: -.4rem;
+                                                                                      height: auto;
+                                                                                      width: 10rem;
+                                                                                      background-color: rgb(255, 255, 255);
+                                                                                      border-right: 1px solid rgb(194, 193, 193);
+                                                                                      box-shadow: 3px 4px 10px rgb(203, 203, 203);
+                                                                                  }
+                                                                                  .contenedor-padre {
+                                                                                      /* padding-left: 1rem; */
+                                                                                      display: flex;
+                                                                                  }
+                                                                                  .btn-estilos {
+                                                                                      padding-left: 1.4rem;
+                                                                                      color: rgb(123, 123, 123);
+                                                                                      height: 2.7rem;
+                                                                                      font-size: 1.1rem;
+                                                                                      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                                                                                      width: 100%;
+                                                                                      background-color: rgb(246, 246, 246);
+                                                                                      border: none;
+                                                                                      text-align: left;
+                                                                                  }
+                                                                                  .btn-estilos:hover {
+                                                                                      /* background-color: rgb(136, 166, 192); */
+                                                                                      color: black;
+                                                                                  }
+                                                                                  .btn-estilos:active {
+                                                                                      background-color: rgb(105, 101, 101);
+                                                                                  }
+                                                                                  .cuerpo {
+                                                                                      overflow-y: scroll;
+                                                                                      margin-top: -.4rem;
+                                                                                      width: 100vw;
+                                                                                      height: 100vh;
+                                                                                      background-color: white;
+                                                                                  }
+                                                                                  .contenidoCentro {
+                                                                                      /* padding: 0rem 10rem 1rem 10rem; */
+                                                                                      height: auto;
+                                                                                      word-wrap: break-word;
+                                                                                      width: 100%;
+                                                                                      text-align: left;
+                                                                                  }
+                                                                                  .textoTitulo {
+                                                                                      padding: .5rem .5rem .5rem .5rem;
+                                                                                      font-family: Arial, Helvetica, sans-serif;
+                                                                                      margin-top: .3rem;
+                                                                                      margin-bottom: .3rem;
+                                                                                      outline: none;
+                                                                                      border-radius: .4rem;
+                                                                                      resize: none;
+                                                                                      border: 3px solid rgb(182, 182, 255);
+                                                                                  }
+                                                                                  .tamañoVideoInsertar,
+                                                                                  .tamañoImagenInsertar {
+                                                                                      padding: .4rem .2rem .4rem .2rem;
+                                                                                      font-family: Arial, Helvetica, sans-serif;
+                                                                                      margin-top: .3rem;
+                                                                                      margin-bottom: .3rem;
+                                                                                      outline: none;
+                                                                                      border-radius: .4rem;
+                                                                                      resize: none;
+                                                                                      width: 3rem;
+                                                                                      border: 3px solid rgb(182, 182, 255);
+                                                                                  }
+                                                                                  .pantallaParaVerEtiqueta {
+                                                                                      /* overflow-y: scroll; */
+                                                                                      width: 100%;
+                                                                                      height: 5rem;
+                                                                                      padding: .5rem .5rem .5rem .5rem;
+                                                                                      background-color: rgba(255, 255, 255, 0.546);
+                                                                                      border-radius: .4rem;
+                                                                                      border: 5px solid rgb(155, 161, 255);
+                                                                                  }
+                                                                                  /* MODALES NO TOCAR */
+                                                                                  .partesModales {
+                                                                                      display: none;
+                                                                                      position: absolute;
+                                                                                      bottom: 2rem;
+                                                                                      right: 17%;
+                                                                                      width: 50vw;
+                                                                                      background-color: rgba(255, 255, 255, 0.7);
+                                                                                      border: 1px solid rgb(195, 195, 195);
+                                                                                      padding: 1rem 5rem 1rem 1rem;
+                                                                                      height: 10rem;
+                                                                                      border-radius: .4rem;
+                                                                                  }
+                                                                                  .partesModalesModificador {
+                                                                                      display: none;
+                                                                                      position: absolute;
+                                                                                      bottom: 2rem;
+                                                                                      right: 17%;
+                                                                                      height: 20rem;
+                                                                                      width: 50vw;
+                                                                                      background-color: rgba(255, 255, 255, 0.7);
+                                                                                      padding: 1rem 5rem 1rem 1rem;
+                                                                                      /* height: 0; */
+                                                                                      border-radius: .4rem;
+                                                                                      border: 1px solid rgb(195, 195, 195);
+                                                                                      box-shadow: 3px 3px 8px rgb(244, 244, 244);
+                                                                                  }
+                                                                                  .Agregar {
+                                                                                      width: 100%;
+                                                                                      position: absolute;
+                                                                                  }
+                                                                                  .agregarEtiqueta {
+                                                                                      width: auto;
+                                                                                      height: 1.7rem;
+                                                                                      border-radius: .3rem;
+                                                                                      outline: none;
+                                                                                      border: 4px solid rgb(192, 192, 192);
+                                                                                      font-family: Arial, Helvetica, sans-serif;
+                                                                                  }
+                                                                                  .contenedorDeBotonesEtiquetas {
+                                                                                      display: flex;
+                                                                                      /* flex-direction: row; */
+                                                                                      justify-content: center;
+                                                                                      width: 30rem;
+                                                                                      position: absolute;
+                                                                                      margin-left: 3rem;
+                                                                                      /* background-color: blue; */
+                                                                                  }
+                                                                                  .tipoTitulo {
+                                                                                      display: none;
+                                                                                      position: absolute;
+                                                                                      padding: 1rem 1rem 1rem 1rem;
+                                                                                      height: 9rem;
+                                                                                      width: 17rem;
+                                                                                      border: 1px solid var(--colorDeBordeCajas);
+                                                                                      border-radius: .4rem;
+                                                                                      background-color: rgba(255, 255, 255, 0.941);
+                                                                                  }
+                                                                                  .agregarImagenACuerpo {
+                                                                                      display: none;
+                                                                                      position: absolute;
+                                                                                      padding: 1rem 1rem 1rem 1rem;
+                                                                                      height: 10rem;
+                                                                                      width: 80%;
+                                                                                      border-radius: .4rem;
+                                                                                      border: 1px solid var(--colorDeBordeCajas);
+                                                                                      background-color: rgba(255, 255, 255, 0.941);
+                                                                                  }
+                                                                                  /* BOTON PARA CERRAR */
+                                                                                  .cerrarAgregar {
+                                                                                      position: absolute;
+                                                                                      font-family: arial;
+                                                                                      font-size: 1rem;
+                                                                                      right: 2rem;
+                                                                                      margin-top: -.3rem;
+                                                                                      background-color: rgb(195, 195, 195);
+                                                                                      padding: .4rem .7rem .4rem .7rem;
+                                                                                      border-radius: 50%;
+                                                                                      border: 4px solid rgb(113, 113, 113);
+                                                                                      /* cursor: pointer;
+            position: absolute;
+            right: 2rem;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(0, 0, 255);
+            border-radius: 50%;
+            padding: .7rem 1rem .7rem 1rem;
+            font-size: 1.3rem;
+            background-color: rgb(208, 208, 208); */
+                                                                                      color: white;
+                                                                                  }
+                                                                                  .cerrarAgregar:hover {
+                                                                                      background-color: rgb(164, 164, 164);
+                                                                                      border-color: rgb(224, 224, 224);
+                                                                                  }
+                                                                                  .cerrarVentanaDeTitulo {
+                                                                                      position: absolute;
+                                                                                      font-family: arial;
+                                                                                      font-size: 1rem;
+                                                                                      right: .5rem;
+                                                                                      margin-top: -.8rem;
+                                                                                      background-color: rgb(195, 195, 195);
+                                                                                      padding: .3rem .6rem .3rem .6rem;
+                                                                                      border-radius: 50%;
+                                                                                  }
+                                                                                  .cerrarVentanaDeTitulo:hover {
+                                                                                      border: 2px solid rgb(255, 74, 74);
+                                                                                  }
+                                                                                  .cerrarVentanaDeTitulo:active {
+                                                                                      background-color: blue;
+                                                                                      color: white;
+                                                                                  }
+                                                                                  .cerrarTextoInput {
+                                                                                      position: absolute;
+                                                                                      font-family: arial;
+                                                                                      font-size: 1rem;
+                                                                                      right: .5rem;
+                                                                                      margin-top: -.8rem;
+                                                                                      background-color: rgb(195, 195, 195);
+                                                                                      padding: .3rem .6rem .3rem .6rem;
+                                                                                      border-radius: 50%;
+                                                                                  }
+                                                                                  .cerrarTextoInput:hover {
+                                                                                      border: 2px solid rgb(255, 74, 74);
+                                                                                  }
+                                                                                  .cerrarTextoInput:active {
+                                                                                      background-color: blue;
+                                                                                      color: white;
+                                                                                  }
+                                                                                  .cerrarImagenInput {
+                                                                                      position: absolute;
+                                                                                      font-family: arial;
+                                                                                      font-size: 1rem;
+                                                                                      right: .5rem;
+                                                                                      margin-top: -.8rem;
+                                                                                      background-color: rgb(195, 195, 195);
+                                                                                      padding: .3rem .6rem .3rem .6rem;
+                                                                                      border-radius: 50%;
+                                                                                  }
+                                                                                  .cerrarImagenInput:hover {
+                                                                                      border: 2px solid rgb(255, 74, 74);
+                                                                                  }
+                                                                                  .cerrarImagenInput:active {
+                                                                                      background-color: rgb(153, 153, 255);
+                                                                                      color: white;
+                                                                                  }
+                                                                                  .cerrarVentanaModificador {
+                                                                                      position: absolute;
+                                                                                      font-family: arial;
+                                                                                      font-size: 1rem;
+                                                                                      right: .5rem;
+                                                                                      margin-top: -.1rem;
+                                                                                      background-color: rgb(195, 195, 195);
+                                                                                      padding: .3rem .6rem .3rem .6rem;
+                                                                                      border-radius: 50%;
+                                                                                      border: 4px solid rgb(113, 113, 113);
+                                                                                  }
+                                                                                  .cerrarVentanaModificador:hover {
+                                                                                      border-color: rgb(235, 235, 235);
+                                                                                  }
+                                                                                  .cerrarVentanaModificador:active {
+                                                                                      background-color: rgb(187, 187, 187);
+                                                                                      color: white;
+                                                                                  }
+                                                                                  /* Bienbenida */
+                                                                                  .cerrarVentanaBienvenida {
+                                                                                      position: absolute;
+                                                                                      font-family: arial;
+                                                                                      font-size: 1rem;
+                                                                                      right: 2rem;
+                                                                                      margin-top: -.9rem;
+                                                                                      background-color: rgb(195, 195, 195);
+                                                                                      padding: .4rem .7rem .4rem .7rem;
+                                                                                      border-radius: 50%;
+                                                                                      border: 4px solid rgb(113, 113, 113);
+                                                                                  }
+                                                                                  .cerrarVentanaBienvenida:hover {
+                                                                                      border: 4px solid rgb(213, 213, 213);
+                                                                                  }
+                                                                                  .cerrarVentanaBienvenida:active {
+                                                                                      background-color: rgb(153, 153, 255);
+                                                                                      color: white;
+                                                                                  }
+                                                                                  /* EXTRAS */
+                                                                                  #etiquetaAModificar {
+                                                                                      border: none;
+                                                                                      color: rgb(16, 16, 16);
+                                                                                      outline: none;
+                                                                                      font-family: Arial, Helvetica, sans-serif;
+                                                                                      padding: .3rem .3rem .3rem .3rem;
+                                                                                      background-color: rgba(255, 255, 255, 0.765);
+                                                                                      border-radius: .3rem;
+                                                                                      resize: horizontal;
+                                                                                  }
+                                                                                  .labelLetra {
+                                                                                      color: rgb(70, 70, 70);
+                                                                                      font-family: Arial;
+                                                                                      font-size: .8rem;
+                                                                                  }
+                                                                                  .inputsDeTextoACuerpo {
+                                                                                      display: flex;
+                                                                                      /* flex-direction: row; */
+                                                                                  }
+                                                                                  .btnModificadorInt {
+                                                                                      display: inline-block;
+                                                                                      padding: .2rem 0rem .2rem 0rem;
+                                                                                      width: 6rem;
+                                                                                      border: 4px solid rgb(211, 211, 255);
+                                                                                      border-radius: .3rem;
+                                                                                      background-color: rgb(198, 211, 255);
+                                                                                      margin-left: .7rem;
+                                                                                      margin-top: .3rem;
+                                                                                      font-family: Arial, Helvetica, sans-serif;
+                                                                                      font-size: .8rem;
+                                                                                      outline: none;
+                                                                                  }
+                                                                                  .btnModificadorInt:hover {
+                                                                                      background-color: azure;
+                                                                                  }
+                                                                                  .btnModificadorInt:active {
+                                                                                      border-color: rgb(97, 97, 97);
+                                                                                  }
+                                                                                  /* Modifciadores 2 */
+                                                                                  .btnModificadorInt2 {
+                                                                                      padding: .2rem 0rem .2rem 0rem;
+                                                                                      width: 6rem;
+                                                                                      border: 4px solid rgb(211, 211, 255);
+                                                                                      border-radius: .3rem;
+                                                                                      background-color: rgb(198, 211, 255);
+                                                                                      margin-left: .7rem;
+                                                                                      font-family: Arial, Helvetica, sans-serif;
+                                                                                      font-size: .8rem;
+                                                                                      outline: none;
+                                                                                  }
+                                                                                  .btnModificadorInt2:hover {
+                                                                                      background-color: azure;
+                                                                                  }
+                                                                                  .btnModificadorInt2:active {
+                                                                                      border-color: rgb(97, 97, 97);
+                                                                                  }
+                                                                                  .guardarCambiosNuevos {
+                                                                                      margin-top: 1rem;
+                                                                                      width: 13rem;
+                                                                                      padding: .6rem;
+                                                                                      margin-left: 18%;
+                                                                                      color: white;
+                                                                                      border-radius: .3rem;
+                                                                                      font-family: Arial, Helvetica, sans-serif;
+                                                                                      border: 3px solid rgb(188, 188, 188);
+                                                                                      background-color: rgb(102, 102, 102);
+                                                                                  }
+                                                                                  .guardarCambiosNuevos:hover {
+                                                                                      background-color: aqua;
+                                                                                      color: black;
+                                                                                  }
+                                                                                  .guardarCambiosNuevos:active {
+                                                                                      border-color: rgb(108, 108, 108);
+                                                                                  }
+                                                                                  #textoAPoner {
+                                                                                      resize: none;
+                                                                                      border: 2px solid rgb(125, 160, 255);
+                                                                                      outline: none;
+                                                                                      padding: .6rem;
+                                                                                      border-radius: .3rem;
+                                                                                      font-family: Arial, Helvetica, sans-serif;
+                                                                                      margin-right: 1rem;
+                                                                                  }
+                                                                                  .btnTextoEditor {
+                                                                                      display: block;
+                                                                                      font-family: Consolas;
+                                                                                  }
+                                                                                  .urlImagenAInsertar {
+                                                                                      width: 60%;
+                                                                                      padding: .4rem .4rem .4rem .4rem;
+                                                                                      outline: none;
+                                                                                      border-radius: .5em;
+                                                                                      font-family: Arial, Helvetica, sans-serif;
+                                                                                      border: 3px solid rgb(157, 157, 255);
+                                                                                  }
+                                                                                  .btnInsertarImagen {
+                                                                                      padding: .4rem .4rem .4rem .4rem;
+                                                                                      border-radius: .5em;
+                                                                                      color: white;
+                                                                                      background-color: rgb(82, 82, 82);
+                                                                                      border: 3px solid rgb(142, 161, 255);
+                                                                                  }
+                                                                                  .btnInsertarImagen:active {
+                                                                                      background-color: beige;
+                                                                                  }
+                                                                                  /* ############ */
+                                                                                  .urlVideoAInsertar {
+                                                                                      width: 60%;
+                                                                                      padding: .4rem .4rem .4rem .4rem;
+                                                                                      outline: none;
+                                                                                      border-radius: .5em;
+                                                                                      font-family: Arial, Helvetica, sans-serif;
+                                                                                      border: 3px solid rgb(157, 157, 255);
+                                                                                  }
+                                                                                  .btnInsertarVideo {
+                                                                                      padding: .4rem .4rem .4rem .4rem;
+                                                                                      border-radius: .5em;
+                                                                                      color: white;
+                                                                                      background-color: rgb(82, 82, 82);
+                                                                                      border: 3px solid rgb(142, 161, 255);
+                                                                                  }
+                                                                                  .btnInsertarVideo:active {
+                                                                                      background-color: beige;
+                                                                                  }
+                                                                                  /* ############ */
+                                                                                  .submitTexto {
+                                                                                      border: 1px solid var(--colorDeBordeCajas);
+                                                                                      padding: .3rem;
+                                                                                      margin-top: 1rem;
+                                                                                      margin-left: 28%;
+                                                                                      background-color: rgb(255, 255, 255);
+                                                                                  }
+                                                                                  .submitTexto:hover {
+                                                                                      color: blue;
+                                                                                  }
+                                                                                  .submitTexto:active {
+                                                                                      background-color: rgb(235, 235, 235);
+                                                                                  }
+                                                                                  .estiloOption {
+                                                                                      /* display: none;
+            width: 8rem; */
+                                                                                      /* justify-content: center; */
+                                                                                      background-color: rgb(255, 255, 255);
+                                                                                      /* position: absolute; */
+                                                                                      /* padding: .4rem .4rem .4rem .4rem; */
+                                                                                      /* border-radius: .3rem; */
+                                                                                      /* margin-top: -2rem; */
+                                                                                      /* font-size: 1rem; */
+                                                                                      font-family: Arial, Helvetica, sans-serif
+                                                                                  }
+                                                                                  .agregarTituloAlArchivo {
+                                                                                      padding: .5rem 1rem .5rem 1rem;
+                                                                                      font-family: Arial, Helvetica, sans-serif;
+                                                                                      border: 1px solid var(--colorDeBordeCajas);
+                                                                                      border-radius: .3rem;
+                                                                                      margin-left: 7rem;
+                                                                                      background-color: rgb(255, 255, 255);
+                                                                                  }
+                                                                                  .agregarTituloAlArchivo:hover {
+                                                                                      background-color: rgb(202, 208, 255);
+                                                                                  }
+                                                                                  #tituloEscojido {
+                                                                                      padding: .2rem 0rem .2rem 0rem;
+                                                                                      width: 6rem;
+                                                                                      border: 4px solid rgb(211, 211, 255);
+                                                                                      border-radius: .3rem;
+                                                                                      background-color: rgb(198, 211, 255);
+                                                                                      margin-left: .7rem;
+                                                                                      font-family: Arial, Helvetica, sans-serif;
+                                                                                      font-size: .8rem;
+                                                                                      outline: none;
+                                                                                  }
+                                                                                  /* .btnFonTIni {} */
+                                                                                  /* FANTASMAS */
+                                                                                  .contenedorDePutosBotones {
+                                                                                      margin-left: -17rem;
+                                                                                  }
+                                                                                  .etiquetaBtnAppend {
+                                                                                      /* display: block; */
+                                                                                      width: 5rem;
+                                                                                      /* min-width: 5rem; */
+                                                                                      height: 2.1rem;
+                                                                                      margin-left: 1rem;
+                                                                                      border: 1px solid rgb(199, 199, 199);
+                                                                                      border-radius: .5rem;
+                                                                                      background-color: rgb(255, 255, 255);
+                                                                                      /* font-family: ; */
+                                                                                  }
+                                                                                  .etiquetaBtnAppend:hover {
+                                                                                      background-color: rgb(232, 232, 232);
+                                                                                  }
+                                                                                  .Bienvenida {
+                                                                                      border: 1px solid rgb(188, 188, 188);
+                                                                                      display: block;
+                                                                                      position: absolute;
+                                                                                      border-radius: 1.4rem;
+                                                                                      background-color: rgb(255, 255, 255);
+                                                                                      margin: 3% 3% 4% 4%;
+                                                                                      width: 80%;
+                                                                                      padding: 4%;
+                                                                                      font-family: Arial, Helvetica, sans-serif;
+                                                                                      font-size: 1.4rem;
+                                                                                  }
+                                                                                  .bienvLetra1 {
+                                                                                      color: rgb(0, 0, 0);
+                                                                                  }
+                                                                                  .bienvLetra2 {
+                                                                                      color: rgb(0, 0, 0);
+                                                                                  }
+                                                                                  .bienvLetra3 {
+                                                                                      color: rgb(0, 0, 0);
+                                                                                  }
+                                                                                  .bienvLetra4 {
+                                                                                      color: rgb(22, 30, 67);
+                                                                                      font-size: 2.2rem;
+                                                                                  }
+                                                                              }
+                                                                              /* ########################################################################## */
+                                                                              /* ########################################################################## */
+                                                                              /* ########################################################################## */
+                                                                              /* ########################################################################## */
+                                                                              
+                                                                              @media screen and (min-width:700px) {
+                                                                                  .logoRaptorIndicaciones {
+                                                                                      width: 100px;
+                                                                                      border-radius: 50%;
+                                                                                      margin-left: -1rem;
+                                                                                      margin-top: 1rem;
+                                                                                  }
+                                                                                  .logoRaptorIndicaciones:hover {
+                                                                                      cursor: pointer;
+                                                                                  }
+                                                                                  .logoRaptorIndicaciones:active {
+                                                                                      width: 98px;
+                                                                                  }
+                                                                                  .stilos {
+                                                                                      margin-top: -.4rem;
+                                                                                      margin-left: -.4rem;
+                                                                                      height: 100vh;
+                                                                                      width: 10rem;
+                                                                                      background-color: rgb(246, 246, 246);
+                                                                                      border-right: 1px solid rgb(194, 193, 193);
+                                                                                  }
+                                                                                  .contenedor-padre {
+                                                                                      /* padding-left: 1rem; */
+                                                                                      display: flex;
+                                                                                  }
+                                                                                  .btn-estilos {
+                                                                                      padding-left: 1.4rem;
+                                                                                      color: rgb(123, 123, 123);
+                                                                                      height: 2.7rem;
+                                                                                      font-size: 1.1rem;
+                                                                                      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                                                                                      width: 100%;
+                                                                                      background-color: rgb(246, 246, 246);
+                                                                                      border: none;
+                                                                                      text-align: left;
+                                                                                  }
+                                                                                  .btn-estilos:hover {
+                                                                                      /* background-color: rgb(136, 166, 192); */
+                                                                                      color: black;
+                                                                                  }
+                                                                                  .btn-estilos:active {
+                                                                                      background-color: rgb(105, 101, 101);
+                                                                                  }
+                                                                                  .cuerpo {
+                                                                                      overflow-y: scroll;
+                                                                                      margin-top: -.4rem;
+                                                                                      width: 90vw;
+                                                                                      height: 100vh;
+                                                                                      background-color: white;
+                                                                                  }
+                                                                                  .contenidoCentro {
+                                                                                      /* padding: 0rem 10rem 1rem 10rem; */
+                                                                                      height: auto;
+                                                                                      word-wrap: break-word;
+                                                                                      width: 80%;
+                                                                                      text-align: left;
+                                                                                  }
+                                                                                  .textoTitulo {
+                                                                                      padding: .5rem .5rem .5rem .5rem;
+                                                                                      font-family: Arial, Helvetica, sans-serif;
+                                                                                      margin-top: .3rem;
+                                                                                      margin-bottom: .3rem;
+                                                                                      outline: none;
+                                                                                      border-radius: .4rem;
+                                                                                      resize: none;
+                                                                                      border: 3px solid rgb(182, 182, 255);
+                                                                                  }
+                                                                                  .tamañoVideoInsertar,
+                                                                                  .tamañoImagenInsertar {
+                                                                                      padding: .4rem .2rem .4rem .2rem;
+                                                                                      font-family: Arial, Helvetica, sans-serif;
+                                                                                      margin-top: .3rem;
+                                                                                      margin-bottom: .3rem;
+                                                                                      outline: none;
+                                                                                      border-radius: .4rem;
+                                                                                      resize: none;
+                                                                                      width: 3rem;
+                                                                                      border: 3px solid rgb(182, 182, 255);
+                                                                                  }
+                                                                                  .pantallaParaVerEtiqueta {
+                                                                                      /* overflow-y: scroll; */
+                                                                                      width: 100%;
+                                                                                      height: 5rem;
+                                                                                      padding: .5rem .5rem .5rem .5rem;
+                                                                                      background-color: rgba(255, 255, 255, 0.546);
+                                                                                      border-radius: .4rem;
+                                                                                      border: 5px solid rgb(155, 161, 255);
+                                                                                  }
+                                                                                  /* MODALES NO TOCAR */
+                                                                                  .partesModales {
+                                                                                      display: none;
+                                                                                      position: absolute;
+                                                                                      bottom: 2rem;
+                                                                                      right: 17%;
+                                                                                      width: 50vw;
+                                                                                      background-color: rgba(255, 255, 255, 0.7);
+                                                                                      border: 1px solid rgb(195, 195, 195);
+                                                                                      padding: 1rem 5rem 1rem 1rem;
+                                                                                      height: 10rem;
+                                                                                      border-radius: .4rem;
+                                                                                  }
+                                                                                  .partesModalesModificador {
+                                                                                      display: none;
+                                                                                      position: absolute;
+                                                                                      bottom: 2rem;
+                                                                                      right: 17%;
+                                                                                      height: 20rem;
+                                                                                      width: 50vw;
+                                                                                      background-color: rgba(255, 255, 255, 0.7);
+                                                                                      padding: 1rem 5rem 1rem 1rem;
+                                                                                      /* height: 0; */
+                                                                                      border-radius: .4rem;
+                                                                                      border: 1px solid rgb(195, 195, 195);
+                                                                                      box-shadow: 3px 3px 8px rgb(244, 244, 244);
+                                                                                  }
+                                                                                  .Agregar {
+                                                                                      width: 100%;
+                                                                                      position: absolute;
+                                                                                  }
+                                                                                  .agregarEtiqueta {
+                                                                                      width: auto;
+                                                                                      height: 1.7rem;
+                                                                                      border-radius: .3rem;
+                                                                                      outline: none;
+                                                                                      border: 4px solid rgb(192, 192, 192);
+                                                                                      font-family: Arial, Helvetica, sans-serif;
+                                                                                  }
+                                                                                  .contenedorDeBotonesEtiquetas {
+                                                                                      display: flex;
+                                                                                      /* flex-direction: row; */
+                                                                                      justify-content: center;
+                                                                                      width: 30rem;
+                                                                                      position: absolute;
+                                                                                      margin-left: 3rem;
+                                                                                      /* background-color: blue; */
+                                                                                  }
+                                                                                  .tipoTitulo {
+                                                                                      display: none;
+                                                                                      position: absolute;
+                                                                                      padding: 1rem 1rem 1rem 1rem;
+                                                                                      height: 9rem;
+                                                                                      width: 20rem;
+                                                                                      border: 1px solid var(--colorDeBordeCajas);
+                                                                                      border-radius: .4rem;
+                                                                                      background-color: rgba(255, 255, 255, 0.941);
+                                                                                  }
+                                                                                  .agregarImagenACuerpo {
+                                                                                      display: none;
+                                                                                      position: absolute;
+                                                                                      padding: 1rem 1rem 1rem 1rem;
+                                                                                      height: 10rem;
+                                                                                      width: 30rem;
+                                                                                      border-radius: .4rem;
+                                                                                      border: 1px solid var(--colorDeBordeCajas);
+                                                                                      background-color: rgba(255, 255, 255, 0.941);
+                                                                                  }
+                                                                                  /* BOTON PARA CERRAR */
+                                                                                  .cerrarAgregar {
+                                                                                      position: absolute;
+                                                                                      font-family: arial;
+                                                                                      font-size: 1rem;
+                                                                                      right: 2rem;
+                                                                                      margin-top: -.3rem;
+                                                                                      background-color: rgb(195, 195, 195);
+                                                                                      padding: .4rem .7rem .4rem .7rem;
+                                                                                      border-radius: 50%;
+                                                                                      border: 4px solid rgb(113, 113, 113);
+                                                                                      color: white;
+                                                                                  }
+                                                                                  .menuModoCelularP {
+                                                                                      display: none;
+                                                                                  }
+                                                                                  .cerrarAgregar:hover {
+                                                                                      background-color: rgb(164, 164, 164);
+                                                                                      border-color: rgb(224, 224, 224);
+                                                                                  }
+                                                                                  .cerrarVentanaDeTitulo {
+                                                                                      position: absolute;
+                                                                                      font-family: arial;
+                                                                                      font-size: 1rem;
+                                                                                      right: .5rem;
+                                                                                      margin-top: -.8rem;
+                                                                                      background-color: rgb(195, 195, 195);
+                                                                                      padding: .3rem .6rem .3rem .6rem;
+                                                                                      border-radius: 50%;
+                                                                                  }
+                                                                                  .cerrarVentanaDeTitulo:hover {
+                                                                                      border: 2px solid rgb(255, 74, 74);
+                                                                                  }
+                                                                                  .cerrarVentanaDeTitulo:active {
+                                                                                      background-color: blue;
+                                                                                      color: white;
+                                                                                  }
+                                                                                  .cerrarTextoInput {
+                                                                                      position: absolute;
+                                                                                      font-family: arial;
+                                                                                      font-size: 1rem;
+                                                                                      right: .5rem;
+                                                                                      margin-top: -.8rem;
+                                                                                      background-color: rgb(195, 195, 195);
+                                                                                      padding: .3rem .6rem .3rem .6rem;
+                                                                                      border-radius: 50%;
+                                                                                  }
+                                                                                  .cerrarTextoInput:hover {
+                                                                                      border: 2px solid rgb(255, 74, 74);
+                                                                                  }
+                                                                                  .cerrarTextoInput:active {
+                                                                                      background-color: blue;
+                                                                                      color: white;
+                                                                                  }
+                                                                                  .cerrarImagenInput {
+                                                                                      position: absolute;
+                                                                                      font-family: arial;
+                                                                                      font-size: 1rem;
+                                                                                      right: .5rem;
+                                                                                      margin-top: -.8rem;
+                                                                                      background-color: rgb(195, 195, 195);
+                                                                                      padding: .3rem .6rem .3rem .6rem;
+                                                                                      border-radius: 50%;
+                                                                                  }
+                                                                                  .cerrarImagenInput:hover {
+                                                                                      border: 2px solid rgb(255, 74, 74);
+                                                                                  }
+                                                                                  .cerrarImagenInput:active {
+                                                                                      background-color: rgb(153, 153, 255);
+                                                                                      color: white;
+                                                                                  }
+                                                                                  .cerrarVentanaModificador {
+                                                                                      position: absolute;
+                                                                                      font-family: arial;
+                                                                                      font-size: 1rem;
+                                                                                      right: .5rem;
+                                                                                      margin-top: -.1rem;
+                                                                                      background-color: rgb(195, 195, 195);
+                                                                                      padding: .3rem .6rem .3rem .6rem;
+                                                                                      border-radius: 50%;
+                                                                                      border: 4px solid rgb(113, 113, 113);
+                                                                                  }
+                                                                                  .cerrarVentanaModificador:hover {
+                                                                                      border-color: rgb(235, 235, 235);
+                                                                                  }
+                                                                                  .cerrarVentanaModificador:active {
+                                                                                      background-color: rgb(187, 187, 187);
+                                                                                      color: white;
+                                                                                  }
+                                                                                  /* Bienbenida */
+                                                                                  .cerrarVentanaBienvenida {
+                                                                                      position: absolute;
+                                                                                      font-family: arial;
+                                                                                      font-size: 1rem;
+                                                                                      right: 2rem;
+                                                                                      margin-top: -.9rem;
+                                                                                      background-color: rgb(195, 195, 195);
+                                                                                      padding: .4rem .7rem .4rem .7rem;
+                                                                                      border-radius: 50%;
+                                                                                      border: 4px solid rgb(113, 113, 113);
+                                                                                  }
+                                                                                  .cerrarVentanaBienvenida:hover {
+                                                                                      border: 4px solid rgb(213, 213, 213);
+                                                                                  }
+                                                                                  .cerrarVentanaBienvenida:active {
+                                                                                      background-color: rgb(153, 153, 255);
+                                                                                      color: white;
+                                                                                  }
+                                                                                  /* EXTRAS */
+                                                                                  #etiquetaAModificar {
+                                                                                      border: none;
+                                                                                      color: rgb(16, 16, 16);
+                                                                                      outline: none;
+                                                                                      font-family: Arial, Helvetica, sans-serif;
+                                                                                      padding: .3rem .3rem .3rem .3rem;
+                                                                                      background-color: rgba(255, 255, 255, 0.765);
+                                                                                      border-radius: .3rem;
+                                                                                      resize: horizontal;
+                                                                                  }
+                                                                                  .labelLetra {
+                                                                                      color: rgb(0, 0, 0);
+                                                                                      font-family: Arial;
+                                                                                      font-size: .8rem;
+                                                                                  }
+                                                                                  .inputsDeTextoACuerpo {
+                                                                                      display: flex;
+                                                                                      /* flex-direction: row; */
+                                                                                  }
+                                                                                  .btnModificadorInt {
+                                                                                      padding: .2rem 0rem .2rem 0rem;
+                                                                                      width: 6rem;
+                                                                                      border: 4px solid rgb(211, 211, 255);
+                                                                                      border-radius: .3rem;
+                                                                                      background-color: rgb(198, 211, 255);
+                                                                                      margin-left: .7rem;
+                                                                                      font-family: Arial, Helvetica, sans-serif;
+                                                                                      font-size: .8rem;
+                                                                                      outline: none;
+                                                                                  }
+                                                                                  .btnModificadorInt:hover {
+                                                                                      background-color: azure;
+                                                                                  }
+                                                                                  .btnModificadorInt:active {
+                                                                                      border-color: rgb(97, 97, 97);
+                                                                                  }
+                                                                                  /* Modifciadores 2 */
+                                                                                  .btnModificadorInt2 {
+                                                                                      padding: .2rem 0rem .2rem 0rem;
+                                                                                      width: 6rem;
+                                                                                      border: 4px solid rgb(211, 211, 255);
+                                                                                      border-radius: .3rem;
+                                                                                      background-color: rgb(198, 211, 255);
+                                                                                      margin-left: .7rem;
+                                                                                      font-family: Arial, Helvetica, sans-serif;
+                                                                                      font-size: .8rem;
+                                                                                      outline: none;
+                                                                                  }
+                                                                                  .btnModificadorInt2:hover {
+                                                                                      background-color: azure;
+                                                                                  }
+                                                                                  .btnModificadorInt2:active {
+                                                                                      border-color: rgb(97, 97, 97);
+                                                                                  }
+                                                                                  .guardarCambiosNuevos {
+                                                                                      margin-top: 1rem;
+                                                                                      width: 13rem;
+                                                                                      padding: .6rem;
+                                                                                      margin-left: 11rem;
+                                                                                      color: white;
+                                                                                      border-radius: .3rem;
+                                                                                      font-family: Arial, Helvetica, sans-serif;
+                                                                                      border: 3px solid rgb(188, 188, 188);
+                                                                                      background-color: rgb(102, 102, 102);
+                                                                                  }
+                                                                                  .guardarCambiosNuevos:hover {
+                                                                                      background-color: aqua;
+                                                                                      color: black;
+                                                                                  }
+                                                                                  .guardarCambiosNuevos:active {
+                                                                                      border-color: rgb(108, 108, 108);
+                                                                                  }
+                                                                                  #textoAPoner {
+                                                                                      resize: none;
+                                                                                      border: 2px solid rgb(125, 160, 255);
+                                                                                      outline: none;
+                                                                                      padding: .6rem;
+                                                                                      border-radius: .3rem;
+                                                                                      font-family: Arial, Helvetica, sans-serif;
+                                                                                      margin-right: 1rem;
+                                                                                  }
+                                                                                  .btnTextoEditor {
+                                                                                      display: block;
+                                                                                      font-family: Consolas;
+                                                                                  }
+                                                                                  .urlImagenAInsertar {
+                                                                                      width: 60%;
+                                                                                      padding: .4rem .4rem .4rem .4rem;
+                                                                                      outline: none;
+                                                                                      border-radius: .5em;
+                                                                                      font-family: Arial, Helvetica, sans-serif;
+                                                                                      border: 3px solid rgb(157, 157, 255);
+                                                                                  }
+                                                                                  .btnInsertarImagen {
+                                                                                      padding: .4rem .4rem .4rem .4rem;
+                                                                                      border-radius: .5em;
+                                                                                      color: white;
+                                                                                      background-color: rgb(82, 82, 82);
+                                                                                      border: 3px solid rgb(142, 161, 255);
+                                                                                  }
+                                                                                  .btnInsertarImagen:active {
+                                                                                      background-color: beige;
+                                                                                  }
+                                                                                  /* ############ */
+                                                                                  .urlVideoAInsertar {
+                                                                                      width: 60%;
+                                                                                      padding: .4rem .4rem .4rem .4rem;
+                                                                                      outline: none;
+                                                                                      border-radius: .5em;
+                                                                                      font-family: Arial, Helvetica, sans-serif;
+                                                                                      border: 3px solid rgb(157, 157, 255);
+                                                                                  }
+                                                                                  .btnInsertarVideo {
+                                                                                      padding: .4rem .4rem .4rem .4rem;
+                                                                                      border-radius: .5em;
+                                                                                      color: white;
+                                                                                      background-color: rgb(82, 82, 82);
+                                                                                      border: 3px solid rgb(142, 161, 255);
+                                                                                  }
+                                                                                  .btnInsertarVideo:active {
+                                                                                      background-color: beige;
+                                                                                  }
+                                                                                  /* ############ */
+                                                                                  .submitTexto {
+                                                                                      border: 1px solid var(--colorDeBordeCajas);
+                                                                                      padding: .3rem;
+                                                                                      margin-top: 1rem;
+                                                                                      margin-left: 28%;
+                                                                                      background-color: rgb(255, 255, 255);
+                                                                                  }
+                                                                                  .submitTexto:hover {
+                                                                                      color: blue;
+                                                                                  }
+                                                                                  .submitTexto:active {
+                                                                                      background-color: rgb(235, 235, 235);
+                                                                                  }
+                                                                                  .estiloOption {
+                                                                                      /* display: none;
         width: 8rem; */
-        /* justify-content: center; */
-        background-color: rgb(255, 255, 255);
-        /* position: absolute; */
-        /* padding: .4rem .4rem .4rem .4rem; */
-        /* border-radius: .3rem; */
-        /* margin-top: -2rem; */
-        /* font-size: 1rem; */
-        font-family: Arial, Helvetica, sans-serif
-    }
-    .agregarTituloAlArchivo {
-        padding: .5rem 1rem .5rem 1rem;
-        font-family: Arial, Helvetica, sans-serif;
-        border: 1px solid var(--colorDeBordeCajas);
-        border-radius: .3rem;
-        margin-left: 7rem;
-        background-color: rgb(255, 255, 255);
-    }
-    .agregarTituloAlArchivo:hover {
-        background-color: rgb(202, 208, 255);
-    }
-    #tituloEscojido {
-        padding: .2rem 0rem .2rem 0rem;
-        width: 6rem;
-        border: 4px solid rgb(211, 211, 255);
-        border-radius: .3rem;
-        background-color: rgb(198, 211, 255);
-        margin-left: .7rem;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: .8rem;
-        outline: none;
-    }
-    /* .btnFonTIni {} */
-    /* FANTASMAS */
-    .etiquetaBtnAppend {
-        /* display: block; */
-        width: 5rem;
-        min-width: 5rem;
-        height: 2.1rem;
-        margin-left: .5rem;
-        border: 3px solid rgb(204, 204, 255);
-        border-radius: .5rem;
-        background-color: rgb(237, 237, 237);
-        /* font-family: ; */
-    }
-    .etiquetaBtnAppend:hover {
-        background-color: rgb(255, 255, 255);
-    }
-    .Bienvenida {
-        border: 1px solid rgb(188, 188, 188);
-        display: block;
-        position: absolute;
-        border-radius: 1.4rem;
-        background-color: rgb(255, 255, 255);
-        margin: 3% 3% 4% 15%;
-        width: 35%;
-        padding: 4%;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1.4rem;
-    }
-    .bienvLetra1 {
-        color: rgb(0, 0, 0);
-    }
-    .bienvLetra2 {
-        color: rgb(0, 0, 0);
-    }
-    .bienvLetra3 {
-        color: rgb(0, 0, 0);
-    }
-    .bienvLetra4 {
-        color: rgb(22, 30, 67);
-        font-size: 2.2rem;
-    }
-}
+                                                                                      /* justify-content: center; */
+                                                                                      background-color: rgb(255, 255, 255);
+                                                                                      /* position: absolute; */
+                                                                                      /* padding: .4rem .4rem .4rem .4rem; */
+                                                                                      /* border-radius: .3rem; */
+                                                                                      /* margin-top: -2rem; */
+                                                                                      /* font-size: 1rem; */
+                                                                                      font-family: Arial, Helvetica, sans-serif
+                                                                                  }
+                                                                                  .agregarTituloAlArchivo {
+                                                                                      padding: .5rem 1rem .5rem 1rem;
+                                                                                      font-family: Arial, Helvetica, sans-serif;
+                                                                                      border: 1px solid var(--colorDeBordeCajas);
+                                                                                      border-radius: .3rem;
+                                                                                      margin-left: 7rem;
+                                                                                      background-color: rgb(255, 255, 255);
+                                                                                  }
+                                                                                  .agregarTituloAlArchivo:hover {
+                                                                                      background-color: rgb(202, 208, 255);
+                                                                                  }
+                                                                                  #tituloEscojido {
+                                                                                      padding: .2rem 0rem .2rem 0rem;
+                                                                                      width: 6rem;
+                                                                                      border: 4px solid rgb(211, 211, 255);
+                                                                                      border-radius: .3rem;
+                                                                                      background-color: rgb(198, 211, 255);
+                                                                                      margin-left: .7rem;
+                                                                                      font-family: Arial, Helvetica, sans-serif;
+                                                                                      font-size: .8rem;
+                                                                                      outline: none;
+                                                                                  }
+                                                                                  /* .btnFonTIni {} */
+                                                                                  /* FANTASMAS */
+                                                                                  .etiquetaBtnAppend {
+                                                                                      /* display: block; */
+                                                                                      width: 5rem;
+                                                                                      min-width: 5rem;
+                                                                                      height: 2.1rem;
+                                                                                      margin-left: .5rem;
+                                                                                      border: 3px solid rgb(204, 204, 255);
+                                                                                      border-radius: .5rem;
+                                                                                      background-color: rgb(237, 237, 237);
+                                                                                      /* font-family: ; */
+                                                                                  }
+                                                                                  .etiquetaBtnAppend:hover {
+                                                                                      background-color: rgb(255, 255, 255);
+                                                                                  }
+                                                                                  .Bienvenida {
+                                                                                      border: 1px solid rgb(188, 188, 188);
+                                                                                      display: block;
+                                                                                      position: absolute;
+                                                                                      border-radius: 1.4rem;
+                                                                                      background-color: rgb(255, 255, 255);
+                                                                                      margin: 3% 3% 4% 26%;
+                                                                                      width: 35%;
+                                                                                      padding: 4%;
+                                                                                      font-family: Arial, Helvetica, sans-serif;
+                                                                                      font-size: 1.4rem;
+                                                                                  }
+                                                                                  .bienvLetra1 {
+                                                                                      color: rgb(0, 0, 0);
+                                                                                  }
+                                                                                  .bienvLetra2 {
+                                                                                      color: rgb(0, 0, 0);
+                                                                                  }
+                                                                                  .bienvLetra3 {
+                                                                                      color: rgb(0, 0, 0);
+                                                                                  }
+                                                                                  .bienvLetra4 {
+                                                                                      color: rgb(22, 30, 67);
+                                                                                      font-size: 2.2rem;
+                                                                                  }
+                                                                              }

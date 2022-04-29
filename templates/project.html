@@ -19,20 +19,23 @@
             <script src="./templates/otros/back.js"></script>
             <!-- onmouseenter="backcolor()" onmouseleave="ratonsalido()" -->
             <div class="contenedor-padre" id="contenedor-general">
-                <div class="stilos">
-                    <ul>
-                        <li><a class="nav" href="/">Home</a></li>
-                        <img src="../static/images/logoRaptor.png" class="logoRaptorIndicaciones" alt="">
-                    </ul>
-                    <button class="btn-estilos">Agregar</button>
-                    <div class="hoverFlotanteMensaje2 hoverAnunciosPart1"><span>Agregar titulos, letras, imagenes, videos, etc .. </span></div>
-                    <button class="btn-estilos">Modificar</button>
-                    <div class="hoverFlotanteMensaje hoverAnunciosPart1"><span>hacer combios en color, fuente, tamaño, etc ...</span></div>
-                    <button class="btn-estilos">Estilos</button>
-                    <button class="btn-estilos">Colores</button>
-                    <button class="btn-estilos">Eliminar</button>
-                    <button class="btn-estilos">Vincular</button>
-                    <button class="btn-estilos">Mas</button>
+                <div class="menuModoCelular">
+                    <p class="menuModoCelularP">Opciones</p>
+                    <div class="stilos">
+                        <ul>
+                            <li><a class="nav" href="/">Home</a></li>
+                            <img src="../static/images/logoRaptor.png" class="logoRaptorIndicaciones" alt="">
+                        </ul>
+                        <button class="btn-estilos">Agregar</button>
+                        <div class="hoverFlotanteMensaje2 hoverAnunciosPart1"><span>Agregar titulos, letras, imagenes, videos, etc .. </span></div>
+                        <button class="btn-estilos">Modificar</button>
+                        <div class="hoverFlotanteMensaje hoverAnunciosPart1"><span>hacer combios en color, fuente, tamaño, etc ...</span></div>
+                        <button class="btn-estilos">Estilos</button>
+                        <button class="btn-estilos">Colores</button>
+                        <button class="btn-estilos">Eliminar</button>
+                        <button class="btn-estilos">Vincular</button>
+                        <button class="btn-estilos">Mas</button>
+                    </div>
                 </div>
                 <div class="cuerpo">
                     <center>
@@ -73,7 +76,7 @@
                             <option class="titulo titulo5" value="h5">Titulo5</option>
                             <option class="titulo titulo6" value="h6">Titulo6</option>
                         </select>
-                        <textarea name="textoTitulo" class="textoTitulo" id="textoTitulo" cols="40" rows="3"></textarea>
+                        <textarea name="textoTitulo" class="textoTitulo" id="textoTitulo" cols="34" rows="3"></textarea>
                         <button class="agregarTituloAlArchivo">Agregar</button>
                     </div>
                     <div class="agregarTextoACuerpo">
@@ -99,8 +102,8 @@
                                     <option class="estiloOption2" value=".9rem">Pequeño</option>
                                     <option class="estiloOption2" value=".8rem">Muy Pequeño</option>
                                 </select>
-                                <input type="radio" name="modoDePunto" checked id="saltoDeLinea"><label for="saltoDeLinea">Nueva linea</label>
-                                <br><input type="radio" name="modoDePunto" id="lineaSeguida"><label for="lineaSeguida">punto seguido</label><br>
+                                <input type="radio" name="modoDePunto" checked id="saltoDeLinea"><label for="saltoDeLinea" style="font-size: .8rem;">Nueva linea</label>
+                                <br><input type="radio" name="modoDePunto" id="lineaSeguida"><label for="lineaSeguida" style="font-size: .8rem;">punto seguido</label><br>
                                 <button class="submitTexto">Agregar</button>
                             </div>
                         </div>
@@ -124,7 +127,7 @@
                     <span class="cerrarVentanaModificador">x</span>
                     <div class="pantallaParaVerEtiqueta">
                         <span class="codigoHtmlPantalla"></span>
-                        <textarea name="etiquetaAModificar" id="etiquetaAModificar" cols="70" rows="4" oninput="actualizarDataEnTiempoReal()"></textarea>
+                        <textarea name="etiquetaAModificar" id="etiquetaAModificar" cols="" rows="4" oninput="actualizarDataEnTiempoReal()"></textarea>
                         <!-- <input type="text" id="etiquetaAModificar" name="etiquetaAModificar" oninput="actualizarDataEnTiempoReal()"> -->
                     </div>
                     <h4 style="color: white;">Modificar</h4>

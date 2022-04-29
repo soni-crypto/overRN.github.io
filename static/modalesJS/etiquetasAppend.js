@@ -18,7 +18,7 @@ botonAgregar.onmouseenter = mensajeDeModificarNone2;
 botonAgregar.onmouseleave = mensajeDeModificarBlock2;
 
 
-const listaEtiquetas = ["Título", "Texto", "imagen", "Input", "Boton", "Navegacion"];
+const listaEtiquetas = ["Título", "Texto", "imagen"];
 let cuerpo = document.querySelector(".contenedorDeBotonesEtiquetas");
 let contador = 0;
 // AGREGO BOTONES QUE SON PARA AGREGAR
@@ -28,12 +28,14 @@ function mostrarContenido() {
     ventanaDeAgregar.style.height = "18rem";
     if (document.querySelector(".etiquetaBtnAppend") === null) {
         // console.log(document.querySelector(".etiquetaBtnAppend"));
+        const divE = document.createElement("div");
+        divE.classList.add("contenedorDePutosBotones");
         listaEtiquetas.forEach((etiqt) => {
-            // const divE = document.createElement("div");
             const btnDeListas = document.createElement("button");
             btnDeListas.classList.add("etiquetaBtnAppend");
             btnDeListas.textContent = etiqt;
-            cuerpo.appendChild(btnDeListas);
+            divE.appendChild(btnDeListas)
+            cuerpo.appendChild(divE);
             // cuerpo.appendChild(divE);
             // contador++;
         })
