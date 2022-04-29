@@ -2,6 +2,20 @@ var contadorDeEtiquetasH = 0;
 var prefijoDeClasesDeEtiquetasH = "prefEtClasH";
 const botonAgregar = document.querySelectorAll(".btn-estilos")[0];
 // const botonModificar = document.querySelectorAll(".btn-estilos")[1];
+const mensajeDeModificarNone2 = (pose) => {
+
+    const ventana = document.querySelector(".hoverFlotanteMensaje2");
+    ventana.style.display = "block";
+
+
+}
+const mensajeDeModificarBlock2 = () => {
+    const ventana = document.querySelector(".hoverFlotanteMensaje2");
+    ventana.style.display = "none";
+
+}
+botonAgregar.onmouseenter = mensajeDeModificarNone2;
+botonAgregar.onmouseleave = mensajeDeModificarBlock2;
 
 
 const listaEtiquetas = ["Título", "Texto", "imagen", "Input", "Boton", "Navegacion"];

@@ -1,3 +1,4 @@
+const contGeneralBody = document.getElementById("contenedor-general");
 const cuerpoDeModificador = document.querySelector(".partesModalesModificador");
 
 const cuerpoSensor = document.querySelector(".cuerpo");
@@ -10,12 +11,16 @@ const tamañoDeLetra = document.querySelector(".tamañoDeLetraModificador");
 const btnModificadorIntTamaño = document.querySelectorAll(".btnModificadorInt")[0];
 const btnModificadorIntLetra = document.querySelectorAll(".btnModificadorInt")[1];
 const btnModificadorIntColor = document.getElementById("colorModificadorInput");
+const btnModificadorIntMargen = document.querySelectorAll(".btnModificadorInt")[3];
+
 var etiquetaAEditarGlobal = "";
+var cantidaDeMargen = 0;
 const mostrarContenidoDelModificador = () => {
     const modifcadorDirecto = document.querySelector(".partesModalesModificador");
     modifcadorDirecto.style.display = "block";
 }
 const funcionSensorCuerpo = (evento) => {
+    evento.preventDefault();
 
     // codigoHtmlPantalla.textContent = evento.target;
     // console.log(evento.target.className);
@@ -36,7 +41,31 @@ const actualizarDataEnTiempoReal = () => {
     const valorNuevo = etiquetaAModificar.value;
     etiquetaAEditarGlobal.textContent = valorNuevo;
 }
+const functionMargenLetra = (e) => {
+    if (cantidaDeMargen <= 10) {
+        cantidaDeMargen += 2;
+        etiquetaAEditarGlobal.parentNode.style.marginLeft = cantidaDeMargen + "rem";
+    }
+}
+btnModificadorIntMargen.onclick = functionMargenLetra;
+
 const funcionTamañoLetraOpcion = () => {}
 const funcionTipoLetraOpcion = () => {}
-botonModificar.onclick = mostrarContenidoDelModificador;
+
+
 cuerpoSensor.onclick = funcionSensorCuerpo;
+botonModificar.onclick = mostrarContenidoDelModificador;
+const mensajeDeModificarNone = (pose) => {
+
+    const ventana = document.querySelector(".hoverFlotanteMensaje");
+    ventana.style.display = "block";
+
+
+}
+const mensajeDeModificarBlock = () => {
+    const ventana = document.querySelector(".hoverFlotanteMensaje");
+    ventana.style.display = "none";
+
+}
+botonModificar.onmouseenter = mensajeDeModificarNone;
+botonModificar.onmouseleave = mensajeDeModificarBlock;

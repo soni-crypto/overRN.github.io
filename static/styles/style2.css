@@ -1,5 +1,10 @@
+:root {
+    --colorDeBordeCajas: rgb(191, 191, 191);
+}
+
 body {
     background: rgb(47, 47, 47);
+    overflow: hidden;
 }
 
 ul li {
@@ -16,9 +21,45 @@ ul li:hover {
     /* border-bottom: 3px solid rgb(179, 255, 66); */
 }
 
+.hoverAnunciosPart1 {
+    border: 1px solid var(--colorDeBordeCajas);
+    max-width: 10rem;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    display: none;
+    margin-left: 7rem;
+    padding: .3rem;
+}
+
 .nav {
     text-decoration: none;
     color: #fff;
+}
+
+.botonDeEliminarClickDerecho {
+    border: 3px solid rgb(137, 176, 248);
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: black;
+    padding: .3rem;
+    border-radius: .3rem;
+}
+
+.mensajeDeEliminarClickDerecho {
+    font-family: monospace;
+    color: black;
+}
+
+.cajaDeEliminarClickDerecho {
+    position: absolute;
+    border: 1px solid rgb(200, 200, 200);
+    background-color: white;
+    border-radius: .4rem;
+    padding: .3rem;
+    box-shadow: .3rem .3rem .3rem rgb(216, 216, 216);
 }
 
 @media screen and (min-width:700px) {
@@ -35,25 +76,30 @@ ul li:hover {
         width: 98px;
     }
     .stilos {
-        margin-top: -1rem;
+        margin-top: -.4rem;
+        margin-left: -.4rem;
         height: 100vh;
         width: 10rem;
-        background-color: rgb(42, 42, 42);
+        background-color: rgb(246, 246, 246);
+        border-right: 1px solid rgb(194, 193, 193);
     }
     .contenedor-padre {
         /* padding-left: 1rem; */
         display: flex;
     }
     .btn-estilos {
-        color: #fff;
-        height: 3rem;
+        padding-left: 1.4rem;
+        color: rgb(123, 123, 123);
+        height: 2.7rem;
+        font-size: 1.1rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         width: 100%;
-        background-color: rgb(42, 42, 42);
+        background-color: rgb(246, 246, 246);
         border: none;
-        border-bottom: 1px solid rgb(127, 127, 127);
+        text-align: left;
     }
     .btn-estilos:hover {
-        background-color: rgb(197, 228, 255);
+        /* background-color: rgb(136, 166, 192); */
         color: black;
     }
     .btn-estilos:active {
@@ -61,13 +107,16 @@ ul li:hover {
     }
     .cuerpo {
         overflow-y: scroll;
-        margin-top: -.5rem;
+        margin-top: -.4rem;
         width: 90vw;
         height: 100vh;
         background-color: white;
     }
     .contenidoCentro {
-        padding: 0rem 10rem 1rem 10rem;
+        /* padding: 0rem 10rem 1rem 10rem; */
+        height: auto;
+        word-wrap: break-word;
+        width: 80%;
         text-align: left;
     }
     .textoTitulo {
@@ -97,7 +146,7 @@ ul li:hover {
         width: 100%;
         height: 5rem;
         padding: .5rem .5rem .5rem .5rem;
-        background-color: rgba(0, 0, 0, 0.546);
+        background-color: rgba(255, 255, 255, 0.546);
         border-radius: .4rem;
         border: 5px solid rgb(155, 161, 255);
     }
@@ -108,7 +157,8 @@ ul li:hover {
         bottom: 2rem;
         right: 17%;
         width: 50vw;
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(255, 255, 255, 0.7);
+        border: 1px solid rgb(195, 195, 195);
         padding: 1rem 5rem 1rem 1rem;
         height: 10rem;
         border-radius: .4rem;
@@ -120,10 +170,12 @@ ul li:hover {
         right: 17%;
         height: 20rem;
         width: 50vw;
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(255, 255, 255, 0.7);
         padding: 1rem 5rem 1rem 1rem;
         /* height: 0; */
         border-radius: .4rem;
+        border: 1px solid rgb(195, 195, 195);
+        box-shadow: 3px 3px 8px rgb(244, 244, 244);
     }
     .Agregar {
         width: 100%;
@@ -152,6 +204,7 @@ ul li:hover {
         padding: 1rem 1rem 1rem 1rem;
         height: 9rem;
         width: 20rem;
+        border: 1px solid var(--colorDeBordeCajas);
         border-radius: .4rem;
         background-color: rgba(255, 255, 255, 0.941);
     }
@@ -161,6 +214,7 @@ ul li:hover {
         padding: 1rem 1rem 1rem 1rem;
         height: 12rem;
         width: 40rem;
+        border: 1px solid var(--colorDeBordeCajas);
         border-radius: .4rem;
         background-color: rgba(255, 255, 255, 0.941);
     }
@@ -171,6 +225,7 @@ ul li:hover {
         height: 10rem;
         width: 30rem;
         border-radius: .4rem;
+        border: 1px solid var(--colorDeBordeCajas);
         background-color: rgba(255, 255, 255, 0.941);
     }
     /* BOTON PARA CERRAR */
@@ -289,13 +344,14 @@ ul li:hover {
     }
     /* EXTRAS */
     #etiquetaAModificar {
-        color: white;
+        border: none;
+        color: rgb(16, 16, 16);
         outline: none;
         font-family: Arial, Helvetica, sans-serif;
         padding: .3rem .3rem .3rem .3rem;
-        background-color: rgb(92, 92, 133);
+        background-color: rgba(255, 255, 255, 0.765);
         border-radius: .3rem;
-        resize: none;
+        resize: horizontal;
     }
     .labelLetra {
         color: white;
@@ -371,29 +427,6 @@ ul li:hover {
         display: block;
         font-family: Consolas;
     }
-    .btnTextoEditor button {
-        display: flex;
-        cursor: pointer;
-        font-family: Arial, Helvetica, sans-serif;
-        /* flex-direction: column; */
-        /* justify-content: center; */
-        width: 5rem;
-        height: auto;
-        padding: .3rem 0rem .3rem .8rem;
-        margin-top: .5rem;
-        /* text-align: center; */
-        /* justify-content: center; */
-        background-color: rgb(143, 203, 255);
-        outline: none;
-        border-radius: .2rem;
-        border: 2px solid rgb(137, 137, 255);
-    }
-    .btnTextoEditor button:hover {
-        background-color: rgb(215, 215, 252);
-    }
-    .btnTextoEditor button:active {
-        background-color: rgb(255, 255, 255);
-    }
     .urlImagenAInsertar {
         width: 60%;
         padding: .4rem .4rem .4rem .4rem;
@@ -432,8 +465,18 @@ ul li:hover {
         background-color: beige;
     }
     /* ############ */
-    .submitTexto:active {
+    .submitTexto {
+        border: 1px solid var(--colorDeBordeCajas);
+        padding: .3rem;
+        margin-top: 1rem;
+        margin-left: 28%;
         background-color: rgb(255, 255, 255);
+    }
+    .submitTexto:hover {
+        color: blue;
+    }
+    .submitTexto:active {
+        background-color: rgb(235, 235, 235);
     }
     .estiloOption {
         /* display: none;
@@ -450,10 +493,10 @@ ul li:hover {
     .agregarTituloAlArchivo {
         padding: .5rem 1rem .5rem 1rem;
         font-family: Arial, Helvetica, sans-serif;
-        border: 3px solid rgb(206, 206, 255);
+        border: 1px solid var(--colorDeBordeCajas);
         border-radius: .3rem;
         margin-left: 7rem;
-        background-color: rgb(0, 153, 255);
+        background-color: rgb(255, 255, 255);
     }
     .agregarTituloAlArchivo:hover {
         background-color: rgb(202, 208, 255);
@@ -486,27 +529,28 @@ ul li:hover {
         background-color: rgb(255, 255, 255);
     }
     .Bienvenida {
-        border: 1rem solid rgb(159, 158, 255);
+        border: 1px solid rgb(188, 188, 188);
         display: block;
         position: absolute;
         border-radius: 1.4rem;
-        background-color: rgb(50, 50, 50);
-        margin: 3% 3% 4% 14%;
+        background-color: rgb(255, 255, 255);
+        margin: 3% 3% 4% 15%;
+        width: 35%;
         padding: 4%;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 1.4rem;
     }
     .bienvLetra1 {
-        color: white;
+        color: rgb(0, 0, 0);
     }
     .bienvLetra2 {
-        color: white;
+        color: rgb(0, 0, 0);
     }
     .bienvLetra3 {
-        color: white;
+        color: rgb(0, 0, 0);
     }
     .bienvLetra4 {
-        color: rgb(255, 237, 80);
+        color: rgb(22, 30, 67);
         font-size: 2.2rem;
     }
 }

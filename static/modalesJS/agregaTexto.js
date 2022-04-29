@@ -16,8 +16,7 @@ const funcionAgregar = () => {
         contenidoCentro.appendChild(BR);
 
     }
-    console.log(btnModificadorIntLetra2);
-    console.log(btnModificadorIntTamaño2);
+    const contenedorDeTextoCreadoConJs = document.createElement("div");
     const etiquetaPAAgregar = document.createElement("span");
     etiquetaPAAgregar.classList.add(prefijoDeClasesDeEtiquetasS + contadorDeEtiquetasS)
     etiquetaPAAgregar.textContent = textoAAgregar;
@@ -25,7 +24,11 @@ const funcionAgregar = () => {
     etiquetaPAAgregar.style.fontSize = btnModificadorIntTamaño2;
     etiquetaPAAgregar.style.color = colorDeTexto;
     contadorDeEtiquetasS++;
-    contenidoCentro.appendChild(etiquetaPAAgregar);
+    contenedorDeTextoCreadoConJs.style.width = "auto";
+    contenedorDeTextoCreadoConJs.style.height = "auto";
+
+    contenedorDeTextoCreadoConJs.appendChild(etiquetaPAAgregar);
+    contenidoCentro.appendChild(contenedorDeTextoCreadoConJs);
     document.getElementById("textoAPoner").value = " ";
 
 };
