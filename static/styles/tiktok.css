@@ -1,0 +1,179 @@
+body {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4c4c4c+0,0a0a0a+12,666666+19,161616+28,474747+39,2c2c2c+50,000000+51,111111+60,565656+68,2b2b2b+78,1c1c1c+91,131313+100 */
+    background: rgb(76, 76, 76);
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(76, 76, 76, 1) 0%, rgba(10, 10, 10, 1) 12%, rgba(102, 102, 102, 1) 19%, rgba(22, 22, 22, 1) 28%, rgba(71, 71, 71, 1) 39%, rgba(44, 44, 44, 1) 50%, rgba(0, 0, 0, 1) 51%, rgba(17, 17, 17, 1) 60%, rgba(86, 86, 86, 1) 68%, rgba(43, 43, 43, 1) 78%, rgba(28, 28, 28, 1) 91%, rgba(19, 19, 19, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(76, 76, 76, 1) 0%, rgba(10, 10, 10, 1) 12%, rgba(102, 102, 102, 1) 19%, rgba(22, 22, 22, 1) 28%, rgba(71, 71, 71, 1) 39%, rgba(44, 44, 44, 1) 50%, rgba(0, 0, 0, 1) 51%, rgba(17, 17, 17, 1) 60%, rgba(86, 86, 86, 1) 68%, rgba(43, 43, 43, 1) 78%, rgba(28, 28, 28, 1) 91%, rgba(19, 19, 19, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(76, 76, 76, 1) 0%, rgba(10, 10, 10, 1) 12%, rgba(102, 102, 102, 1) 19%, rgba(22, 22, 22, 1) 28%, rgba(71, 71, 71, 1) 39%, rgba(44, 44, 44, 1) 50%, rgba(0, 0, 0, 1) 51%, rgba(17, 17, 17, 1) 60%, rgba(86, 86, 86, 1) 68%, rgba(43, 43, 43, 1) 78%, rgba(28, 28, 28, 1) 91%, rgba(19, 19, 19, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+
+.cuerpoTik {
+    display: none;
+    margin-left: 30%;
+    position: relative;
+    width: 27em;
+    height: 100vh;
+    /* border: 1px solid rgb(0, 60, 255); */
+    overflow: hidden;
+    background-color: black;
+}
+
+.optTikTokMore {
+    position: absolute;
+    bottom: 8rem;
+    right: 0rem;
+    width: 4em;
+    background-color: rgba(0, 0, 0, 0);
+    height: 17em;
+    /* ####### */
+}
+
+.optTikTokMore div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.navDeTikTok {
+    position: absolute;
+    bottom: 0rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    height: 4em;
+    /* ##### */
+    display: flex;
+}
+
+.letrasBottomTik {
+    font-family: sans-serif;
+    font-size: .6rem;
+    color: white;
+}
+
+.letrasBottomTik2 {
+    color: white;
+    font-family: sans-serif;
+    font-size: .6rem;
+}
+
+.iconTik {
+    width: 1.3rem;
+}
+
+.imgAquiMusica {
+    width: 2.8rem;
+    height: 2.8rem;
+    background-color: rgb(107, 107, 170);
+    border-radius: 50%;
+}
+
+.iconTik2 {
+    width: 2rem;
+}
+
+.letrasBottomTikM {
+    font-size: 1.5rem;
+    border-radius: .6rem;
+    padding: .1rem 1rem .1rem 1rem;
+    border-left: 2px solid blue;
+    border-right: 2px solid red;
+    background-color: white;
+}
+
+.perfilCirculoTik {
+    width: 2.7rem;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.navDeTikTok div {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.masCirculoTik {
+    font-size: 1.4rem;
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    margin-top: -1rem;
+    padding: 0 .4rem 0 .4rem;
+}
+
+.perfilDeLaPersona {
+    position: absolute;
+    bottom: 5rem;
+    left: 1rem;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.perfilDeLaPersona>span {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(233, 233, 233);
+}
+
+.vidFondo {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* FONDO CELULAR INICIO */
+
+.fondoCelularInicio {
+    width: 27em;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+}
+
+.tiktokLogoDeEntrada {
+    width: 3rem;
+    background-color: antiquewhite;
+    /* display: flex; */
+    /* flex-direction: column; */
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 70%;
+}
+
+.siguiendoParaTi {
+    position: absolute;
+    top: 2rem;
+    margin-left: 32%;
+}
+
+.siguiendo {
+    font-family: Helvetica;
+    color: rgb(204, 204, 204);
+}
+
+.paraTi {
+    margin-left: 1rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width:700px) {
+    .cuerpoTik {
+        margin-left: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+}

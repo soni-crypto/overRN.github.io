@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/styles/tablas.css">
+    <title>Over Rimachi</title>
+</head>
+
+<body>
+    <thead></thead>
+    <div class="containerPrincipal">
+        <div class="containerPrimero">
+            <div class="cajaLogo">
+                <br><br>
+                <img src="../static/images/excelLogoEm.png" class="logoApp" width="30px" alt="Logo de la Aplicacion">
+                <p class="nombreDeLaApp">Pafixel</p>
+                <a href="../index.html">Home</a><br>
+                <a href="./project.html">RapPress</a><br>
+                <a href="./tiktok.html">Tik Tok</a>
+            </div>
+            <button class="btnTipoDeArchivo">import XLSX</button>
+            <button class="btnTipoDeArchivo">import CSV</button>
+            <button class="btnTipoDeArchivo">import XLS</button>
+
+        </div>
+        <div class="containerSegundo">
+            <input type="text" class="inputDeBusqueda" placeholder="Buscar por Nombre">
+            <div class="cajaDeContenidoDeDatos">
+                <table class="tablaDeEntrada">
+                    <thead class="cabezeraDeDatos">
+                        <th class="thTitulos" scope="col">ID</th>
+                        <th class="thTitulos">Nombres</th>
+                        <th class="thTitulos">Apellidos</th>
+                        <th class="thTitulos">Código</th>
+                        <th class="thTitulos">Ocupación</th>
+                        <th class="thTitulos">Deuda</th>
+                        <th class="thTitulos">Ahorro</th>
+                        <th class="thTitulos" scope="col">Tipo de Cliente</th>
+                    </thead>
+                    <tbody class="contenedorDeDatos">
+                        <tr class="filaDeDatos">
+                            <td class="columnaDeDatos" id="idUnico">1</td>
+                            <td class="columnaDeDatos">Over</td>
+                            <td class="columnaDeDatos">Rimachi Nuñez</td>
+                            <td class="columnaDeDatos">27190508</td>
+                            <td class="columnaDeDatos">Estudiante</td>
+                            <td class="columnaDeDatos">120</td>
+                            <td class="columnaDeDatos">50</td>
+                            <td class="columnaDeDatos">fijo</td>
+                        </tr>
+                        <tr class="filaDeDatos">
+                            <td class="columnaDeDatos" id="idUnico">2</td>
+                            <td class="columnaDeDatos">Jessica</td>
+                            <td class="columnaDeDatos">Yance Ccahuana</td>
+                            <td class="columnaDeDatos">2719----</td>
+                            <td class="columnaDeDatos">Estudiante</td>
+                            <td class="columnaDeDatos">100</td>
+                            <td class="columnaDeDatos">50</td>
+                            <td class="columnaDeDatos">fijo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <div class="contenedoresDeInputsBotonesGeneral">
+        <input type="text" class="inputDeDatos" required placeholder="Nombres">
+        <input type="text" class="inputDeDatos" required placeholder="Apellidos">
+        <input type="text" class="inputDeDatos" required placeholder="Código">
+        <input type="text" class="inputDeDatos" required placeholder="Ocupación">
+        <input type="text" class="inputDeDatos" required placeholder="Deuda">
+        <input type="text" class="inputDeDatos" required placeholder="Ahorro">
+        <input type="text" class="inputDeDatos" required placeholder="Tipo de Cliente">
+        <br>
+
+        <button id="agregarDatosATabla">Agregar</button>
+    </div>
+    <tfoot></tfoot>
+    <script src="../static/tablasJS/insertarDatos.js"></script>
+</body>
+
+
+</html>
