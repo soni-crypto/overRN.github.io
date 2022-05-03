@@ -795,8 +795,172 @@ p {
     width: 100%;
 }
 
+.botMensajero {
+    cursor: pointer;
+    overflow: hidden;
+    position: fixed;
+    z-index: 2;
+    margin-top: 80vh;
+    right: 1rem;
+    width: 6rem;
+    height: 3rem;
+    padding: .6rem;
+    border-radius: 2rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 2px 30px rgb(185, 185, 185);
+}
+
+.botMensajero:hover {
+    box-shadow: 3px 2px 30px rgb(124, 124, 124);
+}
+
+.wallLogoChat {
+    width: 90%;
+    /* border-radius; */
+}
+
+.cerrarChatConWall {
+    background-color: rgb(232, 232, 232);
+    padding: .1rem .5rem .2rem .5rem;
+    border: 3px solid rgb(184, 184, 184);
+    border-radius: 50%;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(104, 104, 104);
+    cursor: pointer;
+}
+
+.cerrarChatConWall:hover {
+    border: 3px solid rgb(135, 159, 255);
+}
+
+.wallLogoChatMensaje {
+    margin-top: 2rem;
+    width: 50%;
+    border-radius: 2rem;
+}
+
+.chatEscribir {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.chatEscribir input {
+    border: 4px solid rgb(243, 239, 255);
+    height: 1rem;
+    padding: .4rem;
+    outline: none;
+    margin-top: 2rem;
+    border-radius: .4rem;
+    font-family: Arial;
+}
+
+.chatEscribir button {
+    padding: .4rem;
+    margin-top: 1.5rem;
+    width: 50%;
+    border: none;
+    border-radius: .4rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(106, 106, 106);
+}
+
+.chatEscribir button:hover {
+    background-color: rgb(147, 147, 147);
+}
+
+.chatEscribir button:active {
+    background-color: rgb(187, 113, 113);
+}
+
+.cerrarChatConWall:active {
+    background-color: aliceblue;
+    color: rgb(74, 74, 74);
+}
+
+.modalChatWall {
+    display: none;
+    z-index: 1;
+    position: fixed;
+    height: 60vh;
+    margin-top: 8rem;
+    border-radius: 2rem;
+    background-color: rgb(183, 183, 255);
+    width: 20rem;
+    right: 1rem;
+}
+
+.evaModal {
+    position: fixed;
+    width: 20vw;
+    height: 30vh;
+    z-index: 1;
+    bottom: 2rem;
+}
+
+.contentEva img {
+    width: 10rem;
+    animation-name: evaSubeBaja;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.cerrarMensajeDeEva {
+    background-color: rgb(232, 232, 232);
+    padding: .1rem .5rem .2rem .5rem;
+    border: 3px solid rgb(184, 184, 184);
+    border-radius: 50%;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(104, 104, 104);
+    cursor: pointer;
+}
+
+.cerrarMensajeDeEva:hover {
+    border: 3px solid rgb(135, 159, 255);
+}
+
+.cerrarMensajeDeEva:active {
+    background-color: aliceblue;
+    color: rgb(74, 74, 74);
+}
+
+.mensajeDeEvaAPublico {
+    position: fixed;
+    width: 20vw;
+    height: auto;
+    padding: 3rem;
+    background-color: white;
+    z-index: 1;
+    left: 9rem;
+    bottom: 17rem;
+    box-shadow: 5px 5px 20px rgb(192, 192, 192);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    border-radius: 1rem;
+}
+
 
 /* ###################################################################### */
+
+@keyframes evaSubeBaja {
+    0% {
+        transform: translateY(-1rem);
+    }
+    50% {
+        transform: translateY(1rem);
+    }
+    100% {
+        transform: translateY(-1rem)
+    }
+}
 
 
 /* ###################################################################### */
@@ -811,11 +975,24 @@ p {
     body {
         overflow-x: hidden;
     }
+    .mensajeDeEvaAPublico {
+        bottom: 13rem;
+        width: 60vw;
+        left: 2rem;
+    }
+    .contentEva {
+        display: none;
+        width: 0;
+    }
     .contenedor-madre {
         display: block;
     }
     .vistaALaProgramacion {
         display: block;
+    }
+    .botMensajero {
+        width: 2rem;
+        height: 2rem;
     }
     .contenedor1 {
         transform: scale(.9);
