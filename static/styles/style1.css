@@ -21,6 +21,7 @@ section {
 
 body {
     padding: 0;
+    margin: 0;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0e1347+0,1b1366+23,1d147f+47,1f0f60+65,2f0f63+77,1d147f+90,2b2496+100 */
     background: white;
     /* Old browsers */
@@ -32,6 +33,17 @@ body {
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     /* filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0e1347', endColorstr='#2b2496', GradientType=1); */
     /* IE6-9 fallback on horizontal gradient*/
+}
+
+body::-webkit-scrollbar {
+    background-color: black;
+    border-radius: .4rem;
+    width: .4rem;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(216, 122, 0);
+    border-radius: .4rem;
 }
 
 .img-perfil {
@@ -1137,8 +1149,8 @@ p {
         transition: 2s;
     }
     .iconoDeNav {
-        margin-top: .2rem;
-        margin-left: .4rem;
+        margin-top: .5rem;
+        margin-left: .7rem;
         margin-bottom: .4rem;
         display: block;
         width: 2rem;

@@ -5,6 +5,8 @@
 }
 
 body {
+    padding: 0;
+    margin: 0;
     background: rgb(47, 47, 47);
     overflow: hidden;
 }
@@ -84,10 +86,6 @@ body {
     border-radius: 5%;
     margin-left: -1rem;
     margin-top: 1rem;
-}
-
-.logoRaptorIndicaciones:hover {
-    cursor: pointer;
 }
 
 .navAndLogo li {
@@ -702,11 +700,12 @@ body {
     .menuModoCelularDiv {
         width: 2rem;
         position: absolute;
-        right: 1rem;
-        margin-top: 1.2rem;
+        left: .5rem;
+        top: .5rem;
+        /* margin-top: 1.2rem; */
     }
     .menuModoCelularP {
-        max-width: "2px";
+        max-width: auto;
         font-size: 1px;
     }
     .stilos {
@@ -728,5 +727,12 @@ body {
     }
     .partesModales {
         overflow: hidden;
+    }
+    .logoRaptorIndicaciones {
+        width: 40px;
+        margin-left: 1rem;
+    }
+    .btn-estilos {
+        height: 2rem;
     }
 }
