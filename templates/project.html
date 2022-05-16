@@ -7,10 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/c3e03baa45.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../static/styles/style2.css">
-    <link rel="shortcut icon" href="../static/images/over.ico" type="image/x-icon">
 
-    <title>OverRimachiNuñez</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Barlow+Condensed:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../static/styles/style2.css">
+    <link rel="shortcut icon" href="../static/images/vraemtec.ico" type="image/x-icon">
+
+    <title>RapPress</title>
 </head>
 
 <body>
@@ -20,12 +28,21 @@
             <!-- onmouseenter="backcolor()" onmouseleave="ratonsalido()" -->
             <div class="contenedor-padre" id="contenedor-general">
                 <div class="menuModoCelular">
-                    <p class="menuModoCelularP">Opciones</p>
+                    <div class="menuModoCelularDiv">
+                        <img src="../static/images/bars-solid.svg" class="menuModoCelularP" alt="">
+                    </div>
                     <div class="stilos">
-                        <ul>
-                            <li><a class="nav" href="/">Home</a></li>
-                            <img src="../static/images/logoRaptor.png" class="logoRaptorIndicaciones" alt="">
+                        <ul class="navAndLogo">
+                            <img src="../static/images/user-solid.svg" class="logoRaptorIndicaciones" alt="">
+                            <li>
+                                <a class="nav" href="/">Home</a>
+                                <a class="nav" href="./tiktok.html">Tik Tok</a>
+                                <a class="nav" href="./tablas.html">Pafixel</a>
+                                <a href="https://vraemtec.pythonanywhere.com/" class="nav">VraemTec</a>
+                                <a href="https://emmavraemtec.pythonanywhere.com/" class="nav">PyExcel</a>
+                            </li>
                         </ul>
+                        <hr>
                         <button class="btn-estilos">Agregar</button>
                         <div class="hoverFlotanteMensaje2 hoverAnunciosPart1"><span>Agregar titulos, letras, imagenes, videos, etc .. </span></div>
                         <button class="btn-estilos">Modificar</button>
@@ -84,7 +101,7 @@
                         <span class="cerrarTextoInput">x</span>
                         <div class="inputsDeTextoACuerpo">
                             <textarea name="textoAPoner" id="textoAPoner" placeholder="Escriba su texto" cols="60" rows="8"></textarea>
-                            <div class="btnTextoEditor"><input type="color" name="colorTexto" id="colorTexto">
+                            <div class="btnTextoEditor"><input type="color" name="colorTexto" id="colorTexto"><br>
                                 <!-- <button class="btnFonTIni">fuente</button>
                                 <button class="btnFonTIni">tamaño</button> -->
                                 <select name="" id="" class="btnModificadorInt2">
@@ -130,7 +147,7 @@
                         <textarea name="etiquetaAModificar" id="etiquetaAModificar" cols="" rows="4" oninput="actualizarDataEnTiempoReal()"></textarea>
                         <!-- <input type="text" id="etiquetaAModificar" name="etiquetaAModificar" oninput="actualizarDataEnTiempoReal()"> -->
                     </div>
-                    <h4 style="color: white;">Modificar</h4>
+                    <h4 style="color: black; font-family:'Abel';">Modificar</h4>
                     <div class="contenedorDeBotonesModificadores">
                         <!-- <button class="btnModificadorInt">Tamaño</button> -->
                         <select name="tamañoDeLetraSeleccionado" id="tamañoDeLetraSeleccionado" class="btnModificadorInt">
@@ -149,7 +166,8 @@
                             <option class="estiloOption" value="fantasy">Negrita</option>
                         </select>
                         <!-- <button class="btnModificadorInt">Tipo de letra</button> -->
-                        <label for="colorModificadorInput" class="btnModificadorInt">Color de texto</label><input type="color" style="width: 0px;display: none;" name="colorModificadorInput" id="colorModificadorInput">
+                        <!-- <label for="colorModificadorInput" class="btnModificadorInt">Color de texto</label> {% endcomment %} -->
+                        <input type="color" name="colorModificadorInput" id="colorModificadorInput">
                         <button class="btnModificadorInt">Margen Izq.</button>
                         <button class="btnModificadorInt">Centrar</button><br>
                         <button class="guardarCambiosNuevos">Guardar Cambios</button>

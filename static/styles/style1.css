@@ -44,19 +44,89 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     background-color: rgb(255, 255, 255);
 }
 
 .contenedor1 {
-    border: 1px solid rgb(184, 184, 184);
-    max-width: 30rem;
+    /* max-width: 30rem; */
     min-width: auto;
     margin-top: 2rem;
     margin-bottom: 3rem;
-    background-color: rgb(0, 0, 0);
+    /* background-color: blue; */
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: left;
+    margin-left: 4rem;
     /* border-radius: 2rem; */
+}
+
+.contenedor1Hijo1 {
     padding: 1rem 1rem 1rem 1rem;
+    border: 1px solid rgb(184, 184, 184);
+    background-color: rgb(0, 0, 0);
+    max-width: 30rem;
+    /* max-width: 49%; */
+}
+
+.afterForTyped {
+    font-family: "Abel", sans-serif;
+    font-size: 4.5rem;
+    color: rgb(0, 33, 91);
+}
+
+.typed {
+    font-family: "Abel", sans-serif;
+    font-size: 3.5rem;
+    color: rgb(119, 119, 119);
+}
+
+.mensajeDeBackEnd {
+    font-family: "Abel", sans-serif;
+    font-size: 1rem;
+}
+
+.contenedor1Hijo2 {
+    margin-left: 6rem;
+    margin-top: 6rem;
+    width: 60%;
+    padding: 1rem;
+    /* background-color: rgb(159, 159, 159); */
+}
+
+.btnDeDemostracion button {
+    border: 1px solid rgb(204, 204, 204);
+    background-color: White;
+    outline: none;
+    padding: 1rem;
+}
+
+.btnDeDemostracion button:hover {
+    background-color: aliceblue;
+    border: 1px solid rgb(136, 136, 136);
+}
+
+.btnDeDemostracion button:active {
+    background-color: aqua;
+}
+
+.backDemos,
+.frontDemos {
+    display: none;
+    border: 1px solid rgb(200, 200, 200);
+    width: auto;
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 40%;
+    margin-left: 20%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgb(183, 183, 183);
+}
+
+.backDemos img,
+.frontDemos img {
+    margin-left: 1rem;
 }
 
 .letraPubInfo {
@@ -547,13 +617,14 @@ p {
 
 .buttonOPT {
     cursor: pointer;
-    width: 7rem;
+    width: 9rem;
     margin-top: .5rem;
     height: 3rem;
-    background-color: white;
+    background-color: rgb(165, 186, 225);
     border: none;
     border-radius: .4rem;
     outline: none;
+    box-shadow: 5px 5px 1rem rgb(202, 202, 202);
 }
 
 .gitCmd {
@@ -934,13 +1005,13 @@ p {
 
 .mensajeDeEvaAPublico {
     position: fixed;
-    width: 20vw;
+    width: 15vw;
     height: auto;
     padding: 3rem;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.976);
     z-index: 1;
-    left: 9rem;
-    bottom: 17rem;
+    left: 50%;
+    bottom: 2rem;
     box-shadow: 5px 5px 20px rgb(192, 192, 192);
     font-family: 'Courier New', Courier, monospace;
     font-size: 1rem;
@@ -996,10 +1067,28 @@ p {
     }
     .contenedor1 {
         transform: scale(.9);
+        display: block;
         /* background-color: blueviolet; */
-        margin-left: -1.7rem;
+        margin-left: -1rem;
         margin-top: -2rem;
+    }
+    .contenedor1Hijo1 {
         width: 99vw;
+    }
+    .contenedor1Hijo2 {
+        width: 99vw;
+        margin-left: -.5rem;
+    }
+    .typed {
+        font-size: 2rem;
+    }
+    .afterForTyped {
+        font-size: 2.3rem;
+    }
+    .backDemos,
+    .frontDemos {
+        width: 70vw;
+        margin-left: 0rem;
     }
     .undraw_programingImg {
         margin-top: -15rem;
@@ -1045,6 +1134,7 @@ p {
     }
     .contenidoDeNav {
         display: none;
+        transition: 2s;
     }
     .iconoDeNav {
         margin-top: .2rem;
@@ -1056,6 +1146,7 @@ p {
     }
     .contenedorGeneralDeNavs:hover>.contenidoDeNav {
         display: block;
+        margin-top: -.5rem;
         position: absolute;
         z-index: 1;
         background-color: rgb(255, 255, 255);

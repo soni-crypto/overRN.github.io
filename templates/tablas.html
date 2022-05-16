@@ -5,26 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Barlow+Condensed:wght@200&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../static/styles/tablas.css">
-    <title>Over Rimachi</title>
+    <link rel="shortcut icon" href="../static/images/vraemtec.ico" type="image/x-icon">
+    <title>Pafixel</title>
 </head>
 
 <body>
     <thead></thead>
     <div class="containerPrincipal">
-        <div class="containerPrimero">
-            <div class="cajaLogo">
-                <br><br>
-                <img src="../static/images/excelLogoEm.png" class="logoApp" width="30px" alt="Logo de la Aplicacion">
-                <p class="nombreDeLaApp">Pafixel</p>
-                <a href="../index.html">Home</a><br>
-                <a href="./project.html">RapPress</a><br>
-                <a href="./tiktok.html">Tik Tok</a>
+        <div class="contenedorParaHover">
+            <div class="containerDeBarra">
+                <img src="../static/images/bars-solid.svg" class="barraDeMenu" alt="">
             </div>
-            <button class="btnTipoDeArchivo">import XLSX</button>
-            <button class="btnTipoDeArchivo">import CSV</button>
-            <button class="btnTipoDeArchivo">import XLS</button>
+            <div class="containerPrimero">
+                <div class="cajaLogo">
+                    <br><br>
+                    <img src="../static/images/excelLogoEm.png" class="logoApp" width="30px" alt="Logo de la Aplicacion">
+                    <p class="nombreDeLaApp">Pafixel</p>
+                    <a href="../index.html">Home</a><br>
+                    <a href="./project.html">RapPress</a><br>
+                    <a href="./tiktok.html">Tik Tok</a><br>
+                    <a href="https://vraemtec.pythonanywhere.com/">VraemTec</a><br>
+                    <a href="https://emmavraemtec.pythonanywhere.com/">PyExcel</a>
 
+                </div>
+                <button class="btnTipoDeArchivo">import XLSX</button>
+                <button class="btnTipoDeArchivo">import CSV</button>
+                <button class="btnTipoDeArchivo">import XLS</button>
+
+            </div>
         </div>
         <div class="containerSegundo">
             <input type="text" class="inputDeBusqueda" placeholder="Buscar por Nombre">
@@ -39,6 +53,10 @@
                         <th class="thTitulos">Deuda</th>
                         <th class="thTitulos">Ahorro</th>
                         <th class="thTitulos" scope="col">Tipo de Cliente</th>
+                        <th class="thTitulos">Tiempo</th>
+                        <th class="thTitulos">Estado</th>
+                        <th class="thTitulos">Horas trabajadas</th>
+                        <th class="thTitulos">Lugar de residencia</th>
                     </thead>
                     <tbody class="contenedorDeDatos">
                         <tr class="filaDeDatos">
@@ -50,16 +68,95 @@
                             <td class="columnaDeDatos">120</td>
                             <td class="columnaDeDatos">50</td>
                             <td class="columnaDeDatos">fijo</td>
+                            <td class="columnaDeDatos">completo</td>
+                            <td class="columnaDeDatos">Buenas condiciones</td>
+                            <td class="columnaDeDatos">20hr al dia</td>
+                            <td class="columnaDeDatos">Sivia</td>
+
                         </tr>
                         <tr class="filaDeDatos">
                             <td class="columnaDeDatos" id="idUnico">2</td>
                             <td class="columnaDeDatos">Jessica</td>
                             <td class="columnaDeDatos">Yance Ccahuana</td>
-                            <td class="columnaDeDatos">2719----</td>
+                            <td class="columnaDeDatos">27199834</td>
                             <td class="columnaDeDatos">Estudiante</td>
                             <td class="columnaDeDatos">100</td>
                             <td class="columnaDeDatos">50</td>
                             <td class="columnaDeDatos">fijo</td>
+                            <td class="columnaDeDatos">medio tiempo</td>
+                            <td class="columnaDeDatos">Buenas condiciones</td>
+                            <td class="columnaDeDatos">18hr al dia</td>
+                            <td class="columnaDeDatos">Ayacucho</td>
+                        </tr>
+                        <tr class="filaDeDatos">
+                            <td class="columnaDeDatos" id="idUnico">3</td>
+                            <td class="columnaDeDatos">Orlando</td>
+                            <td class="columnaDeDatos">Perez Maldonado</td>
+                            <td class="columnaDeDatos">27162312</td>
+                            <td class="columnaDeDatos">Estudiante</td>
+                            <td class="columnaDeDatos">200</td>
+                            <td class="columnaDeDatos">1000</td>
+                            <td class="columnaDeDatos">fijo</td>
+                            <td class="columnaDeDatos">completo</td>
+                            <td class="columnaDeDatos">Buenas condiciones</td>
+                            <td class="columnaDeDatos">14hr al dia</td>
+                            <td class="columnaDeDatos">Huancavelica</td>
+                        </tr>
+                        <tr class="filaDeDatos">
+                            <td class="columnaDeDatos" id="idUnico">4</td>
+                            <td class="columnaDeDatos">Diana</td>
+                            <td class="columnaDeDatos">Valencia Quispe</td>
+                            <td class="columnaDeDatos">24238912</td>
+                            <td class="columnaDeDatos">Estudiante</td>
+                            <td class="columnaDeDatos">500</td>
+                            <td class="columnaDeDatos">1250</td>
+                            <td class="columnaDeDatos">No fijo</td>
+                            <td class="columnaDeDatos">medio tiempo</td>
+                            <td class="columnaDeDatos">Buenas condiciones</td>
+                            <td class="columnaDeDatos">17hr al dia</td>
+                            <td class="columnaDeDatos">Pichari</td>
+                        </tr>
+                        <tr class="filaDeDatos">
+                            <td class="columnaDeDatos" id="idUnico">5</td>
+                            <td class="columnaDeDatos">Samuel</td>
+                            <td class="columnaDeDatos">Salinas Cunto</td>
+                            <td class="columnaDeDatos">27102345</td>
+                            <td class="columnaDeDatos">Estudiante</td>
+                            <td class="columnaDeDatos">200</td>
+                            <td class="columnaDeDatos">1650</td>
+                            <td class="columnaDeDatos">fijo</td>
+                            <td class="columnaDeDatos">completo</td>
+                            <td class="columnaDeDatos">Buenas condiciones</td>
+                            <td class="columnaDeDatos">12hr al dia</td>
+                            <td class="columnaDeDatos">Huanta</td>
+                        </tr>
+                        <tr class="filaDeDatos">
+                            <td class="columnaDeDatos" id="idUnico">6</td>
+                            <td class="columnaDeDatos">Jazmin</td>
+                            <td class="columnaDeDatos">Condori Limaquispe</td>
+                            <td class="columnaDeDatos">22346589</td>
+                            <td class="columnaDeDatos">Estudiante</td>
+                            <td class="columnaDeDatos">1000</td>
+                            <td class="columnaDeDatos">5000</td>
+                            <td class="columnaDeDatos">fijo</td>
+                            <td class="columnaDeDatos">Completo</td>
+                            <td class="columnaDeDatos">Buenas condiciones</td>
+                            <td class="columnaDeDatos">14hr al dia</td>
+                            <td class="columnaDeDatos">Huanta</td>
+                        </tr>
+                        <tr class="filaDeDatos">
+                            <td class="columnaDeDatos" id="idUnico">7</td>
+                            <td class="columnaDeDatos">Oliver</td>
+                            <td class="columnaDeDatos">Huamán Lunazco</td>
+                            <td class="columnaDeDatos">22346578</td>
+                            <td class="columnaDeDatos">Estudiante</td>
+                            <td class="columnaDeDatos">800</td>
+                            <td class="columnaDeDatos">3450</td>
+                            <td class="columnaDeDatos">fijo</td>
+                            <td class="columnaDeDatos">Completo</td>
+                            <td class="columnaDeDatos">Buenas condiciones</td>
+                            <td class="columnaDeDatos">18hr al dia</td>
+                            <td class="columnaDeDatos">Sivia</td>
                         </tr>
                     </tbody>
                 </table>
@@ -75,6 +172,11 @@
         <input type="text" class="inputDeDatos" required placeholder="Deuda">
         <input type="text" class="inputDeDatos" required placeholder="Ahorro">
         <input type="text" class="inputDeDatos" required placeholder="Tipo de Cliente">
+
+        <input type="text" class="inputDeDatos" required placeholder="Tiempo">
+        <input type="text" class="inputDeDatos" required placeholder="Estado">
+        <input type="text" class="inputDeDatos" required placeholder="Horas trabajadas">
+        <input type="text" class="inputDeDatos" required placeholder="Ciudad de residencia">
         <br>
 
         <button id="agregarDatosATabla">Agregar</button>

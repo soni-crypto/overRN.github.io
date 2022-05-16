@@ -9,8 +9,12 @@ const funcInsertarDatos = () => {
     const deuda = document.querySelectorAll(".inputDeDatos")[4].value;
     const ahorro = document.querySelectorAll(".inputDeDatos")[5].value;
     const tipoCliente = document.querySelectorAll(".inputDeDatos")[6].value;
+    const tiempo = document.querySelectorAll(".inputDeDatos")[7].value;
+    const estado = document.querySelectorAll(".inputDeDatos")[8].value;
+    const horasTrabajadas = document.querySelectorAll(".inputDeDatos")[9].value;
+    const lugarResidencia = document.querySelectorAll(".inputDeDatos")[10].value;
 
-    let datosParaAgregar = [nombres, apellidos, codigo, ocupacion, deuda, ahorro, tipoCliente];
+    let datosParaAgregar = [nombres, apellidos, codigo, ocupacion, deuda, ahorro, tipoCliente, tiempo, estado, horasTrabajadas, lugarResidencia];
 
     let id = idU.length + 1;
 

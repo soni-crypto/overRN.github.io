@@ -263,8 +263,26 @@ window.onclick = function(event) {
     }
 }
 
-// span.onclick = function() {
-//     modal.style.display = "none";
+const back = document.querySelector(".btnDemostracionBack");
+const ventanaBack = document.querySelector(".backDemos");
+
+const front = document.querySelector(".btnDemostracionFront");
+const ventanaFront = document.querySelector(".frontDemos");
+
+back.onclick = () => {
+    ventanaBack.style.display = "block";
+    setTimeout(() => {
+        ventanaBack.style.display = "none";
+    }, 1500)
+}
+front.onclick = () => {
+        ventanaFront.style.display = "block";
+        setTimeout(() => {
+            ventanaFront.style.display = "none";
+        }, 1500)
+    }
+    // span.onclick = function() {
+    //     modal.style.display = "none";
 
 //     body.style.position = "inherit";
 //     body.style.height = "auto";
