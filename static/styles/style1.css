@@ -1,17 +1,12 @@
 :root {
     --color-negro-letra: rgb(35, 35, 35);
     --background-negro: rgb(232, 232, 232);
+    --letraGoogle: "Abel", sans-serif
 }
 
 a {
     text-decoration: none;
     color: var(--color-negro-letra);
-}
-
-#particles-js {
-    height: 100%;
-    width: 90%;
-    position: absolute;
 }
 
 section {
@@ -36,18 +31,19 @@ body {
 }
 
 body::-webkit-scrollbar {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     border-radius: .4rem;
     width: .4rem;
+    height: .4rem;
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: rgb(216, 122, 0);
+    background-color: rgb(43, 43, 43);
     border-radius: .4rem;
 }
 
 .img-perfil {
-    width: 15rem;
+    width: 10rem;
     margin-left: -5rem;
     border-radius: .2rem;
 }
@@ -77,7 +73,7 @@ body::-webkit-scrollbar-thumb {
     padding: 1rem 1rem 1rem 1rem;
     border: 1px solid rgb(184, 184, 184);
     background-color: rgb(0, 0, 0);
-    max-width: 30rem;
+    max-width: 25rem;
     /* max-width: 49%; */
 }
 
@@ -92,6 +88,74 @@ body::-webkit-scrollbar-thumb {
     font-size: 3.5rem;
     color: rgb(119, 119, 119);
 }
+
+
+/* estilos btn nav */
+
+
+/* From uiverse.io by @adamgiebl */
+
+.cssbuttons-io {
+    cursor: pointer;
+    position: relative;
+    font-family: var(--letraGoogle);
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    border-radius: 0.8em;
+    border: none;
+    background: linear-gradient(to right, #f1efff, #e2e2e2);
+    color: rgb(43, 43, 226);
+    overflow: hidden;
+}
+
+.cssbuttons-io svg {
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 0.5em;
+}
+
+.cssbuttons-io span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8em 1.2em 0.8em 1.05em;
+}
+
+.cssbuttons-io::before,
+.cssbuttons-io::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.cssbuttons-io::before {
+    content: "";
+    background: rgb(248, 248, 248);
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.cssbuttons-io:hover::before {
+    transform: translate3d(100%, 0, 0);
+}
+
+.cssbuttons-io:active {
+    transform: scale(0.95);
+}
+
+
+/*  */
+
+
+/*  */
 
 .mensajeDeBackEnd {
     font-family: "Abel", sans-serif;
@@ -146,64 +210,6 @@ body::-webkit-scrollbar-thumb {
     margin-left: 1rem;
 }
 
-.contenedorFacebookPub {
-    width: 35rem;
-    height: 100%;
-    margin-left: 4%;
-    /* background-color: #d1d1d1; */
-}
-
-.inputFacebook {
-    margin-top: 1rem;
-    margin-left: .7rem;
-    height: 3rem;
-    width: 28rem;
-    border-radius: 10rem;
-    outline: none;
-    border: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    color: rgb(193, 193, 193);
-    background-color: rgb(54, 54, 54);
-}
-
-.inputFacebook:hover {
-    background-color: rgb(93, 93, 93);
-}
-
-.perfilFacebook {
-    width: 3rem;
-    height: 3rem;
-    margin: 1rem 0rem 0rem 1rem;
-    border-radius: 50%;
-}
-
-.vistaALaProgramacion {
-    display: flex;
-}
-
-.facebookBloque1 {
-    height: 9rem;
-    width: 100%;
-    border-radius: 1rem;
-    background-color: rgb(64, 64, 64);
-}
-
-.facebookBloque2 {
-    height: 8rem;
-    width: 100%;
-    border-radius: 1rem;
-    background-color: rgb(64, 64, 64);
-}
-
-.facebookBloque3 {
-    height: 100%;
-    width: 100%;
-    border-radius: 1rem;
-    background-color: rgb(99, 98, 98);
-    margin-bottom: 3rem;
-}
-
 h1 {
     font-family: monospace;
     font-size: 1.4rem;
@@ -214,124 +220,35 @@ h2 {
     font-family: monospace;
 }
 
-p {
-    font-family: monospace;
-}
-
 .letraTwitter {
     color: rgb(168, 168, 168);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
+    font-size: .8rem;
 }
 
 .prohack {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: .9rem;
-}
-
-.bloqueFaceCabecera {
-    display: flex;
-    border-bottom: 1px solid rgb(191, 191, 191);
-    width: 90%;
-    margin-left: 2rem;
-    padding-bottom: 1rem;
-    /* background-color: #000; */
-}
-
-.bloqueFaceCabeceraPub {
-    display: flex;
-    border-radius: 1rem 1rem 0 0;
-    /* border-bottom: 1px solid rgb(191, 191, 191); */
-    width: 100%;
-    /* padding-left: 1rem; */
-    padding-bottom: 1rem;
-    background-color: rgb(51, 51, 51);
+    font-size: .8rem;
 }
 
 .inforFalso {
     color: rgb(128, 128, 255);
     /* text-decoration: underline; */
     font-family: Consolas;
-    font-size: .8rem
+    font-size: .7rem
 }
 
-.botonInfFacebook {
-    border: none;
-    outline: none;
-    width: 15rem;
-    height: 2.7rem;
-    border-radius: .4rem;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    margin-top: .4rem;
-    display: flex;
-    justify-content: center;
-    background-color: rgba(100, 100, 100, 0);
-    color: aqua;
-}
-
-.botonInfFacebook:hover {
-    background-color: rgb(100, 100, 100);
-}
-
-.botonesParteDos {
-    margin-top: 1rem;
-}
-
-.publicacionesFacebook {
-    margin-top: .3rem;
-    margin-right: 1rem;
-}
-
-.inputFacebookParte2 {
-    height: 2.3rem;
-    background-color: rgb(100, 100, 100);
-    color: aqua;
-    border-radius: .5rem;
-    border: none;
-    outline: none;
-}
-
-.centrarEnVertiFacebook {
-    color: rgb(103, 103, 240);
-}
-
-.classListaModo {
-    border: none;
-    outline: none;
-    width: 15rem;
-    height: 2.7rem;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    margin-top: .4rem;
-    display: flex;
-    justify-content: center;
-    background-color: rgba(100, 100, 100, 0);
-    color: aqua;
-    border-bottom: 3px solid rgb(74, 74, 223);
-}
-
-.botonesFacebookInferior {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.facebookColorIcono {
-    fill: rgb(255, 94, 94);
-    font-size: 1.6rem;
+.fechaDeDesarrollo {
+    color: rgb(152, 152, 152);
+    font-size: .8rem;
 }
 
 .twitterContadorDePuntos {
     font-family: Arial, Helvetica, sans-serif;
     margin-right: 8%;
+    font-size: .8rem;
     color: rgb(159, 159, 159);
-}
-
-.publicacionesFantasmaFacebook {
-    color: white;
-    font-size: .9rem;
 }
 
 .iconTwitterPub {
@@ -349,7 +266,7 @@ p {
 .description {
     color: rgb(255, 255, 255);
     font-size: .9rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--letraGoogle);
     /* margin-left: -6rem; */
 }
 
@@ -366,15 +283,15 @@ p {
 }
 
 .calendarioSVG {
-    width: 1.3rem;
+    width: 1rem;
     fill: rgb(160, 160, 160);
     padding-bottom: -5rem;
 }
 
 .contenedorTwitterCaja {
-    width: 32rem;
+    width: 100%;
     margin-top: 1rem;
-    margin-left: -1rem;
+    /* margin-left: ; */
     display: flex;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -385,10 +302,6 @@ p {
 .contenedorTwitterCajaImg {
     padding-top: 2rem;
     margin-right: 1rem;
-}
-
-.fechaDeDesarrollo {
-    color: rgb(152, 152, 152);
 }
 
 .dscr1 {
@@ -569,7 +482,9 @@ p {
 }
 
 .btnModalSkill {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #626262;
+    font-family: var(--letraGoogle);
+    font-size: 1rem;
     cursor: pointer;
     border-radius: .4rem;
     border: none;
@@ -586,6 +501,7 @@ p {
 
 .btnModalSkill:hover {
     color: blue;
+    font-size: 1.1rem;
 }
 
 .AllSkills {
@@ -793,34 +709,37 @@ p {
     height: 0;
 }
 
-.contenedorGeneralDeNavs {
-    /* padding-left: .3rem; */
-    margin-top: -.5rem;
-    margin-left: -.6rem;
-}
-
 .contenidoDeNav {
-    /* background-color: rgb(255, 255, 255); */
-    padding-left: 1rem;
-    padding-top: 1rem;
-    height: 2rem;
-    width: 80%;
-    border: 1px solid rgb(217, 217, 217);
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+    /* padding: .3rem; */
+    /*padding-top: 1rem; */
+    /* height: 2rem; */
+    /* width: 100%; */
+    /* border: 1px solid rgb(217, 217, 217); */
+    /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 .contenidoDeNav a {
-    padding: 1rem;
-    display: inline;
+    height: auto;
+    /* padding: 1rem; */
+    display: inline-block;
     /* transition: 1s; */
-    color: rgb(0, 0, 0);
+    /* color: rgb(0, 0, 0); */
 }
 
-.contenidoDeNav a:hover {
+.imageGifNav {
+    width: 5%;
+    float: right;
+    margin-right: 15%;
+}
+
+
+/* .contenidoDeNav a:hover {
     color: rgb(32, 32, 32);
     border-bottom: 2px solid rgb(87, 87, 87);
-    /* background-color: black; */
-}
+
+
+}  */
 
 .modalContainer {
     display: none;
@@ -993,43 +912,6 @@ p {
     animation-iteration-count: infinite;
 }
 
-.cerrarMensajeDeEva {
-    background-color: rgb(232, 232, 232);
-    padding: .1rem .5rem .2rem .5rem;
-    border: 3px solid rgb(184, 184, 184);
-    border-radius: 50%;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(104, 104, 104);
-    cursor: pointer;
-}
-
-.cerrarMensajeDeEva:hover {
-    border: 3px solid rgb(135, 159, 255);
-}
-
-.cerrarMensajeDeEva:active {
-    background-color: aliceblue;
-    color: rgb(74, 74, 74);
-}
-
-.mensajeDeEvaAPublico {
-    position: fixed;
-    width: 15vw;
-    height: auto;
-    padding: 3rem;
-    background-color: rgba(255, 255, 255, 0.976);
-    z-index: 1;
-    left: 50%;
-    bottom: 2rem;
-    box-shadow: 5px 5px 20px rgb(192, 192, 192);
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1rem;
-    border-radius: 1rem;
-}
-
 
 /* ###################################################################### */
 
@@ -1046,7 +928,99 @@ p {
 }
 
 
-/* ###################################################################### */
+/*CARD */
+
+
+/* From uiverse.io by @gagan-gv */
+
+.card {
+    display: inline-block;
+    margin: 1rem 1rem 0 1rem;
+    width: 20rem;
+    overflow-x: hidden;
+    height: 30rem;
+    background: #f0f0f0;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.card:hover {
+    /* box-shadow: 0 0 2px 10px rgb(195, 206, 255); */
+    background-color: #2323fb;
+}
+
+.card .blob {
+    height: 10px;
+    width: 75%;
+    border-radius: 0 0 30px 30px;
+    margin: 0 auto;
+    background-color: #2323fb;
+    visibility: visible;
+    transition: all 0.3s;
+}
+
+.card:hover .blob {
+    height: 0;
+}
+
+.card .img {
+    display: flex;
+    margin: 30px auto 10px auto;
+    width: 70px;
+    height: 70px;
+    background-color: #acacff;
+    border-radius: 50%;
+    font-size: 11px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.card:hover .img {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px 0 0;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    z-index: 99999;
+}
+
+.card h2 {
+    padding: 15px 10px;
+    font-size: 25px;
+    transition: all 0.1s;
+    z-index: -99;
+    line-height: 17px;
+}
+
+.card span {
+    font-size: 18px;
+}
+
+.card:hover h2 {
+    opacity: 0;
+    /* width: 100%; */
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.card>p {
+    opacity: 0;
+    transition: all 0.75s;
+}
+
+.card>p>svg {
+    padding: 5px;
+}
+
+.card:hover>p {
+    /* position: absolute; */
+    bottom: 15px;
+    left: 35px;
+    opacity: 1;
+    transition: all 0.1s;
+}
 
 
 /* ###################################################################### */
@@ -1054,14 +1028,17 @@ p {
 
 /* ###################################################################### */
 
-@media screen and (max-width:700px) {
+.vistaALaProgramacion {
+    width: 100%;
+}
+
+.paddingParaCertificadosExterior {
+    padding: 1%;
+}
+
+@media screen and (max-width:1000px) {
     body {
         overflow-x: hidden;
-    }
-    .mensajeDeEvaAPublico {
-        bottom: 13rem;
-        width: 60vw;
-        left: 2rem;
     }
     .contentEva {
         display: none;
@@ -1101,21 +1078,6 @@ p {
     .frontDemos {
         width: 70vw;
         margin-left: 0rem;
-    }
-    .undraw_programingImg {
-        margin-top: -15rem;
-        width: 100vw;
-    }
-    .contenedorFacebookPub {
-        width: 100vw;
-        margin-left: -1rem;
-        transform: scale(.9);
-    }
-    .inputFacebook {
-        width: 130%;
-    }
-    .fotoPubcelular {
-        width: 100%;
     }
     .terminales-y-mas {
         margin-left: -2rem;
@@ -1167,9 +1129,7 @@ p {
         height: auto;
         width: 50%;
     }
-    .propina {
-        display: none;
-    }
+    /* From uiverse.io by @adamgiebl */
     .gitCmd {
         transform: scale(.7);
         margin-left: -2rem;
@@ -1183,14 +1143,6 @@ p {
         width: 129vw;
         height: 22rem;
         margin-top: -3rem;
-    }
-    .inputFacebookParte2 {
-        display: flex;
-        transform: scale(.8);
-        margin-left: -.9rem;
-    }
-    .publicacionesFacebook {
-        margin-top: 1rem;
     }
     .botonesParteDos {
         width: 100%;
