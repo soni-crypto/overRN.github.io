@@ -1,0 +1,93 @@
+:root {
+    --letraGoogleAbel: "Abel", sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.contenedorGeneralDeNavs {
+    width: 100%;
+}
+
+.contenidoDeNav {
+    height: 3rem;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(213, 213, 213);
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+}
+
+.imgLog {
+    border-radius: .4rem .4rem 0 0;
+    width: 100%;
+}
+
+.iconoDeNav {
+    display: none;
+}
+
+.cssbuttons-io {
+    text-decoration: none;
+    font-family: var(--letraGoogleAbel);
+    height: 2rem;
+    background-color: #2323fb00;
+    color: rgb(30, 30, 30);
+    cursor: pointer;
+    outline: none;
+    padding-top: 2rem;
+    margin-right: 5rem;
+}
+
+.cssbuttons-io:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.contenedorGeneral {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.centradorGeneral {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+}
+
+.contenedorDeProyecto {
+    width: 20rem;
+    height: 25rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 10px rgb(199, 199, 199);
+    border-radius: .4rem;
+    font-family: var(--letraGoogleAbel);
+}
+
+.imagen {
+    width: 100%;
+    height: 50%;
+}
+
+.descripcion {
+    padding: 1rem;
+}
+
+.Footer {
+    width: 100%;
+    font-size: 2rem;
+    font-family: var(--letraGoogleAbel);
+    background-color: black;
+    color: wheat;
+    text-align: center;
+    height: auto;
+}

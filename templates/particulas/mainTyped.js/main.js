@@ -1,11 +1,11 @@
 const typed = new Typed('.typed', {
-    strings: ['python en BackEnd.',
-        'javascript en FrontEnd.',
-        'php en BackEnd.',
-        'html, sin duda control total.',
-        'css y estilos nativos.',
-        'react, ya que es muy popular.',
-        'etc.'
+    strings: ['python',
+        'javascript',
+        'php',
+        'html',
+        'css ',
+        'react',
+        
     ],
     //stringsElement: '#cadena-texto',
     typeSpeed: 75, // velocidad en milisegundos para poner una letra 

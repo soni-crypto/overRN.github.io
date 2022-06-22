@@ -55,8 +55,45 @@
                         <h3 class="tituloSecundario">Python Numpy</h3>
                         <span class="letrasNormales">Numpy es mi favorita si se trata de trabajar con listas, matrices ya que a comparación de las listas que se puede generar con python mismo, los de numpy ocupan menos espacio en la memoria y tambien se nesecita poca memoria para crear Arrays grandes. <br>Las ventajas que ofrece ante Arrays comunes es que numpy te da mas opciones para manipular sus Arrays</span>
                         <br>
-                        <img src="../static/images/numpy-pasion.svg" class="imagenDraw" alt="">
+                        <h4 class="tituloTerciario">Crear lista</h4>
+                        <span></span>
+                        <div class="codigoPythonl">
+                            <pre class="codigoPython">
+                                
+    1 import numpy as np
+    2 listaVacia = np.array([])  
+    3 listaNormal = np.array([1, "a", True])
+    4 listaEnRango = np.arange(1, 10)  
+    5 listaBidimensional = np.array([1, 2, 3], ["a", "b", "c"])
+    6 unos = np.ones((3,4))
+    7 ceros = np.zeros((2,2))
+    8 aleatorio = np.random.random((2,2))
+    9 vacio = np.empty((3,2))
+   10 unSoloValor = np.full((2,3),8) 
+   11 valorEspaciado = np.arange(1,10,2)
+   12 valorEspaciadoDecimal = np.linspace(0,2,5)                             
+   13 matrizIndentidad1 = np.eyes(4,4)
+   14 matrizIndentidad2 = np.identity(4)
+   15 
+   16 dimensiones = listaNormal.ndim
+   17 tipoDeDato = listaNormal.dtype
+   18 cambioDeForma = listaNormal.reshape(3,2) 
+   19 maximo = listaEnRango.max() # np.max(listaEnRango) 
+   20 minimo = listaEnRango.min() # np.min(listaEnRango)
+   21 suma = listaEnRango.sum() # np.sum(listaEnRango)
+   22 tamaño = listaNormal.size
+   23 forma = listaNormal.shape
+   24 raizCuadrada = np.sqrt(listaNormal)
+   25 desviacionEstandar = np.std(listaNormal)                                
 
+                            </pre>
+                        </div>
+                        <img src="../static/images/numpy-pasion.svg" class="imagenDraw" alt="">
+                        <h3 class="tituloSecundario">Matplotlib</h3>
+                        <span class="letrasNormales">Matplotlib es una biblioteca para la generación de gráficos a partir de datos contenidos en listas o arrays en el lenguaje de programación Python y su extensión matemática NumPy. Proporciona una API, pylab, diseñada para recordar a la de MATLAB.</span>
+                        <div>
+                            <pre class="codigoPython">import matplotlib.pyplot as plt</pre>
+                        </div>
                         <h3 class="tituloSecundario">openCV y Mediapipe</h3>
                         <span class="letrasNormales"> OpenCV es una biblioteca libre de visión artificial que significa Open Computer Vision (Visión Artificial Abierta) que tiene mas de 2500 algoritmos para poder realizar acciones econtrar imágenes similares, seguir los movimientos de los ojos, etc . Practicamente es como tener un ojo en la pc y todo lo que ve podemos manipularlo a nuestro gusto.<br> Mediapipe nos facilita a reconocer y a graficar obejtos que estan siendo captados por la camara, practicamente mediapipe facilita la detección de objetos. </span>
 
