@@ -489,8 +489,9 @@ h2 {
 }
 
 .btnModalSkill {
-    color: #626262;
-    font-family: var(--letraGoogle);
+    color: #2a2a2a;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: .07rem;
     font-size: 1rem;
     cursor: pointer;
     border-radius: .4rem;
@@ -508,7 +509,8 @@ h2 {
 
 .btnModalSkill:hover {
     color: blue;
-    font-size: 1.1rem;
+    /* font-size: 1.1rem; */
+    /* background-color: #ffffff; */
 }
 
 .AllSkills {

@@ -1,10 +1,11 @@
 const typed = new Typed('.typed', {
-    strings: ['python',
-        'javascript',
-        'php',
-        'html',
-        'css ',
-        'react',
+    strings: ['Base de datos',
+        'Visión artificial',
+        'Análisis de datos',
+        'Desarrollo web',
+        'Scripting',
+        'Web scraping',
+        'Etc..',
         
     ],
     //stringsElement: '#cadena-texto',
