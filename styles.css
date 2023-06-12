@@ -1,0 +1,348 @@
+:root{
+    --fontFamily: "Open sans", sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.main-header{
+    height: 5rem;
+    width: 100%;
+    box-shadow: 0px 5px 8px rgb(232, 232, 232);
+}
+.main-header .container-main-header{
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 20rem;
+    border-right: 1px solid rgb(135, 135, 135);
+    position: fixed;
+    height: calc( 100vh - 5rem);
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    z-index: 5;
+}
+.main-header .container-main-nav-view{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3rem;
+}
+.container-btn-nav-close-open .contaier-button-svg-nav svg{
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: rgb(52, 52, 52);
+}
+.container-btn-nav-close-open .contaier-button-svg-nav{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-btn-nav-close-open .contaier-button-svg-nav:hover{
+    background-color: rgb(242, 242, 242);
+}
+.main-header .container-main-header .container-nav-icon{
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fontFamily);
+    user-select: none;
+}
+.main-header .container-main-header .container-nav-icon img{
+    width: 3rem;
+}
+.main-header .container-main-header .container-nav-nav{
+    margin-left: 2rem;
+}
+.main-header .container-main-header .container-nav-nav .container-nav-ul{
+    width: 100%;
+}
+.main-header .container-main-header .container-nav-nav .container-nav-ul ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    row-gap: 1rem;
+    font-family: var(--fontFamily);
+}
+.main-header .container-main-header .container-nav-nav .container-nav-ul ul li a{
+    color: rgb(121, 121, 121);
+}
+.main-header .container-main-header .container-nav-nav .container-nav-ul ul li a:hover{
+    color: rgb(59, 59, 59);
+}
+.section-presentation-over-me{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-presentation-over-me .container-description-me{
+    width: 45%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: .8rem;
+}
+.section-presentation-over-me .container-icon-programer{
+    width: 45%;
+    box-sizing: border-box;
+    /* overflow: auto; */
+}
+.section-presentation-over-me .container-icon-programer .container-icon-programer__image{
+    width: 90%;
+    max-width: 35rem;
+    user-select: none;
+    box-sizing: border-box;
+}
+.section-presentation-over-me .container-description-me .container-text-div-descr{
+    max-width: 30rem;
+    width: 100%;
+    font-family: var(--fontFamily);
+}
+.section-presentation-over-me .container-description-me .container-text-div-descr p{
+    font-size: 1.1rem;
+    font-family: var(--fontFamily);
+    color: rgb(51, 51, 51);
+    text-indent: 1rem;
+    line-height: 1.9rem;
+
+}
+
+
+.section-proyects-in-web {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-proyects-in-web .container-descr-my-proyects{
+    text-align: left;
+    max-width: 50rem;
+    width: 95%;
+    /* height: 6rem; */
+    background-color: white;
+    margin-top: 7rem;
+    font-family: var(--fontFamily);
+}
+.section-proyects-in-web .container-descr-my-proyects h1{
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+.container-all-proyects-main{
+    margin-top: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.container-all-proyects-main .container-row-proyects-one{
+    width: 30rem;
+    box-shadow: 2px 2px 6px rgb(230, 228, 228), -2px -2px 6px rgb(230, 228, 228);
+    border-radius: .6rem;
+    overflow: hidden;
+}
+.container-all-proyects-main .container-row-proyects-one .container-image-proyect{
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid rgb(232, 232, 232);
+}
+.container-all-proyects-main .container-row-proyects-one .container-image-proyect img{
+    /* width: 100%; */
+    max-width: 100%;
+    max-height: 100%;
+}
+.container-all-proyects-main .container-row-proyects-one .container-text-proyect{
+    padding: .6rem;
+    text-align: center;
+    font-family: var(--fontFamily);
+    font-size: 1rem;
+    height: 7rem;
+    background-color: white;
+    border-bottom: 1px solid rgb(232, 232, 232);
+}
+.container-all-proyects-main .container-row-proyects-one .container-button-proyect{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-all-proyects-main .container-row-proyects-one .container-button-proyect a{
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-all-proyects-main .container-row-proyects-one .container-button-proyect a button{
+    height: 3rem;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    column-gap: .6rem;
+    font-family: var(--fontFamily);
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: .6rem;
+}
+.container-main-footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fontFamily);
+    margin-top: 8rem;
+    /* height: 15rem; */
+}
+.container-main-footer .container-copy{
+    text-align: center;
+}
+
+.container-main-footer .container-details-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.container-main-footer .container-details-footer .row-1-f{
+    text-align: center;
+    margin-top: 2rem;
+}
+.section-main-contat-me{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12rem;
+    font-family: var(--fontFamily);
+}
+.section-main-contat-me .container-title-contact{
+    width: 100%;
+    height: 5rem;
+    text-align: center;
+}
+.section-main-contat-me .contact-me-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 1rem;
+}
+.section-main-contat-me .contact-me-container a svg{
+    width: 2rem;
+    height: 2rem;
+    fill: rgb(49, 49, 194);
+}
+.icon-contact-me-container-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-contact-me-container-image img{
+    width: 100%;
+    max-width: 38rem;
+}
+.container-svg-decoration-footer-base{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.container-svg-decoration-footer-base svg{
+    width: 100%;
+    z-index: -1;
+    margin-bottom: -1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.color-decoration-1{
+    color: rgb(88, 92, 211);
+    font-size: 1.8rem;
+    font-weight:bold;
+}
+.color-decoration-2{
+    color: rgb(65, 53, 176);
+    font-size: 1.5rem;
+    font-weight:bold;
+}
+
+
+
+
+@media screen and (max-width: 950px) {
+    .section-presentation-over-me{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 3rem;
+    }   
+    .section-presentation-over-me .container-icon-programer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-presentation-over-me .container-description-me{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-presentation-over-me .container-description-me .container-text-div-descr{
+        width: 100%;
+        text-align: center;
+    }
+    .container-all-proyects-main .container-row-proyects-one .container-text-proyect {
+        height: auto;
+    }
+    .container-all-proyects-main .container-row-proyects-one {
+        width: 90%;
+    }
+
+}

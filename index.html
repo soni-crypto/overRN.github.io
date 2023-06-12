@@ -2,409 +2,316 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="./static/style.css">
+    <link rel="stylesheet" href="./styles.css">
     <title>Over Rimachi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <section class="section-container">
-        <div id="particles-js"></div>
-        <div class="mask-container-all">
-            <div class="section-nav-and-data">
-                <div class="container-icon-profile-school">
-                    <div class="container-icon-profile-school__image">
-                        <img src="./static/logo-1.png" alt="">
-                    </div>
-                    <span class="container-icon-profile-school__span">Software developer</span>
-                </div>
-                <div class="container-icon-profile-school">
-                    <span class="container-icon-profile-school__span">Programer software</span>
-                    <div class="container-icon-profile-school__image">
-                        <img src="./static/logo-2.png" alt="">
-                    </div>
+    <header class="main-header">
+        <div class="container-main-nav-view">
+            <div class="container-btn-nav-close-open">
+                <div class="contaier-button-svg-nav" id="contaier-button-svg-nav">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>
                 </div>
             </div>
-            <div class="container-all-div-buttons">
-                <div class="container-all-div-buttons__div">
-                    <!-- <button class="container-all-div-buttons__buttons-nav"  type="button" data-bs-toggle="modal" data-bs-target="#musicPlayModal">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-music-note-beamed" viewBox="0 0 16 16"><path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z"/><path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z"/><path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z"/></svg>
-                        CV
-                    </button> -->
-                    <a href="./static/CV-overPython.pdf" download class="a-download-button">
-                        <button class="download-button">
-                            <div class="docs"><svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="currentColor" height="20" width="20" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line y2="13" x2="8" y1="13" x1="16"></line><line y2="17" x2="8" y1="17" x1="16"></line><polyline points="10 9 9 9 8 9"></polyline></svg> CV</div>
-                            <div class="download">
-                                <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="currentColor" height="24" width="24" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line y2="3" x2="12" y1="15" x1="12"></line></svg>
-                            </div>
-                        </button>
-                    </a>
-                    <button class="container-all-div-buttons__buttons-nav" type="button" data-bs-toggle="modal" data-bs-target="#portafolio">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-journal-text" viewBox="0 0 16 16"><path d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/><path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/><path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/></svg>
-                        Portafolio
-                    </button>
-                    <button class="container-all-div-buttons__buttons-nav" type="button" data-bs-toggle="modal" data-bs-target="#habilidades">
-                        Habilidades
-                    </button>
-                    <button class="container-all-div-buttons__buttons-nav" type="button" data-bs-toggle="modal" data-bs-target="#contactMeModal">
-                        Contácto
-                    </button>
-                    <!-- <button class="container-all-div-buttons__buttons-nav">Styles</button> -->
-                </div>
-            </div>
-            <div class="container-body-details">
-                    <div class="container-profile-all">
-                        <div class="container-profile-all__image">
-                            <img src="./static/SL_012519_18110_95.jpg" alt="">
-                        </div>
-                        <!-- <div class="container-profile-all__text-name"> -->
-                            <!-- <h1>Over Rimachi</h1> -->
-                            <!-- <div class="container-profile-all__text">
-                                <span>Soy un desarrollador web independiente apasionado por la creación de soluciones innovadoras y eficientes.</span>
-                            </div> -->
-                        <!-- </div> -->
-                    </div>
-                    <div class="container-skills-all">
-                        <div class="block-rectangle-color"> </div>  
-                            <!-- <div class="message-security">
-                                <svg xmlns="http://www.w3.org/2000/svg"class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
-                                    <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-                                </svg>
-                                <span class="message-security-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, similique!</span>
-                            </div> -->
-                            <div class="container-text-details">
-                                <h1 class="container-text-details__titulo">
-                                    Over Rimachi
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-check-circle" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
-                                    </svg>
-                                </h1>
-                            </div>
-                            <div class="container-skills-center">
-                                <span>
-                                    Soy un desarrollador web independiente apasionado por la creación de soluciones innovadoras y eficientes. Con experiencia en diversas tecnologías web, puedo ayudarte a crear la solución que mejor se adapte a tus necesidades, ya sea desde sitios web sencillos hasta aplicaciones web complejas. 
-                                </span>
-                                <!-- <div class="block-skills">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-shield-plus" viewBox="0 0 16 16"><path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/><path d="M8 4.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V9a.5.5 0 0 1-1 0V7.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"/></svg>
-                                    <span>Python</span>
-                                </div>
-                                <div class="block-skills">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-shield-plus" viewBox="0 0 16 16"><path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/><path d="M8 4.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V9a.5.5 0 0 1-1 0V7.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"/></svg>
-                                    <span>Base de datos (Mysql)</span>
-                                </div>
-                                <div class="block-skills">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-shield-plus" viewBox="0 0 16 16"><path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/><path d="M8 4.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V9a.5.5 0 0 1-1 0V7.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"/></svg>
-                                    <span>Php</span>
-                                </div>
-                                <div class="block-skills">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-shield-plus" viewBox="0 0 16 16"><path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/><path d="M8 4.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V9a.5.5 0 0 1-1 0V7.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"/></svg>
-                                    <span>Javascript</span>
-                                </div>
-                                <div class="block-skills">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-shield-plus" viewBox="0 0 16 16"><path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/><path d="M8 4.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V9a.5.5 0 0 1-1 0V7.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"/></svg>
-                                    <span>HTML</span>
-                                </div>
-                                <div class="block-skills">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-shield-plus" viewBox="0 0 16 16"><path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/><path d="M8 4.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V9a.5.5 0 0 1-1 0V7.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"/></svg>
-                                    <span>CSS</span>
-                                </div>
-                                <div class="block-skills">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-shield-plus" viewBox="0 0 16 16"><path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/><path d="M8 4.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V9a.5.5 0 0 1-1 0V7.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"/></svg>
-                                    <span>Python Flask</span>
-                                </div>
-                                <div class="block-skills">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-shield-plus" viewBox="0 0 16 16"><path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/><path d="M8 4.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V9a.5.5 0 0 1-1 0V7.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"/></svg>
-                                    <span>Sockets(App en tiempo real)</span>
-                                </div>
-                                <div class="block-skills">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-shield-plus" viewBox="0 0 16 16"><path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/><path d="M8 4.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V9a.5.5 0 0 1-1 0V7.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"/></svg>
-                                    <span>Notificaciones</span>
-                                </div>
-                                <div class="block-skills">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-shield-plus" viewBox="0 0 16 16"><path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/><path d="M8 4.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V9a.5.5 0 0 1-1 0V7.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"/></svg>
-                                    <span>Git</span>
-                                </div>
-                                <div class="block-skills">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-shield-plus" viewBox="0 0 16 16"><path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/><path d="M8 4.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V9a.5.5 0 0 1-1 0V7.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"/></svg>
-                                    <span>GitHub</span>
-                                </div>
-                                <div class="block-skills">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-shield-plus" viewBox="0 0 16 16"><path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/><path d="M8 4.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V9a.5.5 0 0 1-1 0V7.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"/></svg>
-                                    <span>Implemetación de pasarela de pagos(Paypal)</span>
-                                </div>
-                                <div class="block-skills">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-shield-plus" viewBox="0 0 16 16"><path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/><path d="M8 4.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V9a.5.5 0 0 1-1 0V7.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"/></svg>
-                                    <span>APIS</span>
-                                </div> -->
-                            </div>
-                    </div>  
-            </div>
-        </div>
-    </section>
-    <section>
-        <!-- MUSICA -->
-        <div class="modal fade" id="musicPlayModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note-beamed" viewBox="0 0 16 16"><path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z"/><path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z"/><path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z"/></svg>
-                        Music
-                    </h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="modal-body-music-container">
-                                <span>GAMPER & DADONI - Creep</span>
-                                <audio src="./static/GAMPER&DADONI-Creep.mp3" controls loop></audio>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-            </div>
-        </div>
-        <!-- portafolio -->
-        <div class="modal modal-lg fade" id="portafolio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body" style="height: 100vh;">
-                        <div class="modal-body-block-note">
-                            <div class="container-skills-explain">
-                                <div class="container-title-skills">
-                                    <h1>WEB</h1>
-                                </div>
-                                <!-- <h2>WEB</h2> -->
-                                <ul class="ul-portafolio">
-                                    <li>
-                                        Servicio de reparación y/o mantenimiento de cobertura, tjerales, cerramiento, sistema de drenaje pluvial industrial y domestico, pisos convencionales e industriales.<br>
-                                        <a href="https://kmtsac.com/" target="_blank">
-                                            <img src="./static/image_web/kmtsac.jpg" alt="kmtsac">KMT S. A. C. 
-                                        </a>
-                                    </li>
-                                    <li>
-                                        Empresa concebida y creada para transportar personas con seguridad, comodidad y de manera exclusiva. <br>
-                                        <a href="http://alotaxitumbes.com/" target="_blank">
-                                            <img src="./static/image_web/taxitumbes.jpg" alt="alo taxi tumbes">
-                                            Alo taxi tumbes
-                                        </a>
-                                    </li>
-                                    <li>
-                                        Marca de productores con más de 10 años de experiencia. Responsables por brindar proteína de alta calidad mediante cortes de cerdo y cordero. <br>
-                                        <a href="https://gudpig.com/" target="_blank">
-                                            <img src="./static/image_web/gudpig.jpg" alt="">
-                                            Gudpig 
-                                        </a>
-                                    </li>
-                                    <li>
-                                        Soluciones tecnológicas digitales a nivel global (desarrollo de software e infraestructura); nuestra cartera de clientes incluye compañias de EEUU, Europa y Latinoamérica. <br>
-                                        <a href="http://digitalbitsolutions.com/" target="_blank">
-                                            <img src="./static/image_web/dbs.jpg" alt="">
-                                            Digital Bit Solutions
-                                        </a>
-                                    </li>
-                                    <li>
-                                        STARTUP NACIDA EN RIPOLLET, un sistema que puede acabar con los accidentes de tráfico por alcohol y drogas (o al menos reducir las cifras).<br>
-                                        <a href="https://www.timegoldsservices.com/" target="_blank">
-                                            <img src="./static/image_web/tgs.jpg" alt="">
-                                            Time Golds Services
-                                        </a>
-                                    </li>
-                                    <li>
-                                        Brindar soluciones a problemas cotidianos relacionados con las reformas, pintura y fontanería.<br>
-                                        <a href="https://www.cedenosystems.com/" target="_blank">
-                                            <img src="./static/image_web/cedeno.jpg" alt="">
-                                            Reparaciones Cedeño
-                                        </a>
-                                    </li>
-                                    <li>
-                                        Applicación web donde puedes encontrar cursos y subir videos educativos relacionados con tecnología e informática.<br>
-                                        <a href="https://overcrypto.pythonanywhere.com/" target="_blank">
-                                            <img src="./static/image_web/vraemtec.jpg" alt="">
-                                            Vraemtec
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      </div>
-                </div>
-            </div>
-        </div>
-        <!-- habilidades -->
-        <div class="modal modal-lg fade" id="habilidades" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body" style="height: 100vh;">
-                        <div class="modal-body-block-note">
-                            <div class="container-skills-explain">
-                                <div class="container-title-skills">
-                                    <h1>PYTHON</h1>
-                                </div>
-                                <h2>WEB (FLASK*, DJANGO)</h2>
-                                <ul class="ul-habilidades">
-                                    <li>Desarrollo de aplicaciones de web.</li>
-                                    <li>Aplicaciones web progresivas.</li>
-                                    <li>Aplicaciones en tiempo real con tecnologia Sockets</li>
-                                    <li>Login con google.</li>
-                                    <li>Implementación de pasarela de pagos con PayPal, BRAINTREE.</li>
-                                    <li>Conexión a base de datos, migracion, modelos, etc...</li>
-                                    <li>Firebase DATA BASE</li>
-                                    <li>Notificaciones web push</li>
-                                    <li>Envio de correos</li>
-                                    <li>Envio de mensajes a android (TWILIO)</li>
-                                    <li>Integración con whatsapp (TWILIO) </li>
-                                    <li>Consumo y creacion de API</li>
-                                    <li>Automatización de procesos con python</li>
-                                    <li>Scrapping</li>
-                                    <li>Entre otros</li>
-                                </ul>
-                            </div>
+            <div>
 
-                            <div class="container-skills-explain">
-                                <div class="container-title-skills">
-                                    <h1>PHP</h1>
-                                </div>
-                                <h2>WEB (PHP*, LARAVEL)</h2>
-                                <ul class="ul-habilidades">
-                                    <li>Generar reportes(actas, albaranes, etc)</li>
-                                    <li>Control de imagenes (comvetir, reducir peso, redimensionar)</li>
-                                    <li>Desarrollo de aplicaciones de web.</li>
-                                    <li>Aplicaciones web progresivas.</li>
-                                    <li>Login con google.</li>
-                                    <li>Implementación de pasarela de pagos con PayPal, BRAINTREE.</li>
-                                    <li>Conexión a base de datos, migracion, modelos, etc...</li>
-                                    <li>Notificaciones web push</li>
-                                    <li>Envio de correos</li>
-                                    <li>Consumo y creacion de API</li>
-                                    <li>Entre otros</li>
-                                </ul>
-                            </div>
-
-                            <div class="container-skills-explain">
-                                <div class="container-title-skills">
-                                    <h1>JAVASCRIPT</h1>
-                                </div>
-                                <h2>WEB (JAVASCRIPT*, REACT)</h2>
-                                <ul class="ul-habilidades">
-                                    <li>Generar reportes en PDF, EXCEL, WORD</li>
-                                    <li>Animaciones</li>
-                                    <li>Aplicaciones reactivas</li>
-                                    <li>Aplicaciones web progresivas.</li>
-                                    <li>AJAX</li>
-                                    <li>SPA</li>
-                                    <li>Buen manejo del DOM</li>
-                                    <li>Notificaciones web push</li>
-                                    <li>Consumo de API</li>
-                                    <li>Entre otros</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="container-skills-explain">
-                                <div class="container-title-skills">
-                                    <h1>BASE DE DATOS</h1>
-                                </div>
-                                <h2>RELACIONALES</h2>
-                                <ul class="ul-habilidades">
-                                    <li>Mysql(xampp)</li>
-                                    <li>PostgreSQL</li>
-                                    <li>SQLite</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="container-skills-explain">
-                                <div class="container-title-skills">
-                                    <h1>OTROS</h1>
-                                </div>
-                                <ul class="ul-habilidades">
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>GIT</li>
-                                    <li>GITHUB</li>
-                                    <li>GITLAB</li>
-                                    <li>POSTMAN</li>
-                                    <li>VISUAL STUDIO</li>
-                                    <li>OFIMÁTICA</li>
-                                    <li>Entre otros</li>
-                                </ul>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      </div>
-                </div>
             </div>
         </div>
-        <!-- Contact me -->
-        <div class="modal fade" id="contactMeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">
-                            Contácto
-                        </h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="container-main-header" id="container-main-header">
+            <div class="container-nav-icon">
+                <img src="./images/icon-main-notify.png" alt="Over Rimcahi">
+                <span>Over Rimachi</span>
+            </div>
+            <div class="container-nav-nav">
+                <nav class="container-nav-ul">
+                    <ul>
+                        <li><a href="#sobre-mi-id" class="a-redirect-nav-li">Sobre mí</a></li>
+                        <li><a href="#" class="a-redirect-nav-li">Experiencia</a></li>
+                        <li><a href="#proyectos-id" class="a-redirect-nav-li">Proyectos</a></li>
+                        <li><a href="#contact-id" class="a-redirect-nav-li">Contácto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section-presentation-over-me" id="sobre-mi-id">
+            <div class="container-icon-programer">
+                <img src="./images/Web Developer_Monochromatic.png" class="container-icon-programer__image" alt="Over Rimachi">
+            </div>
+            <div class="container-description-me">
+                <div class="container-text-div-descr">
+                    
+                    <p>Soy <span class="color-decoration-1">Programador web backend</span> con experiencia en <span class="color-decoration-2">PHP</span> y <span class="color-decoration-2">Python</span>, y me complace presentarme como alguien apasionado por la creación de soluciones tecnológicas. Con habilidades en desarrollo de aplicaciones web y conocimiento en lenguajes como PHP y Python, he trabajado en diversas proyectos, desde sistemas de gestión de bases de datos hasta implementación de API REST.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section-experience-in-web-dev">
+
+        </section>
+        <section class="section-proyects-in-web" id="proyectos-id">
+            <div class="container-descr-my-proyects">
+                <h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg>
+                    Mis Proyectos
+                </h1>
+                <p>En el transcurso de los años he desarrollado aplicaciones web, lading pages, blogs, aplicaciones android, etc. sobre python y php, así ganando experiencia en el área del desarrollo web y las aplicaciones web progresivas(PWA)</p>
+            </div>
+
+            <div class="container-all-proyects-main">
+                <div class="container-row-proyects-one">
+                    <div class="container-image-proyect">
+                        <img src="./images/pages/ondaily.png" alt="Over Rimachi">
                     </div>
-                    <div class="modal-body">
-                        <div class="modal-body-contact-me-container">
-                            <a href="https://api.whatsapp.com/send/?phone=%2B51927106331&text=Hola&type=phone_number&app_absent=0" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-whatsapp iconContactMeRedes" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
-                            </a>
-                            <a href="https://web.facebook.com/overRimachi" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-facebook iconContactMeRedes" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/></svg>
-                            </a>
-                            <a href="https://github.com/soni-crypto" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-github iconContactMeRedes"  viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-                            </a>
-                            <a href="https://www.linkedin.com/in/over-rimachi-398611200/" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-linkedin iconContactMeRedes" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg>
-                            </a>
-                            <a href="mailto:overrimachi2001@gmail.com" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-envelope iconContactMeRedes" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/></svg>
-                            </a>
-                        </div>
-                        <div class="more-data-profile">
-                            <div class="container-row">
-                                <span>Nombre y apellido: </span>
-                                <span>Over Rimachi</span>
-                            </div>
-                            <div class="container-row">
-                                <span>País: </span>
-                                <span>Perú</span>
-                            </div>
-                            <!-- <div class="container-row">
-                                <span>Cambio de residencia: </span>
-                                <span>Si</span>
-                            </div> -->
-                        </div>
+                    <div class="container-text-proyect">
+                        <p>Aplicación web funcional donde puedes generar notificaciones web push desde cualquier lenguaje de programación. Esta desarrollado con el Framework flask de python y Base de datos Mysql.</p>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                    <div class="container-button-proyect">
+                        <a href="https://ondaily.pythonanywhere.com/" target="_blank">
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16"><path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/><path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/></svg>
+                                VER
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="container-row-proyects-one">
+                    <div class="container-image-proyect">
+                        <img src="./images/pages/vraemtec.jpg" alt="Over Rimachi">
+                    </div>
+                    <div class="container-text-proyect">
+                        <p>Aplicación web funcional donde puedes encontrar cursos sobre programación, ademas permite subir cursos. Esta deasrrollado con el Framework flask de python y Base de datos Mysql.</p>
+                    </div>
+                    <div class="container-button-proyect">
+                        <a href="https://overcrypto.pythonanywhere.com/" target="_blank">
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16"><path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/><path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/></svg>
+                                VER
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="container-row-proyects-one">
+                    <div class="container-image-proyect">
+                        <img src="./images/pages/tgs.jpg" alt="Over Rimachi">
+                    </div>
+                    <div class="container-text-proyect">
+                        <p>Sitio web donde una persona puede pedir servicios driver, ITV entre otros, basado en carros.Esta desarrollado en PHP.</p>
+                    </div>
+                    <div class="container-button-proyect">
+                        <a href="https://www.timegoldsservices.com/" target="_blank">
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16"><path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/><path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/></svg>
+                                VER
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="container-row-proyects-one">
+                    <div class="container-image-proyect">
+                        <img src="./images/pages/soploSagrado.png" alt="Over Rimachi">
+                    </div>
+                    <div class="container-text-proyect">
+                        <p>Sitio web donde se muestra productos con sus respectivos detalles, basado en los alimentos.Esta desarrollado en PHP</p>
+                    </div>
+                    <div class="container-button-proyect">
+                        <a href="https://soplosagrado.com/" target="_blank">
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16"><path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/><path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/></svg>
+                                VER
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="container-row-proyects-one">
+                    <div class="container-image-proyect">
+                        <img src="./images/pages/taxitumbes.jpg" alt="Over Rimachi">
+                    </div>
+                    <div class="container-text-proyect">
+                        <p>Sitio web desarrollado para poder reservar carros, brindar detalles de los servicios y atraer a los turistas. Está desarrollado en HTML y CSS</p>
+                    </div>
+                    <div class="container-button-proyect">
+                        <a href="http://alotaxitumbes.com/" target="_blank">
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16"><path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/><path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/></svg>
+                                VER
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="container-row-proyects-one">
+                    <div class="container-image-proyect">
+                        <img src="./images/pages/dbs.jpg" alt="Over Rimachi">
+                    </div>
+                    <div class="container-text-proyect">
+                        <p>Sitio web de programadores de DBS. Desarrollado en HTML , CSS y JAVASCRIPT.</p>
+                    </div>
+                    <div class="container-button-proyect">
+                        <a href="http://digitalbitsolutions.com/" target="_blank">
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16"><path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/><path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/></svg>
+                                VER
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="container-row-proyects-one">
+                    <div class="container-image-proyect">
+                        <img src="./images/pages/cedeno.jpg" alt="Over Rimachi">
+                    </div>
+                    <div class="container-text-proyect">
+                        <p>Sitio web donde se detalla los servicios que la empresa brinda, cuenta con un panel de administración interna. Está desarrollado en PHP.</p>
+                    </div>
+                    <div class="container-button-proyect">
+                        <a href="https://www.cedenosystems.com/" target="_blank">
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16"><path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/><path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/></svg>
+                                VER
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="container-row-proyects-one">
+                    <div class="container-image-proyect">
+                        <img src="./images/pages/gudpig.jpg" alt="Over Rimachi">
+                    </div>
+                    <div class="container-text-proyect">
+                        <p>Sitio web donde se presenta los productos de la empresa. Está desarrollado en HTML, CSS y JAVASCRIPT.</p>
+                    </div>
+                    <div class="container-button-proyect">
+                        <a href="https://gudpig.com/" target="_blank">
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16"><path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/><path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/></svg>
+                                VER
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="container-row-proyects-one">
+                    <div class="container-image-proyect">
+                        <img src="./images/pages/kmtsac.jpg" alt="Over Rimachi">
+                    </div>
+                    <div class="container-text-proyect">
+                        <p>Sitio web con panel administrativo interno, desarrollado en PHP.</p>
+                    </div>
+                    <div class="container-button-proyect">
+                        <a href="https://kmtsac.com/" target="_blank">
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16"><path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/><path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/></svg>
+                                VER
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="container-row-proyects-one">
+                    <div class="container-image-proyect">
+                        <img src="./images/pages/butdriversl.png" alt="Over Rimachi">
+                    </div>
+                    <div class="container-text-proyect">
+                        <p>Panel interno empresarial desarrollado en PHP</p>
+                    </div>
+                    <div class="container-button-proyect">
+                        <a href="#">
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-eye-slash" viewBox="0 0 16 16"><path d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7.028 7.028 0 0 0-2.79.588l.77.771A5.944 5.944 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.134 13.134 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755-.165.165-.337.328-.517.486l.708.709z"/><path d="M11.297 9.176a3.5 3.5 0 0 0-4.474-4.474l.823.823a2.5 2.5 0 0 1 2.829 2.829l.822.822zm-2.943 1.299.822.822a3.5 3.5 0 0 1-4.474-4.474l.823.823a2.5 2.5 0 0 0 2.829 2.829z"/><path d="M3.35 5.47c-.18.16-.353.322-.518.487A13.134 13.134 0 0 0 1.172 8l.195.288c.335.48.83 1.12 1.465 1.755C4.121 11.332 5.881 12.5 8 12.5c.716 0 1.39-.133 2.02-.36l.77.772A7.029 7.029 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.721 2.641-3.238l.708.709zm10.296 8.884-12-12 .708-.708 12 12-.708.708z"/></svg>
+                                Panel privado
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="container-row-proyects-one">
+                    <div class="container-image-proyect">
+                        <img src="./images/pages/tgsApp.png" alt="Over Rimachi">
+                    </div>
+                    <div class="container-text-proyect">
+                        <p>Aplicación de TGS en la play store.</p>
+                    </div>
+                    <div class="container-button-proyect">
+                        <a href="https://play.google.com/store/apps/details?id=com.tgs.driversinterface" target="_blank">
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16"><path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/><path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/></svg>
+                                VER
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="section-main-contat-me" id="contact-id">
+            <div class="container-title-contact">
+                <h1>Contácteme</h1>
+            </div>
+            <div class="contact-me-container">
+                <a href="mailto:overrimachi2001@gmail.com" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-envelope-at" viewBox="0 0 16 16"><path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"/><path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/></svg>
+                </a>
+                <a href="https://api.whatsapp.com/send/?phone=%2B51927106331&text=Hola&type=phone_number&app_absent=0" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-whatsapp" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/over-rimachi-398611200/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg>
+                </a>
+                <a href="https://web.facebook.com/overRimachi" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg"  class="bi bi-facebook" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/></svg>
+                </a>
+                <a href="https://github.com/soni-crypto" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+                </a>
+            </div>
+            <div class="icon-contact-me-container-image">
+                <img src="./images/Video Call_Isometric.png" alt="">
+            </div>
+        </section>
+    </main>
+    <footer class="container-main-footer">
+        <div class="container-copy">
+            <span>&copy; 2023 ONDAILY &raquo; VRAEMTEC &raquo; OVER RIMACHI</span>
         </div>
-    </section>
-    
-    <script src="./static/particles.min.js"></script>
-    <script src="./static/app.js"></script>
-
-    <script src="./static/animate.js" >
+        <div class="container-details-footer">
+            <div class="row-1-f">
+                <span>PYTHON</span>
+                <span>PHP</span>
+            </div>
+            <div class="row-1-f">
+                <p>Programador independiente</p>
+            </div>
+        </div>
+        <div class="container-svg-decoration-footer-base">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L30,208C60,192,120,160,180,133.3C240,107,300,85,360,85.3C420,85,480,107,540,106.7C600,107,660,85,720,80C780,75,840,85,900,96C960,107,1020,117,1080,101.3C1140,85,1200,43,1260,42.7C1320,43,1380,85,1410,106.7L1440,128L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
+        </div>
+    </footer>
+    <script>
+        let stateNav = true;
+        const containerNav = document.getElementById("container-main-header");
+        const buttonNav = document.getElementById("contaier-button-svg-nav");
+        buttonNav.addEventListener("click", ()=>{
+            if (stateNav === true){
+                containerNav.style.display = "flex"
+                stateNav = false;
+            }else if (stateNav === false){
+                containerNav.style.display = "none"
+                stateNav = true;
+            }
+        });
+        const aListAll = document.querySelectorAll(".a-redirect-nav-li");
+        aListAll.forEach(a_li =>{
+            a_li.addEventListener("click", ()=>{
+                containerNav.style.display = "none"
+                stateNav = true;
+            })
+        })
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
