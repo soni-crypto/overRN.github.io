@@ -13,7 +13,7 @@ body{
 .main-header{
     height: 4rem;
     width: 100%;
-    box-shadow: 0px 5px 8px rgb(25, 43, 98);
+    box-shadow: 0px 3px 8px rgb(19, 34, 79);
     background-color: rgb(31, 32, 55);
     position: fixed;
     margin-top: 0;
@@ -44,7 +44,7 @@ body{
 .container-btn-nav-close-open .contaier-button-svg-nav svg{
     height: 1.5rem;
     width: 1.5rem;
-    fill: rgb(170, 170, 170);
+    fill: rgb(255, 255, 255);
 }
 .container-btn-nav-close-open .contaier-button-svg-nav{
     width: 2.5rem;
@@ -53,7 +53,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid rgba(215, 215, 215, 0.354);
+    border: 1px solid rgba(255, 255, 255, 0.598);
 }
 .container-btn-nav-close-open .contaier-button-svg-nav:hover svg{
     fill: black;

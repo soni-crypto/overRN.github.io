@@ -204,7 +204,7 @@
             </div>
         </div>
     </header>
-    <main>
+    <main class="main-body">
         <section class="section-presentation-over-me" id="sobre-mi-id">
             <div class="container-icon-programer">
                 <img src="./images/over_foto.jpg" class="container-icon-programer__image" alt="Over Rimachi">
@@ -248,7 +248,7 @@
             </div>
         </section>
         <section class="section-experience-in-web-dev">
-
+            
         </section>
         <section class="section-proyects-in-web" id="proyectos-id">
             <div class="container-descr-my-proyects">
@@ -260,6 +260,23 @@
             </div>
 
             <div class="container-all-proyects-main">
+                <div class="container-row-proyects-one">
+                    <div class="container-image-proyect">
+                        <img src="./images/pages/fdr.png" alt="Over Rimachi">
+                    </div>
+                    <div class="container-text-proyect">
+                        <p>Panel interno para poder administrar recursos en FDR. Esta desarrollado con el Framework CodeIgniter 4 y Base de datos Mysql.</p>
+                    </div>
+                    <!-- <div class="container-button-proyect">
+                        <a href="#" target="_blank">
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16"><path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/><path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/></svg>
+                                VER
+                            </button>
+                        </a>
+                    </div> -->
+                </div>
+
                 <div class="container-row-proyects-one">
                     <div class="container-image-proyect">
                         <img src="./images/pages/ondaily.png" alt="Over Rimachi">
@@ -495,6 +512,11 @@
         let stateNav = true;
         const containerNav = document.getElementById("container-main-header");
         const buttonNav = document.getElementById("contaier-button-svg-nav");
+        const main_body = document.querySelector(".main-body");
+        main_body.addEventListener("click",()=>{
+            containerNav.style.display = "none"
+            stateNav = true;
+        });
         buttonNav.addEventListener("click", ()=>{
             if (stateNav === true){
                 containerNav.style.display = "flex"
