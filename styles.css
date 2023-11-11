@@ -290,7 +290,7 @@ main section:nth-child(4){
     font-size: 1.1rem;
     font-family: var(--fontFamily);
     color: rgb(205, 197, 235);
-    text-indent: 1rem;
+    /* text-indent: 1rem; */
     line-height: 1.9rem;
     text-shadow: 2px 2px 10px rgb(205, 205, 205);
 }
@@ -462,8 +462,30 @@ main section:nth-child(4){
     z-index: -1;
     margin-bottom: -1rem;
 }
-
-
+.container-images-icon-skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* background-color: aliceblue; */
+    gap: 1rem;
+}
+.container-images-icon-skill .ctn-main-image{
+    background-color: aliceblue;
+    width: 8rem;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: .6rem;
+    margin-bottom: 2rem;
+}
+.container-images-icon-skill img{
+    max-width: 100%;
+    max-height: 100%;
+}
 
 
 
